@@ -2,12 +2,11 @@ import React from "react";
 
 const Home: React.FC = () => {
     return (
-        <>
-            <div className="flex self-center bg-blue-500 text-white p-4">
-                This is styled using Tailwind CSS!
+        <div id="top" className="h-screen bg-background flex self-center">
+            <div className="text-text p-4">
+                Home
             </div>
-            <div style={{ color: 'red' }}>This is styled with CSS</div>
-        </>
+        </div>
     );
 }
 
