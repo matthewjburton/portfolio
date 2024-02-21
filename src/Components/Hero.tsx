@@ -1,13 +1,13 @@
 import React from "react";
 
-const Home: React.FC = () => {
+const Hero: React.FC = () => {
     return (
         <div id="top" className="h-screen bg-background flex self-center">
             <div className="text-text p-12">
-                Home
+                Hero
             </div>
         </div>
     );
 }
 
-export default Home;
+export default Hero;

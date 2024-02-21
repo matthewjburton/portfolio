@@ -2,7 +2,7 @@ import './App.css';
 import About from './Components/About';
 import Connect from './Components/Connect';
 import Experience from './Components/Experience';
-import Home from './Components/Home';
+import Hero from './Components/Hero';
 import Nav from './Components/Nav';
 import Projects from './Components/Projects';
 
@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Nav />
-      <Home />
+      <Hero />
       <Projects />
       <Experience />
       <About />
