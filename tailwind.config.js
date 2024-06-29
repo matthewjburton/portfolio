@@ -8,7 +8,11 @@ export const theme = {
     colors: {
       background: {
         DEFAULT: '#FFFFFF',
-        dark: '#121212',
+        dark: '#101010',
+      },
+      container: {
+        DEFAULT: '#FFFFFF',
+        dark: '#1a1a1e',
       },
       dropdownHover: {
         DEFAULT: '#f4f4f4',

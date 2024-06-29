@@ -3,13 +3,15 @@ import Yellowstone from "../Images/Yellowstone.png";
 import Overcome from "../Images/Overcome.png";
 import AllStars from "../Images/All Stars.png";
 import ForeverLit from "../Images/Forever Lit.png";
+import { Element } from 'react-scroll';
 
 const Projects: React.FC = () => {
     return (
         <div className="flex w-full justify-center ">
             <div className="flex flex-col items-center w-2/3 p-12 gap-12">
                 <div className="text-3xl font-bold">Projects</div>
-                <div>
+
+                <Element name="programs">
                     <div className="text-2xl font-bold py-4">Programs</div>
                     <div>
                         <a href="https://github.com/matthewjburton/comfort-airlines">
@@ -22,9 +24,9 @@ const Projects: React.FC = () => {
                             the class nomination for the
                             project most worthy of winning the company's "bid".</p>
                     </div>
-                </div>
+                </Element>
 
-                <div>
+                <Element name="games">
                     <div className="text-2xl font-bold py-4">Games</div>
                     <div className="grid grid-flow-row grid-cols-2 gap-4">
                         <div>
@@ -44,9 +46,9 @@ const Projects: React.FC = () => {
                             <p>An action roguelike platformer</p>
                         </div>
                     </div>
-                </div>
+                </Element>
 
-                <div>
+                <Element name="graphics">
                     <div className="text-2xl font-bold py-4">Graphics</div>
                     <div className="grid grid-cols-2 gap-4">
                         <img className="w-80 h-80 object-fit" src={Yellowstone} alt="Yellowstone" />
@@ -54,7 +56,7 @@ const Projects: React.FC = () => {
                         <img className="w-80 h-80 object-fit" src={ForeverLit} alt="Forever Lit" />
                         <img className="w-80 h-80 object-fit" src={AllStars} alt="All Stars" />
                     </div>
-                </div>
+                </Element>
             </div>
         </div>
     );
