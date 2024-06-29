@@ -1,4 +1,3 @@
-import './App.css';
 import Nav from './Components/Nav';
 import Hero from './Components/Hero';
 import Projects from './Components/Projects';
@@ -8,14 +7,14 @@ import Footer from './Components/Footer';
 
 function App() {
   return (
-    <>
+    <div className="bg-background dark:bg-background-dark text-primaryText dark:text-primaryText-dark">
       <Nav />
       <Hero />
       <Projects />
       <Experience />
       <About />
       <Footer />
-    </>
+    </div>
   );
 }
 

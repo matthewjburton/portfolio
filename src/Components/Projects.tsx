@@ -7,7 +7,7 @@ import ForeverLit from "../Images/Forever Lit.png";
 const Projects: React.FC = () => {
     return (
         <div className="flex w-full justify-center ">
-            <div className="bg-slate-800 text-white flex flex-col items-center w-2/3 p-12 gap-12">
+            <div className="flex flex-col items-center w-2/3 p-12 gap-12">
                 <div className="text-3xl font-bold">Projects</div>
                 <div>
                     <div className="text-2xl font-bold py-4">Programs</div>
