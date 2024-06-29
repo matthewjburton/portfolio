@@ -1,13 +1,11 @@
-import React from "react";
-
-const Hero: React.FC = () => {
+const Hero = () => {
     return (
-        <div id="top" className="h-screen bg-background flex self-center">
-            <div className="text-text p-12">
+        <div className="bg-gray-800 flex justify-center">
+            <div className="text-white font-bold text-xl p-8">
                 Hero
             </div>
         </div>
     );
-}
+};
 
 export default Hero;
