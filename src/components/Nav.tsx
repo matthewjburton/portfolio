@@ -1,10 +1,12 @@
-const Nav = () => {
+import React from "react";
+
+const Nav: React.FC = () => {
     return (
-        <nav className="bg-gray-800 p-4">
-            <div className="container mx-auto flex justify-between items-center">
-                <div className="text-white font-bold text-xl">Nav</div>
+        <div className="bg-gray-800 flex justify-center">
+            <div className="text-white font-bold text-xl p-8">
+                Nav
             </div>
-        </nav>
+        </div>
     );
 };
 

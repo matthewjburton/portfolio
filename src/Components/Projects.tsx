@@ -2,8 +2,8 @@ import React from "react";
 
 const Projects: React.FC = () => {
     return (
-        <div id="projects" className="h-screen bg-primary flex self-center">
-            <div className="text-text p-12">
+        <div className="bg-gray-800 flex justify-center">
+            <div className="text-white font-bold text-xl p-8">
                 Projects
             </div>
         </div>

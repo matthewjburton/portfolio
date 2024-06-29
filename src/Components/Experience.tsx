@@ -2,8 +2,8 @@ import React from "react";
 
 const Experience: React.FC = () => {
     return (
-        <div id="experience" className="h-screen bg-secondary flex self-center">
-            <div className="text-text p-12">
+        <div className="bg-gray-800 flex justify-center">
+            <div className="text-white font-bold text-xl p-8">
                 Experience
             </div>
         </div>
