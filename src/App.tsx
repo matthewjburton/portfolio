@@ -1,20 +1,14 @@
 import './App.css';
-import About from './Components/About';
-import Connect from './Components/Connect';
-import Experience from './Components/Experience';
-import Hero from './Components/Hero';
-import Nav from './Components/Nav';
-import Projects from './Components/Projects';
+import Footer from './components/Footer';
+import Hero from './components/Hero';
+import Nav from './components/Nav';
 
 function App() {
   return (
     <>
       <Nav />
       <Hero />
-      <Projects />
-      <Experience />
-      <About />
-      <Connect />
+      <Footer />
     </>
   );
 }
