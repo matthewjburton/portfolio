@@ -28,18 +28,19 @@ const Projects: React.FC = () => {
                     <div className="text-2xl font-bold py-4">Games</div>
                     <div className="grid grid-flow-row grid-cols-2 gap-4">
                         <div>
-                            <iframe title="Endless Breakout" frameBorder="0"
+                            <iframe title="Endless Breakout"
                                 src="https://itch.io/embed/303595?bg_color=811515&amp;fg_color=FFF&amp;link_color=fa5c5c&amp;border_color=ce5555"
-                                width="208" height="167"><a href="https://matt-burton.itch.io/endless-breakout">Endless
-                                    Breakout by Mattburton64</a></iframe>
+                                width="208" height="167">
+                                <a href="https://matt-burton.itch.io/endless-breakout">Endless Breakout by Matt Burton</a>
+                            </iframe>
                             <p>Infinite arcade brick breaker</p>
                         </div>
                         <div>
-                            <iframe title="Head Hunter" frameBorder="0"
+                            <iframe title="Head Hunter"
                                 src="https://itch.io/embed/1437587?bg_color=1E1E1E&amp;fg_color=ffffff&amp;link_color=fa5c5c&amp;border_color=7d7d7d"
-                                width="208" height="167"><a href="https://matt-burton.itch.io/head-hunter">Head Hunter
-                                    by
-                                    Mattburton64</a></iframe>
+                                width="208" height="167">
+                                <a href="https://matt-burton.itch.io/head-hunter">Head Hunter by Matt Burton</a>
+                            </iframe>
                             <p>An action roguelike platformer</p>
                         </div>
                     </div>
