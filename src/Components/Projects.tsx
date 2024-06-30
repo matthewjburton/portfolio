@@ -7,7 +7,7 @@ import { Element } from 'react-scroll';
 
 const Projects: React.FC = () => {
     return (
-        <div className="flex w-full justify-center ">
+        <Element name="projects" className="flex w-full justify-center ">
             <div className="flex flex-col items-center w-2/3 p-12 gap-12">
                 <div className="text-3xl font-bold">Projects</div>
 
@@ -58,7 +58,7 @@ const Projects: React.FC = () => {
                     </div>
                 </Element>
             </div>
-        </div>
+        </Element>
     );
 }
 

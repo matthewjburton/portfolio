@@ -1,20 +1,23 @@
 import Nav from './Components/Nav';
 import Hero from './Components/Hero';
-import Experience from './Components/Experience';
 import Projects from './Components/Projects';
 import About from './Components/About';
 import Footer from './Components/Footer';
 
+import Wrapper from './Components/Wrapper';
+import Container from './Components/Container';
+
 function App() {
   return (
-    <div className="bg-background dark:bg-background-dark text-primaryText dark:text-primaryText-dark">
-      <Nav />
+    <Wrapper>
       <Hero />
-      <Experience />
-      <Projects />
-      <About />
+      <Nav />
+      <Container>
+        <Projects />
+        <About />
+      </Container>
       <Footer />
-    </div>
+    </Wrapper>
   );
 }
 

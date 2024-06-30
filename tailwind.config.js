@@ -30,6 +30,17 @@ export const theme = {
         DEFAULT: '#787878',
         dark: '#BEBEBE',
       },
+      accent: {
+        DEFAULT: '#FFD700',
+        dark: '#FFD700',
+      },
+    },
+    screens: {
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+      '2xl': '1536px',
     },
   },
 };
