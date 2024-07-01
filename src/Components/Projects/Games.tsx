@@ -1,22 +1,22 @@
 import React from 'react';
-import { programs } from '../../Content/Projects/Programs';
+import { games } from '../../Content/Projects/Games';
 
-const Programs: React.FC = () => {
+const Games: React.FC = () => {
     return (
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-8">
-            {programs.map((program) => (
+            {games.map((game) => (
                 <div
-                    key={program.id}
+                    key={game.id}
                     className="relative group flex items-center justify-center bg-container dark:bg-container-dark rounded-lg overflow-hidden hover:shadow-lg transition duration-300 ease-in-out"
-                    style={{ aspectRatio: '2/1' }}
+                    style={{ aspectRatio: '63/50' }}
                 >
-                    <div className="text-3xl md:text-4xl lg:text-5xl text-center font-bold group-hover:opacity-0 transition duration-300 ease-in-out">{program.title}</div>
+                    <img src={game.image} alt={game.title} className="object-cover w-full h-full" />
 
                     {/* Overlay */}
                     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
                         <div className="h-full flex flex-col gap-8 items-center justify-center p-8 bg-accent dark:bg-accent-dark bg-opacity-75">
-                            <p className="text-lg">{program.description}</p>
-                            <a href={program.link} target="_blank" rel="noopener noreferrer" className="text-link">Link</a>
+                            <p className="text-lg">{game.description}</p>
+                            <a href={game.link} target="_blank" rel="noopener noreferrer" className="text-link">Play</a>
                         </div>
                     </div>
 
@@ -26,4 +26,4 @@ const Programs: React.FC = () => {
     );
 };
 
-export default Programs;
+export default Games;

@@ -1,7 +1,5 @@
-import PortraitImage from "../Images/About/portrait.png"
-
 export const bio = {
-    imageSrc: PortraitImage,
+    imageSrc: `${process.env.PUBLIC_URL}/Images/About/portrait.png`,
     altText: "Matthew Burton",
     title: "Bio",
     description:
@@ -36,11 +34,16 @@ export const skills = {
         {
             category: "Programming",
             skills: [
-                "Python",
+                "C",
                 "C++",
-                "Java",
+                "C#",
+                "Python",
                 "HTML",
                 "CSS",
+                "Shell",
+                "TypeScript",
+                "JavaScript",
+                "Java",
                 "MySQL",
             ]
         },

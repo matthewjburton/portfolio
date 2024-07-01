@@ -1,8 +1,5 @@
 import React from "react";
-import WhiteLogo from "../Images/white-logo.png";
-import BlackLogo from "../Images/black-logo.png";
 
-import { Element } from "react-scroll";
 import { Link as ScrollLink } from "react-scroll";
 
 const Footer: React.FC = () => {
@@ -17,8 +14,8 @@ const Footer: React.FC = () => {
             <div className="w-full flex flex-row justify-center gap-8 mt-8">
                 <ScrollLink to="Hero" duration="500" smooth spy={true}>
                     <picture>
-                        <source srcSet={WhiteLogo} media="(prefers-color-scheme: dark)" />
-                        <source srcSet={BlackLogo} media="(prefers-color-scheme: light)" />
+                        <source srcSet={`${process.env.PUBLIC_URL}/Images/white-logo.png`} media="(prefers-color-scheme: dark)" />
+                        <source srcSet={`${process.env.PUBLIC_URL}/Images/black-logo.png`} media="(prefers-color-scheme: light)" />
                         <img alt="Logo" className="w-6 h-6" />
                     </picture>
                 </ScrollLink>
