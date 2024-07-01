@@ -22,7 +22,7 @@ const Nav: React.FC = () => {
     }, []);
 
     return (
-        <div className={`w-full bg-container dark:bg-container-dark flex flex-row justify-center items-center gap-8 p-6 text-2xl z-10 ${isSticky ? 'sticky top-0 shadow-container dark:shadow-container-dark shadow-md' : ''}`}>
+        <div className={`w-full bg-container dark:bg-container-dark flex flex-row justify-center items-center gap-8 p-6 text-2xl z-20 ${isSticky ? 'sticky top-0 shadow-container dark:shadow-container-dark shadow-md' : ''}`}>
             <ScrollLink to="Hero" duration={500} smooth spy={true} offset={-100} activeClass="font-bold text-accent dark:text-accent-dark">
                 Home
             </ScrollLink>

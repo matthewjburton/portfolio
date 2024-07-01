@@ -19,5 +19,125 @@ export const AlbumCovers = [
         title: "Forever Lit",
         image: "Images/Graphics/Album Covers/Forever Lit.png",
     },
+    {
+        id: 5,
+        title: "Infatuated",
+        image: "Images/Graphics/Album Covers/Infatuated.png",
+    },
+    {
+        id: 6,
+        title: "Dormant",
+        image: "Images/Graphics/Album Covers/Dormant.png",
+    },
+    {
+        id: 7,
+        title: "Cha-Ching",
+        image: "Images/Graphics/Album Covers/Cha-Ching.png",
+    },
+    {
+        id: 8,
+        title: "Blur",
+        image: "Images/Graphics/Album Covers/Blur.png",
+    },
+    {
+        id: 9,
+        title: "Noisy Summer",
+        image: "Images/Graphics/Album Covers/Noisy Summer.png",
+    },
+    {
+        id: 10,
+        title: "Pressure",
+        image: "Images/Graphics/Album Covers/Pressure.png",
+    },
+    {
+        id: 11,
+        title: "Sayonara",
+        image: "Images/Graphics/Album Covers/Sayonara.png",
+    },
+    {
+        id: 12,
+        title: "Sunny",
+        image: "Images/Graphics/Album Covers/Sunny.png",
+    },
+    {
+        id: 13,
+        title: "Make Me",
+        image: "Images/Graphics/Album Covers/Make Me.png",
+    },
+    {
+        id: 14,
+        title: "Heater",
+        image: "Images/Graphics/Album Covers/Heater.png",
+    },
+    {
+        id: 15,
+        title: "Effortless",
+        image: "Images/Graphics/Album Covers/Effortless.png",
+    },
+    {
+        id: 16,
+        title: "No Complaints",
+        image: "Images/Graphics/Album Covers/No Complaints.png",
+    }
     // Add more album covers as needed
+];
+
+
+export const Logos = [
+    {
+        id: 1,
+        title: "Spring Cleanse",
+        image: "Images/Graphics/Logos/Spring Cleanse.png",
+    },
+    {
+        id: 2,
+        title: "Whiskey Niner",
+        image: "Images/Graphics/Logos/Whiskey Niner.png",
+    },
+    {
+        id: 3,
+        title: "Friday Night Chips",
+        image: "Images/Graphics/Logos/Friday Night Chips.png",
+    },
+    {
+        id: 4,
+        title: "Fish Frenz",
+        image: "Images/Graphics/Logos/Fish Frenz.png",
+    },
+    {
+        id: 5,
+        title: "SMG Performance",
+        image: "Images/Graphics/Logos/SMG Performance.png",
+    },
+    {
+        id: 6,
+        title: "Educatly",
+        image: "Images/Graphics/Logos/Educatly.png",
+    },
+    {
+        id: 7,
+        title: "Matt",
+        image: "Images/Graphics/Logos/Matt.png",
+    },
+    {
+        id: 8,
+        title: "Liberty Transport",
+        image: "Images/Graphics/Logos/Liberty Transport.png",
+    },
+    {
+        id: 9,
+        title: "Twitch",
+        image: "Images/Graphics/Logos/Twitch.png",
+    },
+    {
+        id: 10,
+        title: "Prophet",
+        image: "Images/Graphics/Logos/Prophet.png",
+    },
+    {
+        id: 11,
+        title: "Blitz Performance",
+        image: "Images/Graphics/Logos/Blitz Performance.png",
+    }
+    // Add more logos as needed
 ];
