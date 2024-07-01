@@ -32,7 +32,7 @@ export const skills = {
     title: "Skills",
     skills: [
         {
-            category: "Programming",
+            category: "Languages",
             skills: [
                 "C",
                 "C++",
@@ -44,35 +44,43 @@ export const skills = {
                 "TypeScript",
                 "JavaScript",
                 "Java",
-                "MySQL",
+                "MySQL"
             ]
         },
         {
-            category: "Game Development",
+            category: "Tools and Frameworks",
+            skills: [
+                "Git",
+                "React",
+                "Tailwind",
+                "Apollo",
+                "Hasura",
+                "Visual Studio Code",
+                "Jira",
+                "Figma",
+                "Excel",
+                "Aseprite",
+                "FL Studio",
+                "Xcode"
+            ]
+        },
+        {
+            category: "Databases",
+            skills: [
+                "MySQL",
+                "MariaDB",
+                "PostgreSQL"
+            ]
+        },
+        {
+            category: "Platforms and Environments",
             skills: [
                 "Unity",
-                "C#",
-                "Aseprite",
-                "Xcode",
-            ]
-        },
-        {
-            category: "Graphic Design",
-            skills: [
-                "Adobe Illustrator",
-                "Adobe Photoshop",
-                "Adobe Lightroom",
-                "Adobe After Effects",
-            ]
-        },
-        {
-            category: "Extras",
-            skills: [
-                "GitHub",
-                "Visual Studio Code",
-                "Microsoft Excel",
-                "Adobe Audition",
-                "Adobe Premiere",
+                "MacOS",
+                "iOS",
+                "Windows",
+                "Linux",
+                "Docker"
             ]
         }
     ]
