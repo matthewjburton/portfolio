@@ -12,7 +12,7 @@ interface SkillsProps {
 
 const Skills: React.FC<SkillsProps> = ({ title, skills }) => {
     return (
-        <div className="w-full bg-container dark:bg-container-dark border border-border dark:border-none p-12 rounded-lg flex flex-col gap-8">
+        <div className="w-full bg-container dark:bg-container-dark p-12 rounded-lg flex flex-col gap-8">
             <div className="text-2xl font-bold">{title}</div>
             {skills.map((category, index) => (
                 <div key={index} className="flex flex-row items-center gap-4">

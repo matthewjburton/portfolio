@@ -4,27 +4,15 @@ import Overcome from "../Images/Overcome.png";
 import AllStars from "../Images/All Stars.png";
 import ForeverLit from "../Images/Forever Lit.png";
 import { Element } from 'react-scroll';
+import Header from "../Components/Header";
+import Programs from "./Projects/Programs";
 
 const Projects: React.FC = () => {
     return (
-        <Element name="projects" className="flex w-full justify-center ">
+        <Element name="Projects" className="flex w-full justify-center p-8">
             <div className="flex flex-col items-center w-2/3 p-12 gap-12">
-                <div className="text-3xl font-bold">Projects</div>
-
-                <Element name="programs">
-                    <div className="text-2xl font-bold py-4">Programs</div>
-                    <div>
-                        <a href="https://github.com/matthewjburton/comfort-airlines">
-                            Comfort Airlines</a>
-                        <p>For my senior capstone project our class was divided into teams of six and instructed to
-                            design a software solution for
-                            the fictional company Comfort Airlines. We were given numerous constraints, requirements,
-                            and challenges which we had to
-                            decide how to solve and implement. Out of the five teams in the class, our group received
-                            the class nomination for the
-                            project most worthy of winning the company's "bid".</p>
-                    </div>
-                </Element>
+                <Header text="Projects" />
+                <Programs />
 
                 <Element name="games">
                     <div className="text-2xl font-bold py-4">Games</div>

@@ -6,7 +6,7 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ text }) => {
     return (
-        <div className="text-3xl font-bold self-center py-12">{text}</div>
+        <div className="text-5xl font-bold self-center py-4 border-b-8 border-accent dark:border-accent-dark">{text}</div>
     );
 }
 

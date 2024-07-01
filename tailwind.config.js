@@ -11,7 +11,7 @@ export const theme = {
         dark: '#101010',
       },
       container: {
-        DEFAULT: '#FFFFFF',
+        DEFAULT: '#f4f4f4',
         dark: '#1a1a1e',
       },
       dropdownHover: {
@@ -31,8 +31,8 @@ export const theme = {
         dark: '#BEBEBE',
       },
       accent: {
-        DEFAULT: '#FFD700',
-        dark: '#FFD700',
+        DEFAULT: '#038387',
+        dark: '#00b294',
       },
     },
     screens: {
