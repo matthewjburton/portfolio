@@ -5,9 +5,9 @@ import { Link as ScrollLink } from "react-scroll";
 const Footer: React.FC = () => {
     const currentYear = new Date().getFullYear();
     return (
-        <div className="w-full relative bg-container dark:bg-container-dark p-12 mt-8 items-center flex flex-col gap-8">
+        <div className="w-full relative bg-container dark:bg-container-dark py-12 mt-24 items-center flex flex-col gap-8">
             <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                <ScrollLink to="Hero" duration="500" smooth spy={true} className="flex justify-center items-center p-4 bg-accent dark:bg-accent-dark text-primaryText dark:text-primaryText-dark text-xl">
+                <ScrollLink to="Hero" duration="500" smooth spy={true} className="flex justify-center items-center p-4 text-primaryText-dark bg-accent dark:bg-accent-dark text-primaryText dark:text-primaryText-dark text-xl">
                     <i className="fa-solid fa-angles-up" />
                 </ScrollLink>
             </div>

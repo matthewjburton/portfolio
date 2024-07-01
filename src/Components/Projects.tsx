@@ -7,8 +7,8 @@ import Graphics from "./Projects/Graphics";
 
 const Projects: React.FC = () => {
     return (
-        <Element name="Projects" className="flex w-full justify-center p-8">
-            <div className="flex flex-col items-center p-12 gap-12">
+        <Element name="Projects" className="flex w-full justify-center pt-8">
+            <div className="flex flex-col items-center pt-12 gap-12">
                 <Header text="Projects" />
                 <Programs />
                 <Games />
