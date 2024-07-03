@@ -44,7 +44,6 @@ export const skills = {
                 "TypeScript",
                 "JavaScript",
                 "Java",
-                "MySQL"
             ]
         },
         {
