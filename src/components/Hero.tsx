@@ -12,7 +12,7 @@ const Hero = () => {
                     I make software, games, and graphics.
                 </div>
             </div>
-            <ScrollLink to="Projects" duration="500" smooth spy={true} offset={-80} className="p-4 border-accent dark:border-accent-dark border-2 text-lg text-accent dark:text-accent-dark">
+            <ScrollLink to="Projects" duration="500" smooth spy={true} offset={-80} className="p-4 border-accent dark:border-accent-dark border-2 text-lg text-accent dark:text-accent-dark hover:shadow-lg hover:shadow-accent hover:dark:shadow-accent-dark transition duration-300 ease-in-out">
                 View my work <i className="ml-2 fa-solid fa-arrow-down" />
             </ScrollLink>
         </Element>
