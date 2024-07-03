@@ -1,4 +1,4 @@
-export const AlbumCovers = [
+export const Images = [
     {
         id: 1,
         title: "Yellowstone",
@@ -78,66 +78,55 @@ export const AlbumCovers = [
         id: 16,
         title: "No Complaints",
         image: "Images/Graphics/Album Covers/No Complaints.png",
-    }
-    // Add more album covers as needed
-];
-
-
-export const Logos = [
+    },
     {
-        id: 1,
+        id: 17,
         title: "Spring Cleanse",
         image: "Images/Graphics/Logos/Spring Cleanse.png",
     },
     {
-        id: 2,
+        id: 18,
         title: "Whiskey Niner",
         image: "Images/Graphics/Logos/Whiskey Niner.png",
     },
     {
-        id: 3,
+        id: 19,
         title: "Friday Night Chips",
         image: "Images/Graphics/Logos/Friday Night Chips.png",
     },
     {
-        id: 4,
+        id: 20,
         title: "Fish Frenz",
         image: "Images/Graphics/Logos/Fish Frenz.png",
     },
     {
-        id: 5,
+        id: 21,
         title: "SMG Performance",
         image: "Images/Graphics/Logos/SMG Performance.png",
     },
     {
-        id: 6,
+        id: 22,
         title: "Educatly",
         image: "Images/Graphics/Logos/Educatly.png",
     },
     {
-        id: 7,
+        id: 23,
         title: "Matt",
         image: "Images/Graphics/Logos/Matt.png",
     },
     {
-        id: 8,
+        id: 24,
         title: "Liberty Transport",
         image: "Images/Graphics/Logos/Liberty Transport.png",
     },
     {
-        id: 9,
-        title: "Twitch",
-        image: "Images/Graphics/Logos/Twitch.png",
-    },
-    {
-        id: 10,
+        id: 25,
         title: "Prophet",
         image: "Images/Graphics/Logos/Prophet.png",
     },
     {
-        id: 11,
+        id: 26,
         title: "Blitz Performance",
         image: "Images/Graphics/Logos/Blitz Performance.png",
     }
-    // Add more logos as needed
 ];

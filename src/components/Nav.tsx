@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link as ScrollLink, Events, scroller } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 
 const Nav: React.FC = () => {
     const [isSticky, setIsSticky] = useState(false);
