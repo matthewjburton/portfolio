@@ -17,7 +17,7 @@ export const programs = [
         id: 3,
         title: 'Fine Dining Bot',
         description:
-            "A webscraping bot for making reservations at High Point Uniersity's fine dining restaurants. Built with Python and Selenium.",
+            "A webscraping bot for making reservations at High Point University's fine dining restaurants. Built with Python and Selenium.",
         link: 'https://github.com/matthewjburton/reservation-bot',
     },
     {
