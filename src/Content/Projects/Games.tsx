@@ -15,5 +15,13 @@ export const games = [
             "Infinite arcade brick breaker. Built with Unity and C#. Assets created in Adobe Illustrator.",
         link: 'https://matt-burton.itch.io/endless-breakout',
     },
+    {
+        id: 3,
+        title: 'Super Massive',
+        image: 'Images/Games/Super Massive.png',
+        description:
+            "Fuse particles to super massive scales. Built with Unity and C#. 48 hour submission to the GMTK game jam.",
+        link: 'https://matt-burton.itch.io/super-massive',
+    },
     // Add more games as needed
 ];
