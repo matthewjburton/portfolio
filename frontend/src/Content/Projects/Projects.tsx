@@ -3,7 +3,7 @@ export const projects = [
     id: 1,
     title: 'Comfort Airlines',
     description:
-      'Generates flight plans and simulates airline operations for evaluation and profit optimization.',
+      'Simulates realistic airline operations including route planning, cost analysis, and profitability modeling.',
     link: 'https://github.com/matthewjburton/comfort-airlines',
     tags: [
       { label: 'Python', iconClass: 'devicon-python-plain' },
@@ -15,7 +15,8 @@ export const projects = [
   {
     id: 2,
     title: 'Business Case Form',
-    description: 'A web app for evaluating potential business investments.',
+    description:
+      'A dynamic form system for analyzing investment opportunities, with real-time data validation, custom UI components, and PDF export capabilities.',
     link: 'https://udig-business-case-form-test.netlify.app/',
     tags: [
       { label: 'React / TS', iconClass: 'devicon-react-plain' },
@@ -29,7 +30,7 @@ export const projects = [
     id: 3,
     title: 'Fine Dining Bot',
     description:
-      "A webscraping bot for making reservations at High Point University's fine dining restaurants.",
+      'Python-based automation tool using Selenium to navigate login flows, check reservation availability, and auto-book tables. Developed in response to limited reservation windows and high demand.',
     link: 'https://github.com/matthewjburton/reservation-bot',
     tags: [
       { label: 'Python', iconClass: 'devicon-python-plain' },
@@ -40,7 +41,7 @@ export const projects = [
   {
     id: 4,
     title: 'Blackjack',
-    description: 'A CLI Blackjack game.',
+    description: 'A CLI blackjack game.',
     link: 'https://github.com/matthewjburton/blackjack',
     tags: [{ label: 'C++', iconClass: 'devicon-cplusplus-plain' }],
     year: 2022,
@@ -49,7 +50,7 @@ export const projects = [
     id: 5,
     title: 'Skate Park Finder',
     description:
-      'A mobile app that locates the nearest skate parks based on your location.',
+      'Android app developed in Java using the Google Maps API and device GPS to display skate parks based on proximity. Focused on location services, UI responsiveness, and real-world testing.',
     link: 'https://github.com/matthewjburton/skate-park-finder',
     tags: [{ label: 'Java / Android', iconClass: 'devicon-java-plain' }],
     year: 2022,
@@ -57,7 +58,8 @@ export const projects = [
   {
     id: 6,
     title: 'Endless Breakout',
-    description: 'Infinite arcade brick breaker.',
+    description:
+      'An infinite arcade brick breaker with power-ups, dynamic difficulty scaling, and a retro aesthetic built in Unity.',
     link: 'https://matt-burton.itch.io/endless-breakout',
     tags: [
       { label: 'Unity', iconClass: 'devicon-unity-plain' },
@@ -78,7 +80,7 @@ export const projects = [
     id: 8,
     title: 'Super Massive',
     description:
-      'Made in 48 hours for the GMTK game jam. Placed top 7% for enjoyment out of 7,632 total submissions.',
+      'Developed core gameplay, UI, and polish in under 48 hours using Unity. Placed top 7% for enjoyment out of 7,632 total submissions.',
     link: 'https://matt-burton.itch.io/super-massive',
     tags: [
       { label: 'C#', iconClass: 'devicon-csharp-plain' },
@@ -90,7 +92,7 @@ export const projects = [
     id: 9,
     title: 'Caves of Combat',
     description:
-      'A 2D action roguelike with fast-paced combat, procedural content, and custom ability systems.',
+      'A 2D action roguelike currently in development with fast-paced combat, procedural content, and custom ability systems.',
     link: 'https://store.steampowered.com/app/3589810/Caves_of_Combat/',
     tags: [
       { label: 'C#', iconClass: 'devicon-csharp-plain' },
@@ -102,7 +104,7 @@ export const projects = [
     id: 10,
     title: 'Full Stack Open',
     description:
-      'A suite of full-stack web apps built while completing the University of Helsinki’s Full Stack Open course, covering modern web development, DevOps, and testing.',
+      'A suite of full-stack web apps for the University of Helsinki’s Full Stack Open course on modern web development, DevOps, and testing.',
     link: 'https://github.com/matthewjburton/full-stack-open',
     tags: [
       { label: 'React / TS', iconClass: 'devicon-react-plain' },
@@ -129,8 +131,7 @@ export const projects = [
   {
     id: 12,
     title: 'Expense Report',
-    description:
-      'A streamlined web form to submit and process employee expenses.',
+    description: `A streamlined web form to submit and generate PDF's of employee expenses.`,
     link: 'https://expense-report.advancetecllc.com',
     tags: [
       { label: 'React / TS', iconClass: 'devicon-react-plain' },
@@ -145,7 +146,7 @@ export const projects = [
     id: 13,
     title: 'Warehouse Inventory',
     description:
-      'An inventory management system capable of tracking shipments, find materials, and scheduling prefabrication.',
+      'Sole developer on an inventory management system capable of tracking shipments, find materials, and scheduling prefabrication.',
     link: 'https://inventory.advancetecllc.com',
     tags: [
       { label: 'React/ TS', iconClass: 'devicon-react-plain' },

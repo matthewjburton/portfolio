@@ -18,9 +18,7 @@ const Bio: React.FC<BioProps> = ({ imageSrc, altText, title, description }) => {
           alt={altText}
           className="h-full w-full rounded-lg object-cover lg:h-60 lg:w-60"
         />
-        <div className="flex h-full w-fit flex-col gap-8">
-          <p>{description}</p>
-        </div>
+        <div className="flex h-full w-fit flex-col gap-8">{description}</div>
       </div>
     </>
   )
