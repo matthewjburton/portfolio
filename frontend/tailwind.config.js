@@ -7,16 +7,21 @@ export default {
       colors: {
         background: '#FFFFFF',
         'background-dark': '#121212',
+
         container: '#f4f4f4',
         'container-dark': '#1E1E1E',
+
         'dropdown-hover': '#f4f4f4',
         'dropdown-hover-dark': '#404040',
+
         'primary-text': '#121212',
         'primary-text-dark': '#E0E0E0',
-        'secondary-text': '#262626',
-        'secondary-text-dark': '#DEDEDE',
-        'tertiary-text': '#787878',
-        'tertiary-text-dark': '#BEBEBE',
+
+        'secondary-text': '#505050',
+        'secondary-text-dark': '#B0B0B0',
+
+        'tertiary-text': '#9E9E9E',
+        'tertiary-text-dark': '#8C8C8C',
 
         accent: '#8fcf45',
         'accent-dark': '#82db4f',
