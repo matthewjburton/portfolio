@@ -6,19 +6,27 @@ export default {
     extend: {
       colors: {
         background: '#FFFFFF',
-        'background-dark': '#101010',
+        'background-dark': '#121212',
         container: '#f4f4f4',
-        'container-dark': '#1a1a1e',
+        'container-dark': '#1E1E1E',
         'dropdown-hover': '#f4f4f4',
         'dropdown-hover-dark': '#404040',
         'primary-text': '#121212',
-        'primary-text-dark': '#FFFFFF',
+        'primary-text-dark': '#E0E0E0',
         'secondary-text': '#262626',
         'secondary-text-dark': '#DEDEDE',
         'tertiary-text': '#787878',
         'tertiary-text-dark': '#BEBEBE',
-        accent: '#44D3AB',
-        'accent-dark': '#00b294',
+
+        accent: '#8fcf45',
+        'accent-dark': '#82db4f',
+
+        'accent-light-start': '#a4d651',
+        'accent-light-mid': '#8fcf45',
+        'accent-light-end': '#6daf2e',
+        'accent-dark-start': '#a8e063',
+        'accent-dark-mid': '#82db4f',
+        'accent-dark-end': '#50a329',
       },
 
       screens: {
@@ -27,15 +35,6 @@ export default {
         lg: '1024px',
         xl: '1280px',
         '2xl': '1536px',
-      },
-      animation: {
-        gradient: 'background-pan 3s linear infinite',
-      },
-      keyframes: {
-        'background-pan': {
-          '0%': { backgroundPosition: '0% 50%' },
-          '100%': { backgroundPosition: '200% 50%' },
-        },
       },
     },
   },
