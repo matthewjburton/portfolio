@@ -5,7 +5,7 @@ import { hero } from '../Content/Hero'
 const Hero = () => {
   return (
     <Element
-      name="Hero"
+      name="Home"
       className="flex h-screen flex-col items-center justify-center gap-8 p-4 text-center text-wrap lg:p-8"
     >
       <div className="text-5xl">
