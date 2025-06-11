@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
           duration="500"
           smooth
           spy={true}
-          className="text-primaryText-dark bg-accent dark:bg-accent-dark text-primaryText dark:text-primaryText-dark flex items-center justify-center p-4 text-xl"
+          className="gradient-accent text-primary-text dark:text-primary-text-dark flex items-center justify-center rounded-full p-4 text-xl"
         >
           <i className="fa-solid fa-angles-up" />
         </ScrollLink>

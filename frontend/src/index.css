@@ -4,10 +4,10 @@
 
 @layer utilities {
   .gradient-accent {
-    @apply from-accent-light-start via-accent-light-mid to-accent-light-end dark:from-accent-dark-start dark:via-accent-dark-mid dark:to-accent-dark-end bg-gradient-to-r;
+    @apply from-accent-light-start via-accent-light-mid to-accent-light-end dark:from-accent-dark-start dark:via-accent-dark-mid dark:to-accent-dark-end bg-gradient-to-br;
   }
 
   .text-gradient-accent {
-    @apply from-accent-light-start via-accent-light-mid to-accent-light-end dark:from-accent-dark-start dark:via-accent-dark-mid dark:to-accent-dark-end bg-gradient-to-r bg-clip-text text-transparent;
+    @apply from-accent-light-start via-accent-light-mid to-accent-light-end dark:from-accent-dark-start dark:via-accent-dark-mid dark:to-accent-dark-end bg-gradient-to-br bg-clip-text text-transparent;
   }
 }
