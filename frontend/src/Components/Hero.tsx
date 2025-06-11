@@ -22,7 +22,7 @@ const Hero = () => {
         smooth
         spy={true}
         offset={-80}
-        className="border-accent dark:border-accent-dark text-accent dark:text-accent-dark hover:shadow-accent hover:dark:shadow-accent-dark border-2 p-4 text-lg transition duration-300 ease-in-out hover:shadow-lg"
+        className="border-accent text-accent dark:border-accent-dark dark:text-accent-dark hover:dark:shadow-accent-dark cursor-pointer rounded-full border-2 p-4 text-lg transition duration-300 ease-in-out hover:shadow-[0_0_10px_#44D3AB] hover:dark:shadow-[0_0_10px_#00b294]"
       >
         {hero.buttonText} <i className="fa-solid fa-arrow-down ml-2" />
       </ScrollLink>
