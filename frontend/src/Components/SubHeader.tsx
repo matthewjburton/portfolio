@@ -1,13 +1,15 @@
-import React from "react";
+import React from 'react'
 
 interface SubHeaderProps {
-    text: string;
+  text: string
 }
 
 const SubHeader: React.FC<SubHeaderProps> = ({ text }) => {
-    return (
-        <div className="w-full text-3xl font-bold justify-self-center align-self-start py-2 border-b-4 border-accent dark:border-accent-dark">{text}</div>
-    );
+  return (
+    <div className="align-self-start border-accent dark:border-accent-dark w-full justify-self-center border-b-4 py-2 text-3xl font-bold">
+      {text}
+    </div>
+  )
 }
 
-export default SubHeader;
+export default SubHeader

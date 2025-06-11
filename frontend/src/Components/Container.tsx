@@ -1,11 +1,15 @@
-import React from "react";
+import React from 'react'
 
-const Container: React.FC<React.PropsWithChildren<{}>> = ({ children }) => {
-    return (
-        <div className="flex flex-col w-full px-12 md:px-24 lg:px-96 self-center justify-center bg-background dark:bg-background-dark text-primaryText dark:text-primaryText-dark lg:gap-12">
-            {children}
-        </div>
-    );
+interface ContainerProps {
+  children: React.ReactNode
 }
 
-export default Container;
+const Container = ({ children }: ContainerProps) => {
+  return (
+    <div className="bg-background dark:bg-background-dark text-primaryText dark:text-primaryText-dark flex w-full flex-col justify-center self-center px-12 md:px-24 lg:gap-12 lg:px-96">
+      {children}
+    </div>
+  )
+}
+
+export default Container

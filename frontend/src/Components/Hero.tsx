@@ -1,23 +1,33 @@
-import { Link as ScrollLink } from "react-scroll";
-import { Element } from "react-scroll";
-import {hero} from '../Content/Hero'
+import { Link as ScrollLink } from 'react-scroll'
+import { Element } from 'react-scroll'
+import { hero } from '../Content/Hero'
 
 const Hero = () => {
-    return (
-        <Element name="Hero" className="h-screen flex flex-col justify-center items-center p-4 lg:p-8 text-wrap text-center gap-8">
-            <div className="text-5xl">
-                <div>
-                    {hero.greeting} <span className="text-accent dark:text-accent-dark">{hero.name}</span>.
-                </div>
-                <div>
-                    {hero.description}
-                </div>
-            </div>
-            <ScrollLink to="Projects" duration="500" smooth spy={true} offset={-80} className="p-4 border-accent dark:border-accent-dark border-2 text-lg text-accent dark:text-accent-dark hover:shadow-lg hover:shadow-accent hover:dark:shadow-accent-dark transition duration-300 ease-in-out">
-                {hero.buttonText} <i className="ml-2 fa-solid fa-arrow-down" />
-            </ScrollLink>
-        </Element>
-    );
-};
+  return (
+    <Element
+      name="Hero"
+      className="flex h-screen flex-col items-center justify-center gap-8 p-4 text-center text-wrap lg:p-8"
+    >
+      <div className="text-5xl">
+        <div>
+          {hero.greeting}{' '}
+          <span className="text-accent dark:text-accent-dark">{hero.name}</span>
+          .
+        </div>
+        <div>{hero.description}</div>
+      </div>
+      <ScrollLink
+        to="Projects"
+        duration="500"
+        smooth
+        spy={true}
+        offset={-80}
+        className="border-accent dark:border-accent-dark text-accent dark:text-accent-dark hover:shadow-accent hover:dark:shadow-accent-dark border-2 p-4 text-lg transition duration-300 ease-in-out hover:shadow-lg"
+      >
+        {hero.buttonText} <i className="fa-solid fa-arrow-down ml-2" />
+      </ScrollLink>
+    </Element>
+  )
+}
 
-export default Hero;
+export default Hero

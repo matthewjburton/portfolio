@@ -1,36 +1,44 @@
-import React from "react";
-import SubHeader from '../SubHeader';
+import React from 'react'
+import SubHeader from '../SubHeader'
 
 interface SkillCategory {
-    category: string;
-    skills: string[];
+  category: string
+  skills: string[]
 }
 
 interface SkillsProps {
-    title: string;
-    skills: SkillCategory[];
+  title: string
+  skills: SkillCategory[]
 }
 
 const Skills: React.FC<SkillsProps> = ({ title, skills }) => {
-    return (
-        <>
-            <SubHeader text={title} />
-            <div className="w-full bg-container dark:bg-container-dark p-12 rounded-lg flex flex-col gap-8">
-                {skills.map((category, index) => (
-                    <div key={index} className="flex flex-col lg:flex-row items-center gap-4">
-                        <div className="font-bold text-center lg:text-left">{category.category}</div>
-                        <div className="flex flex-wrap justify-center lg:justify-start gap-2">
-                            {category.skills.map((skill, skillIndex) => (
-                                <div key={skillIndex} className="bg-gray-200 dark:bg-gray-700 px-4 py-2 rounded-lg">
-                                    {skill}
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                ))}
+  return (
+    <>
+      <SubHeader text={title} />
+      <div className="bg-container dark:bg-container-dark flex w-full flex-col gap-8 rounded-lg p-12">
+        {skills.map((category) => (
+          <div
+            key={category.category}
+            className="flex flex-col items-center gap-4 lg:flex-row"
+          >
+            <div className="text-center font-bold lg:text-left">
+              {category.category}
             </div>
-        </>
-    );
+            <div className="flex flex-wrap justify-center gap-2 lg:justify-start">
+              {category.skills.map((skill) => (
+                <div
+                  key={skill}
+                  className="rounded-lg bg-gray-200 px-4 py-2 dark:bg-gray-700"
+                >
+                  {skill}
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </>
+  )
 }
 
-export default Skills;
+export default Skills
