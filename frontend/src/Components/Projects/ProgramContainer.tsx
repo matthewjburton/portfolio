@@ -7,7 +7,7 @@ interface ProgramContainerProps {
     title: string
     description: string
     link: string
-    tags: [{ label: string; iconClass: string }]
+    tags: { label: string; iconClass: string }[]
     year: number
   }
 }

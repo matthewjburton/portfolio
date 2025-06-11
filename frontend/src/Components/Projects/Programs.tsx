@@ -1,12 +1,14 @@
 import React from 'react'
-import { programs } from '../../Content/Projects/Programs'
 import ProgramContainer from './ProgramContainer'
+import { useSortedProjects } from './useSortedProjectsHook'
 
 const Programs: React.FC = () => {
+  const { projects } = useSortedProjects()
+
   return (
     <>
       <div className="grid w-full grid-cols-1 gap-8 md:grid-cols-3">
-        {programs.map((program) => (
+        {projects.map((program) => (
           <ProgramContainer key={program.id} program={program} />
         ))}
       </div>

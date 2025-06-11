@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link as ScrollLink } from 'react-scroll'
 
-const sections = ['Hero', 'Projects', 'About']
+const sections = ['Home', 'Projects', 'About']
 
 const Nav: React.FC = () => {
   const [isSticky, setIsSticky] = useState(false)

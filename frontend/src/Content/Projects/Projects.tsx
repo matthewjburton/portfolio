@@ -1,4 +1,4 @@
-export const programs = [
+export const projects = [
   {
     id: 1,
     title: 'Comfort Airlines',
@@ -57,7 +57,6 @@ export const programs = [
   {
     id: 6,
     title: 'Endless Breakout',
-    image: 'Images/Games/Endless Breakout.png',
     description: 'Infinite arcade brick breaker.',
     link: 'https://matt-burton.itch.io/endless-breakout',
     tags: [
@@ -78,7 +77,8 @@ export const programs = [
   {
     id: 8,
     title: 'Super Massive',
-    description: 'Made in 48 hours for the GMTK game jam.',
+    description:
+      'Made in 48 hours for the GMTK game jam. Placed top 7% for enjoyment out of 7,632 total submissions.',
     link: 'https://matt-burton.itch.io/super-massive',
     tags: [
       { label: 'C#', iconClass: 'devicon-csharp-plain' },
@@ -89,14 +89,12 @@ export const programs = [
   {
     id: 9,
     title: 'Caves of Combat',
-    image: 'Images/Games/Head Hunter.png',
-    description: 'An action roguelike platformer.',
-    link: 'https://cavesofcombat.com',
+    description:
+      'A 2D action roguelike with fast-paced combat, procedural content, and custom ability systems.',
+    link: 'https://store.steampowered.com/app/3589810/Caves_of_Combat/',
     tags: [
       { label: 'C#', iconClass: 'devicon-csharp-plain' },
       { label: 'Unity', iconClass: 'devicon-unity-plain' },
-      { label: 'React', iconClass: 'devicon-react-plain' },
-      { label: 'Typescript', iconClass: 'devicon-typescript-plain' },
     ],
     year: 2025,
   },
@@ -145,7 +143,7 @@ export const programs = [
   },
   {
     id: 13,
-    title: 'Inventory',
+    title: 'Warehouse Inventory',
     description:
       'An inventory management system capable of tracking shipments, find materials, and scheduling prefabrication.',
     link: 'https://inventory.advancetecllc.com',
@@ -155,6 +153,19 @@ export const programs = [
       { label: 'Docker', iconClass: 'devicon-docker-plain' },
       { label: 'PostgreSQL', iconClass: 'devicon-postgresql-plain' },
       { label: 'Testing / CI', iconClass: 'devicon-githubactions-plain' },
+    ],
+    year: 2025,
+  },
+  {
+    id: 14,
+    title: 'Caves of Combat Website',
+    description:
+      'Marketing site for the indie game Caves of Combat, built to grow its online presence and drive social engagement.',
+    link: 'https://cavesofcombat.com',
+    tags: [
+      { label: 'React', iconClass: 'devicon-react-plain' },
+      { label: 'Typescript', iconClass: 'devicon-typescript-plain' },
+      { label: 'Tailwind', iconClass: 'devicon-tailwindcss-plain' },
     ],
     year: 2025,
   },
