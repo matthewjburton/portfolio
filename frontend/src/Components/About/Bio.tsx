@@ -11,11 +11,11 @@ const Bio: React.FC<BioProps> = ({ imageSrc, altText, title, description }) => {
   return (
     <>
       <div className="bg-container dark:bg-container-dark flex w-full flex-col gap-8 rounded-lg p-12 lg:flex-row">
-        <div className="aspect-square h-full w-full max-w-[240px] overflow-hidden rounded-lg">
+        <div className="aspect-square w-full overflow-hidden rounded-lg lg:max-w-[240px]">
           <img
             src={imageSrc}
             alt={altText}
-            className="h-full w-full translate-x-6 scale-175 transform object-cover transition-transform duration-300"
+            className="h-full w-full translate-x-12 scale-150 object-cover"
           />
         </div>
 

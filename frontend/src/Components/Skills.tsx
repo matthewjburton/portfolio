@@ -1,19 +1,10 @@
 import React from 'react'
+import { skills } from '../Content/skills'
 
-interface SkillType {
-  label: string
-  iconClass: string
-}
-
-interface SkillsProps {
-  title: string
-  skills: SkillType[]
-}
-
-const Skills: React.FC<SkillsProps> = ({ skills }) => {
+const Skills: React.FC = () => {
   return (
     <div className="flex flex-wrap justify-center gap-2">
-      {skills.map((skill) => (
+      {skills.skills.map((skill) => (
         <div
           key={skill.label}
           className="gradient-accent text-container dark:text-container-dark flex items-center gap-x-2 rounded-full px-4 py-2"
