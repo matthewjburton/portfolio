@@ -149,7 +149,7 @@ export const projects = [
       'Sole developer on an inventory management system capable of tracking shipments, find materials, and scheduling prefabrication.',
     link: 'https://inventory.advancetecllc.com',
     tags: [
-      { label: 'React/ TS', iconClass: 'devicon-react-plain' },
+      { label: 'React / TS', iconClass: 'devicon-react-plain' },
       { label: 'Node / Express', iconClass: 'devicon-nodejs-plain' },
       { label: 'Docker', iconClass: 'devicon-docker-plain' },
       { label: 'PostgreSQL', iconClass: 'devicon-postgresql-plain' },
