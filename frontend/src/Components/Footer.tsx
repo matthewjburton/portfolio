@@ -25,25 +25,6 @@ const Footer: React.FC = () => {
       </div>
       <div className="mt-8 flex w-full flex-row justify-center gap-8">
         <div className="group relative">
-          <ScrollLink to="Home" duration="500" smooth spy={true}>
-            <picture>
-              <source
-                srcSet={`/Images/white-logo.png`}
-                media="(prefers-color-scheme: dark)"
-              />
-              <source
-                srcSet={`/Images/black-logo.png`}
-                media="(prefers-color-scheme: light)"
-              />
-              <img alt="Logo" className="h-6 w-6" />
-            </picture>
-          </ScrollLink>
-          <span className="bg-container text-primary-text dark:bg-container-dark dark:text-primary-text-dark absolute -top-10 left-1/2 -translate-x-1/2 rounded px-2 py-1 text-xs whitespace-nowrap opacity-0 transition-opacity group-hover:opacity-100">
-            Portfolio
-          </span>
-        </div>
-
-        <div className="group relative">
           <a href="mailto:mattjburton64@gmail.com">
             <i className="fa-solid fa-envelope" />
           </a>
