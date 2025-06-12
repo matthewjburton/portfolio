@@ -28,4 +28,43 @@
       );
     }
   }
+
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(5%);
+    }
+    100% {
+      transform: translateX(-200%);
+    }
+  }
+
+  @keyframes scroll-right {
+    0% {
+      transform: translateX(-200%);
+    }
+    100% {
+      transform: translateX(5%);
+    }
+  }
+
+  .devicon-row {
+    display: flex;
+    gap: 8rem;
+    white-space: nowrap;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 30s;
+    opacity: 0.1;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  .devicon-row.forward {
+    animation-name: scroll-left;
+  }
+
+  .devicon-row.reverse {
+    animation-name: scroll-right;
+  }
 }

@@ -13,7 +13,7 @@ const Bio: React.FC<BioProps> = ({ imageSrc, altText, title, description }) => {
     <>
       <SubHeader text={title} />
       <div className="bg-container dark:bg-container-dark flex w-full flex-col gap-8 rounded-lg p-12 lg:flex-row">
-        <div className="aspect-square w-full max-w-[240px] overflow-hidden rounded-lg">
+        <div className="aspect-square h-full w-full max-w-[240px] overflow-hidden rounded-lg">
           <img
             src={imageSrc}
             alt={altText}
