@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
     <div className="bg-container dark:bg-container-dark relative mt-24 flex w-full flex-col items-center gap-8 py-12">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 transform">
         <ScrollLink
-          to="Hero"
+          to="Home"
           duration="500"
           smooth
           spy={true}
@@ -18,14 +18,14 @@ const Footer: React.FC = () => {
         </ScrollLink>
       </div>
       <div className="mt-8 flex w-full flex-row justify-center gap-8">
-        <ScrollLink to="Hero" duration="500" smooth spy={true}>
+        <ScrollLink to="Home" duration="500" smooth spy={true}>
           <picture>
             <source
-              srcSet={`Images/white-logo.png`}
+              srcSet={`/Images/white-logo.png`}
               media="(prefers-color-scheme: dark)"
             />
             <source
-              srcSet={`Images/black-logo.png`}
+              srcSet={`/Images/black-logo.png`}
               media="(prefers-color-scheme: light)"
             />
             <img alt="Logo" className="h-6 w-6" />
@@ -41,15 +41,12 @@ const Footer: React.FC = () => {
         >
           <i className="fa-brands fa-github" />
         </a>
-        <a href="https://matt-burton.itch.io/" target="_blank" rel="noreferrer">
-          <i className="fa-brands fa-itch-io" />
-        </a>
         <a
-          href="https://www.instagram.com/matthewburton.graphics/"
+          href="https://www.linkedin.com/in/matthew-j-burton/"
           target="_blank"
           rel="noreferrer"
         >
-          <i className="fa-brands fa-instagram" />
+          <i className="fa-brands fa-linkedin" />
         </a>
       </div>
       <div className="text-sm uppercase">
