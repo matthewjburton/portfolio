@@ -7,7 +7,7 @@ import { Element } from 'react-scroll'
 const About: React.FC = () => {
   return (
     <Element name="About" className="flex w-full justify-center">
-      <div className="flex flex-col items-center gap-12 pt-12">
+      <div className="flex w-full flex-col items-center gap-12 pt-12">
         <Header text="About" />
         <Bio {...bio} />
       </div>
