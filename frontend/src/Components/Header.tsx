@@ -1,4 +1,5 @@
 import React from 'react'
+import FadeInSection from './FadeInSection'
 
 interface HeaderProps {
   text: string
@@ -6,8 +7,12 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ text }) => {
   return (
-    <div className="text-gradient-accent self-center border-b-8 py-4 text-5xl font-bold">
-      {text}
+    <div className="self-center">
+      <FadeInSection>
+        <div className="text-gradient-accent border-b-8 py-4 text-5xl font-bold">
+          {text}
+        </div>
+      </FadeInSection>
     </div>
   )
 }

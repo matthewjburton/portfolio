@@ -1,7 +1,7 @@
 import React from 'react'
 import { Element } from 'react-scroll'
 import Header from '../Header'
-import ProjectContainer from './ProjectContainer'
+import ProjectCard from './ProjectCard'
 import { useSortedProjects } from './useSortedProjectsHook'
 
 const Projects: React.FC = () => {
@@ -13,7 +13,7 @@ const Projects: React.FC = () => {
         <Header text="Projects" />
         <div className="grid w-full grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project) => (
-            <ProjectContainer key={project.id} project={project} />
+            <ProjectCard key={project.id} project={project} />
           ))}
         </div>{' '}
       </div>
