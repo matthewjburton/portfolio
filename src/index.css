@@ -2,6 +2,11 @@
 
 @config "../tailwind.config.js";
 
+html,
+body {
+  @apply bg-background dark:bg-background-dark;
+}
+
 @layer utilities {
   .gradient-accent {
     @apply from-accent-light-start via-accent-light-mid to-accent-light-end dark:from-accent-dark-start dark:via-accent-dark-mid dark:to-accent-dark-end bg-gradient-to-br;
