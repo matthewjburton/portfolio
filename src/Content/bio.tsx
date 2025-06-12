@@ -1,5 +1,5 @@
 export const bio = {
-  imageSrc: '/Images/About/portrait.webp',
+  imageSrc: 'Images/About/portrait.webp',
   altText: 'Matthew Burton',
   title: 'Bio',
   description: (
