@@ -1,8 +1,8 @@
 import React from 'react'
-import Bio from './About/Bio'
-import Skills from './About/Skills'
-import { bio, skills } from '../Content/About/About'
-import Header from './Header'
+import Bio from './Bio'
+import Skills from './Skills'
+import { bio, skills } from '../../Content/About/About'
+import Header from '../Header'
 import { Element } from 'react-scroll'
 
 const About: React.FC = () => {

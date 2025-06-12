@@ -1,7 +1,7 @@
 import Nav from './Components/Nav'
 import Hero from './Components/Hero/Hero'
-import Projects from './Components/Projects'
-import About from './Components/About'
+import Projects from './Components/Projects/Projects'
+import About from './Components/About/About'
 import Footer from './Components/Footer'
 
 import Wrapper from './Components/Wrapper'
