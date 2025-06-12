@@ -10,4 +10,22 @@
   .text-gradient-accent {
     @apply from-accent-light-start via-accent-light-mid to-accent-light-end dark:from-accent-dark-start dark:via-accent-dark-mid dark:to-accent-dark-end bg-gradient-to-br bg-clip-text text-transparent;
   }
+
+  .bg-radial-gradient {
+    background-image: radial-gradient(
+      circle at bottom center,
+      rgba(184, 230, 132, 0.15),
+      transparent 70%
+    );
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .bg-radial-gradient {
+      background-image: radial-gradient(
+        circle at bottom center,
+        rgba(162, 162, 162, 0.15),
+        transparent 80%
+      );
+    }
+  }
 }
