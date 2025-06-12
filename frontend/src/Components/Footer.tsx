@@ -7,47 +7,76 @@ const Footer: React.FC = () => {
   return (
     <div className="bg-container dark:bg-container-dark relative mt-24 flex w-full flex-col items-center gap-8 py-12">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 transform">
-        <ScrollLink
-          to="Home"
-          duration="500"
-          smooth
-          spy={true}
-          className="gradient-accent text-background dark:text-background-dark flex items-center justify-center rounded-full p-4 text-xl"
-        >
-          <i className="fa-solid fa-angles-up" />
-        </ScrollLink>
+        <div className="group relative">
+          <ScrollLink
+            to="Home"
+            duration="500"
+            smooth
+            spy={true}
+            className="gradient-accent text-background dark:text-background-dark flex items-center justify-center rounded-full p-4 text-xl transition duration-300 ease-in-out hover:shadow-[0_0_10px_#8fcf45] hover:dark:shadow-[0_0_10px_#82db4f]"
+          >
+            <i className="fa-solid fa-angles-up" />
+          </ScrollLink>
+
+          <span className="bg-container text-primary-text dark:bg-container-dark dark:text-primary-text-dark absolute -top-10 left-1/2 -translate-x-1/2 rounded px-2 py-1 text-xs whitespace-nowrap opacity-0 transition-opacity group-hover:opacity-100">
+            Back to Top
+          </span>
+        </div>
       </div>
       <div className="mt-8 flex w-full flex-row justify-center gap-8">
-        <ScrollLink to="Home" duration="500" smooth spy={true}>
-          <picture>
-            <source
-              srcSet={`/Images/white-logo.png`}
-              media="(prefers-color-scheme: dark)"
-            />
-            <source
-              srcSet={`/Images/black-logo.png`}
-              media="(prefers-color-scheme: light)"
-            />
-            <img alt="Logo" className="h-6 w-6" />
-          </picture>
-        </ScrollLink>
-        <a href="mailto:mattjburton64@gmail.com">
-          <i className="fa-solid fa-envelope" />
-        </a>
-        <a
-          href="https://github.com/matthewjburton"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <i className="fa-brands fa-github" />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/matthew-j-burton/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <i className="fa-brands fa-linkedin" />
-        </a>
+        <div className="group relative">
+          <ScrollLink to="Home" duration="500" smooth spy={true}>
+            <picture>
+              <source
+                srcSet={`/Images/white-logo.png`}
+                media="(prefers-color-scheme: dark)"
+              />
+              <source
+                srcSet={`/Images/black-logo.png`}
+                media="(prefers-color-scheme: light)"
+              />
+              <img alt="Logo" className="h-6 w-6" />
+            </picture>
+          </ScrollLink>
+          <span className="bg-container text-primary-text dark:bg-container-dark dark:text-primary-text-dark absolute -top-10 left-1/2 -translate-x-1/2 rounded px-2 py-1 text-xs whitespace-nowrap opacity-0 transition-opacity group-hover:opacity-100">
+            Portfolio
+          </span>
+        </div>
+
+        <div className="group relative">
+          <a href="mailto:mattjburton64@gmail.com">
+            <i className="fa-solid fa-envelope" />
+          </a>
+          <span className="bg-container text-primary-text dark:bg-container-dark dark:text-primary-text-dark absolute -top-10 left-1/2 -translate-x-1/2 rounded px-2 py-1 text-xs whitespace-nowrap opacity-0 transition-opacity group-hover:opacity-100">
+            Email
+          </span>
+        </div>
+
+        <div className="group relative">
+          <a
+            href="https://github.com/matthewjburton"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="fa-brands fa-github" />
+          </a>
+          <span className="bg-container text-primary-text dark:bg-container-dark dark:text-primary-text-dark absolute -top-10 left-1/2 -translate-x-1/2 rounded px-2 py-1 text-xs whitespace-nowrap opacity-0 transition-opacity group-hover:opacity-100">
+            Github
+          </span>
+        </div>
+
+        <div className="group relative">
+          <a
+            href="https://www.linkedin.com/in/matthew-j-burton/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="fa-brands fa-linkedin" />
+          </a>
+          <span className="bg-container text-primary-text dark:bg-container-dark dark:text-primary-text-dark absolute -top-10 left-1/2 -translate-x-1/2 rounded px-2 py-1 text-xs whitespace-nowrap opacity-0 transition-opacity group-hover:opacity-100">
+            LinkedIn
+          </span>
+        </div>
       </div>
       <div className="text-sm uppercase">
         Matthew Burton &copy;{currentYear}
