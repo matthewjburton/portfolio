@@ -9,9 +9,9 @@ export const bio = {
         something new.
       </div>
       <div>
-        Outside of work, I’m into soccer, pickleball, skateboarding,
-        snowboarding, and recently, golf. During the pandemic, I got into making
-        music, and before that, I studied graphic design.
+        Outside of work, my interests include soccer, pickleball, skateboarding,
+        snowboarding, painting and recently, golf. During the pandemic, I picked
+        up music, and before that, I studied graphic design.
       </div>
       <div>
         I’ve always followed curiosity wherever it leads. What keeps me going is
