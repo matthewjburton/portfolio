@@ -1,6 +1,6 @@
 import { Link as ScrollLink } from 'react-scroll'
 import { Element } from 'react-scroll'
-import { hero } from '../../Content/Hero'
+import { hero } from '../../Content/hero'
 import IconRow from './IconRow'
 
 const Hero = () => {
