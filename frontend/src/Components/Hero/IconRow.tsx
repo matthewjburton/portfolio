@@ -1,4 +1,4 @@
-import { devicons } from './icons'
+import { devicons } from '../../Content/icons'
 
 const IconRow = ({ reverse = false }: { reverse?: boolean }) => {
   // Repeat the icons twice for continuous scrolling effect

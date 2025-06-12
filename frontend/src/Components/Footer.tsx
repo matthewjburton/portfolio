@@ -1,3 +1,4 @@
+import { footer } from '../Content/footer'
 import React from 'react'
 
 import { Link as ScrollLink } from 'react-scroll'
@@ -23,41 +24,18 @@ const Footer: React.FC = () => {
           </span>
         </div>
       </div>
+
       <div className="mt-8 flex w-full flex-row justify-center gap-8">
-        <div className="group relative">
-          <a href="mailto:mattjburton64@gmail.com">
-            <i className="fa-solid fa-envelope" />
-          </a>
-          <span className="bg-container text-primary-text dark:bg-container-dark dark:text-primary-text-dark absolute -top-10 left-1/2 -translate-x-1/2 rounded px-2 py-1 text-xs whitespace-nowrap opacity-0 transition-opacity group-hover:opacity-100">
-            Email
-          </span>
-        </div>
-
-        <div className="group relative">
-          <a
-            href="https://github.com/matthewjburton"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <i className="fa-brands fa-github" />
-          </a>
-          <span className="bg-container text-primary-text dark:bg-container-dark dark:text-primary-text-dark absolute -top-10 left-1/2 -translate-x-1/2 rounded px-2 py-1 text-xs whitespace-nowrap opacity-0 transition-opacity group-hover:opacity-100">
-            Github
-          </span>
-        </div>
-
-        <div className="group relative">
-          <a
-            href="https://www.linkedin.com/in/matthew-j-burton/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <i className="fa-brands fa-linkedin" />
-          </a>
-          <span className="bg-container text-primary-text dark:bg-container-dark dark:text-primary-text-dark absolute -top-10 left-1/2 -translate-x-1/2 rounded px-2 py-1 text-xs whitespace-nowrap opacity-0 transition-opacity group-hover:opacity-100">
-            LinkedIn
-          </span>
-        </div>
+        {footer.map((action) => (
+          <div key={action.tooltip} className="group relative">
+            <a href={action.link}>
+              <i className={action.icon} />
+            </a>
+            <span className="bg-container text-primary-text dark:bg-container-dark dark:text-primary-text-dark absolute -top-10 left-1/2 -translate-x-1/2 rounded px-2 py-1 text-xs whitespace-nowrap opacity-0 transition-opacity group-hover:opacity-100">
+              {action.tooltip}
+            </span>
+          </div>
+        ))}
       </div>
       <div className="text-sm uppercase">
         Matthew Burton &copy;{currentYear}
