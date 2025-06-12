@@ -6,7 +6,7 @@ import { Link as ScrollLink } from 'react-scroll'
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear()
   return (
-    <div className="bg-container dark:bg-container-dark relative mt-24 flex w-full flex-col items-center gap-8 py-12">
+    <div className="bg-container dark:bg-container-dark relative mt-12 flex w-full flex-col items-center gap-8 py-12">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 transform">
         <div className="group relative">
           <ScrollLink

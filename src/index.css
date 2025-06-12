@@ -59,7 +59,7 @@ body {
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    animation-duration: 30s;
+    animation-duration: 60s;
     opacity: 0.1;
     pointer-events: none;
     user-select: none;

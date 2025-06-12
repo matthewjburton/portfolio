@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from './Link'
 import FadeInSection from '../FadeInSection'
 
 interface ProjectCardProps {
@@ -46,9 +45,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                     </span>
                   ))}
                 </div>
-              </div>
-              <div className="flex w-full items-center justify-end">
-                <Link link={project.link} text="More" />
               </div>
             </div>
           </div>

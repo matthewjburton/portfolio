@@ -1,7 +1,7 @@
 import { Link as ScrollLink } from 'react-scroll'
 import { Element } from 'react-scroll'
 import { hero } from '../../Content/hero'
-import IconRow from './IconRow'
+import DeviconRow from './DeviconRow'
 
 const Hero = () => {
   return (
@@ -15,11 +15,11 @@ const Hero = () => {
       {/* Devicon rows behind text */}
       <div className="pointer-events-none absolute inset-0 z-0 flex h-full flex-col justify-around select-none">
         <div className="overflow-hidden">
-          <IconRow />
+          <DeviconRow />
         </div>
         <div />
         <div className="overflow-hidden">
-          <IconRow reverse />
+          <DeviconRow reverse />
         </div>
       </div>
 

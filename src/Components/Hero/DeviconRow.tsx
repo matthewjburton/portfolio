@@ -1,6 +1,6 @@
 import { devicons } from '../../Content/icons'
 
-const IconRow = ({ reverse = false }: { reverse?: boolean }) => {
+const DeviconRow = ({ reverse = false }: { reverse?: boolean }) => {
   // Repeat the icons twice for continuous scrolling effect
   const icons = [...devicons, ...devicons]
 
@@ -13,4 +13,4 @@ const IconRow = ({ reverse = false }: { reverse?: boolean }) => {
   )
 }
 
-export default IconRow
+export default DeviconRow
