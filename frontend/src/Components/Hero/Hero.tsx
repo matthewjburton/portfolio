@@ -1,6 +1,7 @@
 import { Link as ScrollLink } from 'react-scroll'
 import { Element } from 'react-scroll'
-import { hero } from '../Content/Hero'
+import { hero } from '../../Content/Hero'
+import IconRow from './IconRow'
 
 const Hero = () => {
   return (
@@ -8,7 +9,21 @@ const Hero = () => {
       name="Home"
       className="relative flex h-screen flex-col items-center justify-center gap-8 overflow-hidden p-4 text-center text-wrap lg:p-8"
     >
+      {/* Background Radial Gradient */}
       <div className="bg-radial-gradient dark:bg-radial-gradient pointer-events-none absolute inset-0 z-0 before:absolute before:inset-0 before:opacity-40" />
+
+      {/* Devicon rows behind text */}
+      <div className="pointer-events-none absolute inset-0 z-0 flex h-full flex-col justify-around select-none">
+        <div className="overflow-hidden">
+          <IconRow />
+        </div>
+        <div />
+        <div className="overflow-hidden">
+          <IconRow reverse />
+        </div>
+      </div>
+
+      {/* Greeting Text */}
       <div className="z-10 text-5xl">
         <div>
           {hero.greeting}{' '}
@@ -17,6 +32,7 @@ const Hero = () => {
         <div>{hero.description}</div>
       </div>
 
+      {/* Call to Action */}
       <ScrollLink
         to="Projects"
         duration="500"

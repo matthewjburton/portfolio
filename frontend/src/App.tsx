@@ -1,5 +1,5 @@
 import Nav from './Components/Nav'
-import Hero from './Components/Hero'
+import Hero from './Components/Hero/Hero'
 import Projects from './Components/Projects'
 import About from './Components/About'
 import Footer from './Components/Footer'
