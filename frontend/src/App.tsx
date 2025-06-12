@@ -6,6 +6,7 @@ import Footer from './Components/Footer'
 
 import Wrapper from './Components/Wrapper'
 import Container from './Components/Container'
+import Skills from './Components/Skills'
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Container>
           <Projects />
           <About />
+          <Skills />
         </Container>
         <Footer />
       </Wrapper>
