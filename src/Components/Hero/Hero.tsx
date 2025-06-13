@@ -1,6 +1,6 @@
 import { Link as ScrollLink } from 'react-scroll'
 import { Element } from 'react-scroll'
-import { hero } from '../../Content/hero'
+import { hero } from '../../data/hero'
 import DeviconRow from './DeviconRow'
 
 const Hero = () => {
