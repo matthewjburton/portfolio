@@ -1,28 +1,7 @@
-import Nav from './Components/Nav'
-import Hero from './Components/Hero/Hero'
-import Projects from './Components/Projects/Projects'
-import About from './Components/About/About'
-import Footer from './Components/Footer'
-
-import Wrapper from './Components/Wrapper'
-import Container from './Components/Container'
-import Skills from './Components/Skills'
+import Router from './router/Router'
 
 const App = () => {
-  return (
-    <>
-      <Wrapper>
-        <Hero />
-        <Nav />
-        <Container>
-          <Projects />
-          <About />
-          <Skills />
-        </Container>
-        <Footer />
-      </Wrapper>
-    </>
-  )
+  return <Router />
 }
 
 export default App
