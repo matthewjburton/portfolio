@@ -20,11 +20,11 @@ const Challenges = ({ project }: ChallengesProps) => {
           {sections[sectionIndex]}
         </h2>
 
-        <div className="flex w-full flex-col gap-6">
+        <div className="grid w-full grid-cols-1 gap-6 lg:grid-cols-3">
           {challenges.map((challenge) => (
             <div
               key={challenge.challenge}
-              className="bg-container dark:bg-container-dark rounded-lg p-8 px-8 lg:px-16"
+              className="bg-container dark:bg-container-dark rounded-lg p-8"
             >
               <h4 className="text-secondary-text dark:text-secondary-text-dark text-sm font-semibold uppercase">
                 Challenge
