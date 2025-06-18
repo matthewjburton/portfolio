@@ -12,6 +12,6 @@ export interface ProjectType {
   goals?: string[]
   role?: string
   responsibilities?: string[]
-  features?: { description: string; media: string }[]
+  features?: { header: string; description: string; media: string }[]
   year: number
 }

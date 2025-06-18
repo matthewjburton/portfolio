@@ -37,13 +37,22 @@ const Features = ({ project }: FeaturesProps) => {
               </h2>
 
               {activeIndex !== undefined && (
-                <p
-                  className={`transition-opacity duration-300 ease-in-out ${
+                <div
+                  className={`flex flex-col gap-4 transition-opacity duration-300 ease-in-out ${
                     isFading ? 'opacity-0' : 'opacity-100'
                   }`}
                 >
-                  {features[activeIndex].description}
-                </p>
+                  <h3 className="text-secondary-text dark:text-secondary-text-dark text-sm uppercase">
+                    {features[activeIndex].header}
+                  </h3>
+                  <p
+                    className={`transition-opacity duration-300 ease-in-out ${
+                      isFading ? 'opacity-0' : 'opacity-100'
+                    }`}
+                  >
+                    {features[activeIndex].description}
+                  </p>
+                </div>
               )}
             </div>
           </div>
