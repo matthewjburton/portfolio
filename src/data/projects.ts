@@ -139,6 +139,25 @@ export const projects: ProjectType[] = [
         media: '/images/projects/caves-of-combat/boss.mp4',
       },
     ],
+    challenges: [
+      {
+        challenge:
+          'Avoid tightly coupled systems that would be difficult to maintain or expand.',
+        solution:
+          'Designed gameplay logic around ScriptableObjects, interfaces, and events to decouple input, AI, projectiles, and ability effects.',
+      },
+      {
+        challenge:
+          'Encourage replayability through meaningful variation without overwhelming the player.',
+        solution:
+          'Layered procedural content: random layouts, enemy spawns, and ability shops, with tuned difficulty ramps across runs.',
+      },
+      {
+        challenge: 'Combat felt flat and lacked satisfying feedback early on.',
+        solution:
+          'Added screen shake, hit pause, particles, and color flashes to amplify feedback for player hits and damage.',
+      },
+    ],
     year: 2025,
   },
   {

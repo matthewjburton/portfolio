@@ -3,6 +3,7 @@ import { ProjectType } from '../types'
 import Purpose from './sections/Purpose'
 import Role from './sections/Role'
 import Features from './sections/Features'
+import Challenges from './sections/Challenges'
 
 interface ContentProps {
   project: ProjectType
@@ -13,7 +14,7 @@ const Content: React.FC<ContentProps> = ({ project }) => (
     <Purpose project={project} />
     <Role project={project} />
     <Features project={project} />
-
+    <Challenges project={project} />
     {/*
     <Card title={sections[4]}>
       <div>What was difficult?</div>
