@@ -12,7 +12,7 @@ interface ContentProps {
 }
 
 const Content: React.FC<ContentProps> = ({ project }) => (
-  <div className="mb-12 flex w-full flex-col gap-12">
+  <div className="mb-12 flex w-full flex-col gap-24">
     <Purpose project={project} />
     <Role project={project} />
     <Features project={project} />
