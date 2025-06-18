@@ -15,12 +15,8 @@ const Content: React.FC<ContentProps> = ({ project }) => (
     <Role project={project} />
     <Features project={project} />
     <Challenges project={project} />
-    {/*
-    <Card title={sections[4]}>
-      <div>What was difficult?</div>
-      <div>What decisions were made (e.g. architecture, performance, UX)?</div>
-    </Card>
 
+    {/*
     <Card title={sections[5]}>
       <div>New technologies, skills, design patterns</div>
       <div>Takeaways from the experience</div>
