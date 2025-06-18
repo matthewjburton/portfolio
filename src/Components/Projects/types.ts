@@ -6,5 +6,12 @@ export interface ProjectType {
   description: string
   link: string
   tags: SkillType[]
+  banner?: string
+  type?: 'Personal' | 'Professional' | 'Academic'
+  purpose?: string
+  goals?: string[]
+  role?: string
+  responsibilities?: string[]
+  features?: { description: string; media: string }[]
   year: number
 }

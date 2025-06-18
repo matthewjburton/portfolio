@@ -1,4 +1,6 @@
-export const projects = [
+import { ProjectType } from '@/components/projects/types'
+
+export const projects: ProjectType[] = [
   {
     id: 1,
     title: 'Comfort Airlines',
@@ -10,6 +12,7 @@ export const projects = [
       { label: 'MariaDB', iconClass: 'devicon-mariadb-plain' },
       { label: 'Docker', iconClass: 'devicon-docker-plain' },
     ],
+    type: 'Academic',
     year: 2024,
   },
   {
@@ -24,6 +27,7 @@ export const projects = [
       { label: 'PostgreSQL', iconClass: 'devicon-postgresql-plain' },
       { label: 'Figma', iconClass: 'devicon-figma-plain' },
     ],
+    type: 'Professional',
     year: 2023,
   },
   {
@@ -36,6 +40,7 @@ export const projects = [
       { label: 'Python', iconClass: 'devicon-python-plain' },
       { label: 'Selenium', iconClass: 'devicon-selenium-plain' },
     ],
+    type: 'Personal',
     year: 2024,
   },
   {
@@ -44,6 +49,7 @@ export const projects = [
     description: 'A CLI blackjack game.',
     link: 'https://github.com/matthewjburton/blackjack',
     tags: [{ label: 'C++', iconClass: 'devicon-cplusplus-plain' }],
+    type: 'Personal',
     year: 2022,
   },
   {
@@ -53,6 +59,7 @@ export const projects = [
       'Android app developed in Java using the Google Maps API and device GPS to display skate parks based on proximity. Focused on location services, UI responsiveness, and real-world testing.',
     link: 'https://github.com/matthewjburton/skate-park-finder',
     tags: [{ label: 'Java / Android', iconClass: 'devicon-java-plain' }],
+    type: 'Academic',
     year: 2022,
   },
   {
@@ -66,6 +73,7 @@ export const projects = [
       { label: 'C#', iconClass: 'devicon-csharp-plain' },
       { label: 'Illustrator', iconClass: 'devicon-illustrator-plain' },
     ],
+    type: 'Personal',
     year: 2023,
   },
   {
@@ -74,6 +82,7 @@ export const projects = [
     description: 'Send messages between clients across a server.',
     link: 'https://github.com/matthewjburton/network-app',
     tags: [{ label: 'C', iconClass: 'devicon-c-plain' }],
+    type: 'Academic',
     year: 2023,
   },
   {
@@ -86,6 +95,7 @@ export const projects = [
       { label: 'C#', iconClass: 'devicon-csharp-plain' },
       { label: 'Unity', iconClass: 'devicon-unity-plain' },
     ],
+    type: 'Personal',
     year: 2024,
   },
   {
@@ -97,6 +107,23 @@ export const projects = [
     tags: [
       { label: 'C#', iconClass: 'devicon-csharp-plain' },
       { label: 'Unity', iconClass: 'devicon-unity-plain' },
+    ],
+    banner: '/images/projects/caves-of-combat/ruins.png',
+    type: 'Personal',
+    purpose:
+      'I wanted to make a video game exploring procedurally generated environments and roguelike combat that rewards player mastery.',
+    goals: [
+      'Develop a cast of enemies with unique movement and attack styles',
+      'Experiment with procedural content generation in Unity',
+      'Learn and apply architecture patterns like ECS or ScriptableObject-based design',
+    ],
+    role: 'Solo Developer',
+    responsibilities: ['Design', 'Implementation', 'Deployment'],
+    features: [
+      {
+        description: 'Procedurally generated environments',
+        media: '/images/projects/caves-of-combat/ruins.png',
+      },
     ],
     year: 2025,
   },
@@ -113,6 +140,7 @@ export const projects = [
       { label: 'Docker', iconClass: 'devicon-docker-plain' },
       { label: 'Testing / CI', iconClass: 'devicon-githubactions-plain' },
     ],
+    type: 'Professional',
     year: 2024,
   },
   {
@@ -126,6 +154,7 @@ export const projects = [
       { label: 'Docker', iconClass: 'devicon-docker-plain' },
       { label: 'Github Actions', iconClass: 'devicon-githubactions-plain' },
     ],
+    type: 'Professional',
     year: 2024,
   },
   {
@@ -140,6 +169,7 @@ export const projects = [
       { label: 'MongoDB', iconClass: 'devicon-mongodb-plain' },
       { label: 'Testing / CI', iconClass: 'devicon-githubactions-plain' },
     ],
+    type: 'Professional',
     year: 2024,
   },
   {
@@ -155,6 +185,7 @@ export const projects = [
       { label: 'PostgreSQL', iconClass: 'devicon-postgresql-plain' },
       { label: 'Testing / CI', iconClass: 'devicon-githubactions-plain' },
     ],
+    type: 'Professional',
     year: 2025,
   },
   {
@@ -168,6 +199,7 @@ export const projects = [
       { label: 'Typescript', iconClass: 'devicon-typescript-plain' },
       { label: 'Tailwind', iconClass: 'devicon-tailwindcss-plain' },
     ],
+    type: 'Personal',
     year: 2025,
   },
   // Add more programs as needed

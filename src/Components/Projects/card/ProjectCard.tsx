@@ -4,16 +4,10 @@ import { Link } from 'react-router-dom'
 import { slugify } from '@/router/utils/slugify'
 import TechStack from './TechStack'
 import Card from './Card'
+import { ProjectType } from '../types'
 
 interface ProjectCardProps {
-  project: {
-    id: number
-    title: string
-    description: string
-    link: string
-    tags: { label: string; iconClass: string }[]
-    year: number
-  }
+  project: ProjectType
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {

@@ -1,25 +1,11 @@
-import React, { useState, useEffect } from 'react'
+import useSticky from '@/hooks/useSticky'
+import React from 'react'
 import { Link as ScrollLink } from 'react-scroll'
 
 const sections = ['Home', 'Projects', 'About']
 
 const Nav: React.FC = () => {
-  const [isSticky, setIsSticky] = useState(false)
-
-  const handleScroll = () => {
-    if (window.scrollY > 0) {
-      setIsSticky(true)
-    } else {
-      setIsSticky(false)
-    }
-  }
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll)
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [])
+  const isSticky = useSticky()
 
   return (
     <nav

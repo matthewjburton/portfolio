@@ -1,8 +1,17 @@
 import { Link } from 'react-router-dom'
 
-const Breadcrumbs = () => (
+interface BreadcrumbsProps {
+  project: string
+}
+
+const Breadcrumbs = ({ project }: BreadcrumbsProps) => (
   <nav aria-label="breadcrumb" style={{ marginBottom: '1rem' }}>
-    <Link to="/">Home</Link> / <span>Project</span>
+    <span className="text-secondary-text dark:text-secondary-text-dark">
+      <Link to="/">Home</Link> / <Link to="/">Projects</Link> /{' '}
+    </span>
+    <span className="text-primary-text dark:text-primary-text-dark">
+      {project}
+    </span>
   </nav>
 )
 
