@@ -3,7 +3,6 @@ export const sections = [
   'Role & Responsibilities',
   'Features',
   'Challenges & Solutions',
-  /*
-  'What You Learned',
-  'Future Work',*/
+  'What I Learned',
+  'Project State',
 ]

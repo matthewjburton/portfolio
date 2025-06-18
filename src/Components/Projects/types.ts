@@ -14,5 +14,8 @@ export interface ProjectType {
   responsibilities?: string[]
   features?: { header: string; description: string; media: string }[]
   challenges?: { challenge: string; solution: string }[]
+  learned?: string[]
+  state?: 'Complete' | 'In Progress' | 'On Hold' | 'Prototype'
+  conclusion?: string
   year: number
 }
