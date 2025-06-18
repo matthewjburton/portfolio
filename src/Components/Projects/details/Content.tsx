@@ -1,6 +1,4 @@
 import React from 'react'
-import Card from './Card'
-import { sections } from './sections/sections'
 import { ProjectType } from '../types'
 import Purpose from './sections/Purpose'
 import Role from './sections/Role'

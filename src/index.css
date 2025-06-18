@@ -81,3 +81,17 @@ body {
     @apply border-secondary-text dark:border-secondary-text-dark text-secondary-text dark:text-secondary-text-dark;
   }
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: white !important;
+}
+
+.swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.4) !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: white !important;
+}
