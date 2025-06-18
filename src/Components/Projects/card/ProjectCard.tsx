@@ -14,7 +14,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
     <div key={project.id} className="h-full">
       <FadeInSection>
-        <Link to={`/projects/${slugify(project.title)}`}>
+        <Link to={`/${slugify(project.title)}`}>
           <Card>
             <div className="flex flex-col gap-2">
               <div className="text-start text-xl font-bold md:text-2xl lg:text-3xl">

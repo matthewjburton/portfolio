@@ -7,7 +7,7 @@ interface BreadcrumbsProps {
 const Breadcrumbs = ({ project }: BreadcrumbsProps) => (
   <nav aria-label="breadcrumb" style={{ marginBottom: '1rem' }}>
     <span className="text-secondary-text dark:text-secondary-text-dark">
-      <Link to="/">Home</Link> / <Link to="/">Projects</Link> /{' '}
+      <Link to="/">Home</Link> /{' '}
     </span>
     <span className="text-primary-text dark:text-primary-text-dark">
       {project}

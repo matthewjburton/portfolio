@@ -28,7 +28,7 @@ const Features = ({ project }: FeaturesProps) => {
     <Element name={sections[sectionIndex]}>
       <FadeInSection>
         <section
-          className={`bg-container dark:bg-container-dark grid grid-cols-1 overflow-hidden rounded-lg shadow-xl md:grid-cols-3`}
+          className={`bg-container dark:bg-container-dark grid grid-cols-1 overflow-hidden rounded-lg shadow-xl lg:grid-cols-3`}
         >
           <div className="flex flex-col gap-4 rounded-lg p-8 lg:gap-8 lg:p-16">
             <div className="flex w-full flex-col items-start gap-4">
@@ -72,13 +72,13 @@ const Features = ({ project }: FeaturesProps) => {
                       muted
                       loop
                       playsInline
-                      className="aspect-video w-full object-cover"
+                      className="aspect-video h-full w-full object-cover"
                     />
                   ) : (
                     <img
                       src={feature.media}
                       alt={feature.description}
-                      className="aspect-video w-full object-cover"
+                      className="aspect-video h-full w-full object-cover"
                     />
                   )}
                 </SwiperSlide>
