@@ -3,6 +3,7 @@ import { cavesOfCombat } from './projects/caves-of-combat'
 import { warehouseInventory } from './projects/warehouse-inventory'
 import { businessCaseForm } from './projects/business-case-form'
 import { comfortAirlines } from './projects/comfort-airlines'
+import { superMassive } from './projects/super-massive'
 
 export const projects: ProjectType[] = [
   comfortAirlines,
@@ -72,21 +73,7 @@ export const projects: ProjectType[] = [
       type: 'Academic',
     },
   },
-  {
-    id: 8,
-    title: 'Super Massive',
-    description:
-      'Developed core gameplay, UI, and polish in under 48 hours using Unity. Placed top 7% for enjoyment out of 7,632 total submissions.',
-    link: 'https://matt-burton.itch.io/super-massive',
-    skills: [
-      { label: 'C#', iconClass: 'devicon-csharp-plain' },
-      { label: 'Unity', iconClass: 'devicon-unity-plain' },
-    ],
-    year: 2024,
-    purpose: {
-      type: 'Personal',
-    },
-  },
+  superMassive,
   cavesOfCombat,
   {
     id: 10,
