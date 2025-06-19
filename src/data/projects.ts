@@ -4,6 +4,7 @@ import { warehouseInventory } from './projects/warehouse-inventory'
 import { businessCaseForm } from './projects/business-case-form'
 import { comfortAirlines } from './projects/comfort-airlines'
 import { superMassive } from './projects/super-massive'
+import { expenseReport } from './projects/expense-report'
 
 export const projects: ProjectType[] = [
   comfortAirlines,
@@ -109,23 +110,7 @@ export const projects: ProjectType[] = [
       type: 'Professional',
     },
   },
-  {
-    id: 12,
-    title: 'Expense Report',
-    description: `A streamlined web form to submit and generate PDF's of employee expenses.`,
-    link: 'https://expense-report.advancetecllc.com',
-    skills: [
-      { label: 'React / TS', iconClass: 'devicon-react-plain' },
-      { label: 'Node / Express', iconClass: 'devicon-nodejs-plain' },
-      { label: 'Docker', iconClass: 'devicon-docker-plain' },
-      { label: 'MongoDB', iconClass: 'devicon-mongodb-plain' },
-      { label: 'Testing / CI', iconClass: 'devicon-githubactions-plain' },
-    ],
-    year: 2024,
-    purpose: {
-      type: 'Professional',
-    },
-  },
+  expenseReport,
   warehouseInventory,
   {
     id: 14,
