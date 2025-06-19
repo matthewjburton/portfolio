@@ -1,8 +1,8 @@
 export const sections = [
-  'Purpose',
-  'Role & Responsibilities',
-  'Features',
-  'Challenges & Solutions',
-  'What I Learned',
-  'Project State',
+  { id: 'purpose', label: 'Purpose' },
+  { id: 'role', label: 'Role & Responsibilities' },
+  { id: 'features', label: 'Features' },
+  { id: 'challenges', label: 'Challenges & Solutions' },
+  { id: 'learned', label: 'What I Learned' },
+  { id: 'state', label: 'Project State' },
 ]

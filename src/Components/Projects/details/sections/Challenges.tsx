@@ -10,20 +10,20 @@ interface ChallengesProps {
 }
 
 const Challenges = ({ project }: ChallengesProps) => {
-  const challenges = project.challenges ?? []
+  if (!project.challenges) return null
 
-  if (challenges.length === 0) return null
+  const { challenges } = project.challenges
 
   return (
     <FadeInSection>
-      <Element name={sections[sectionIndex]}>
+      <Element name={sections[sectionIndex].label}>
         <div className="flex w-full flex-col items-start gap-8">
           <h2 className="px-8 text-start text-xl font-bold md:text-2xl lg:px-16 lg:text-3xl">
-            {sections[sectionIndex]}
+            {sections[sectionIndex].label}
           </h2>
 
           <div className="grid w-full grid-cols-1 gap-6 lg:grid-cols-3">
-            {challenges.map((challenge) => (
+            {challenges?.map((challenge) => (
               <div
                 key={challenge.challenge}
                 className="bg-container dark:bg-container-dark grid h-full grid-cols-1 gap-6 rounded-lg p-8"

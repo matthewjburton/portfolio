@@ -28,7 +28,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 
             <div className="text-lg">{project.description}</div>
 
-            <TechStack tags={project.tags} />
+            <TechStack tags={project.skills} />
           </Card>
         </Link>
       </FadeInSection>

@@ -9,22 +9,33 @@ interface StateProps {
 }
 
 const State = ({ project }: StateProps) => {
+  if (!project.state) return null
+
+  const { state, conclusion } = project.state
+
+  if (!project.link) return null
+  const { link } = project
+
   return (
-    <Card title={sections[sectionIndex]}>
-      <h3
-        className={`text-sm uppercase italic ${project.state === 'Complete' ? 'text-accent-gradient' : 'text-secondary-text dark:text-secondary-text-dark'}`}
-      >
-        {project.state}
-      </h3>
+    <Card title={sections[sectionIndex].label}>
+      {state && (
+        <h3
+          className={`text-sm uppercase italic ${state === 'Complete' ? 'text-accent-gradient' : 'text-secondary-text dark:text-secondary-text-dark'}`}
+        >
+          {state}
+        </h3>
+      )}
 
-      <p>{project.conclusion}</p>
+      {conclusion && <p>{conclusion}</p>}
 
-      <span className="text-gradient-accent flex items-center gap-2">
-        <a href={project.link} target="_blank" rel="noopener noreferrer">
-          View project
-        </a>
-        <i className="fa fa-external-link" aria-hidden="true"></i>
-      </span>
+      {link && (
+        <span className="text-gradient-accent flex items-center gap-2">
+          <a href={project.link} target="_blank" rel="noopener noreferrer">
+            View project
+          </a>
+          <i className="fa fa-external-link" aria-hidden="true"></i>
+        </span>
+      )}
     </Card>
   )
 }

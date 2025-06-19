@@ -20,12 +20,12 @@ const Features = ({ project }: FeaturesProps) => {
   const [activeIndex, setActiveIndex] = useState<number | undefined>()
   const [isFading, setIsFading] = useState(false)
 
-  const features = project.features ?? []
+  const features = project.features?.features
 
-  if (features.length === 0) return null
+  if (!features) return null
 
   return (
-    <Element name={sections[sectionIndex]}>
+    <Element name={sections[sectionIndex].label}>
       <FadeInSection>
         <section
           className={`bg-container dark:bg-container-dark grid grid-cols-1 overflow-hidden rounded-lg shadow-xl lg:grid-cols-3`}
@@ -33,7 +33,7 @@ const Features = ({ project }: FeaturesProps) => {
           <div className="flex flex-col gap-4 rounded-lg p-8 lg:gap-8 lg:p-16">
             <div className="flex w-full flex-col items-start gap-4">
               <h2 className="text-start text-xl font-bold md:text-2xl lg:text-3xl">
-                {sections[sectionIndex]}
+                {sections[sectionIndex].label}
               </h2>
 
               {activeIndex !== undefined && (

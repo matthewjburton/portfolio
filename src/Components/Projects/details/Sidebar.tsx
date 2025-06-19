@@ -1,15 +1,24 @@
 import { Link as ScrollLink } from 'react-scroll'
 import { sections } from './sections/sections'
+import { ProjectType } from '../types'
 
-const Sidebar = () => {
+interface SidebarProps {
+  project: ProjectType
+}
+
+const Sidebar = ({ project }: SidebarProps) => {
+  const filteredSections = sections.filter((section) =>
+    Boolean(project[section.id as keyof ProjectType]),
+  )
+
   return (
     <nav
       className={`top-12 z-20 flex h-fit flex-col gap-4 rounded-lg text-sm md:sticky`}
     >
-      {sections.map((section) => (
+      {filteredSections.map((section) => (
         <ScrollLink
-          key={section}
-          to={section}
+          key={section.label}
+          to={section.label}
           smooth
           duration={400}
           offset={-60}
@@ -17,7 +26,7 @@ const Sidebar = () => {
           activeClass="active-sidebar-link"
           spy
         >
-          {section}
+          {section.label}
         </ScrollLink>
       ))}
     </nav>

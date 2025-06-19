@@ -12,22 +12,28 @@ interface RoleProps {
 }
 
 const Role = ({ project }: RoleProps) => {
+  if (!project.role) return null
+
+  const { role = defaultRole, responsibilities } = project.role
+
   return (
     <FadeInSection>
-      <Element name={sections[sectionIndex]}>
+      <Element name={sections[sectionIndex].label}>
         <div className="flex w-full flex-col items-start gap-8 px-8 lg:px-16">
           <h2 className="text-start text-xl font-bold md:text-2xl lg:text-3xl">
-            {sections[sectionIndex]}
+            {sections[sectionIndex].label}
           </h2>
           <div className="flex flex-wrap items-center gap-4">
-            <SkillPill
-              skill={{ label: project.role ?? defaultRole }}
-              variant="outlined"
-            />{' '}
-            <span className="text-secondary-text dark:text-secondary-text-dark">
-              &
-            </span>{' '}
-            {project.responsibilities?.map((responsibility) => (
+            {role && <SkillPill skill={{ label: role }} variant="outlined" />}
+            {role && responsibilities && (
+              <>
+                {' '}
+                <span className="text-secondary-text dark:text-secondary-text-dark">
+                  &
+                </span>{' '}
+              </>
+            )}
+            {responsibilities?.map((responsibility) => (
               <SkillPill
                 key={responsibility}
                 skill={{ label: responsibility }}
