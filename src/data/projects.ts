@@ -267,8 +267,82 @@ export const projects: ProjectType[] = [
       { label: 'Testing / CI', iconClass: 'devicon-githubactions-plain' },
     ],
     year: 2025,
+    banner: '/images/projects/warehouse-inventory/banner.png',
     purpose: {
+      purpose:
+        'Built to replace a fragmented inventory process with a unified, efficient platform that streamlined logistics, tracking, and warehouse operations.',
+      goals: [
+        'Enable real-time tracking of shipments, including contents, status, and responsible personnel',
+        'Allow staff to locate and manage materials by project, crate, and shelf location',
+        'Support prefabrication workflows by identifying material needs and tracking assembly progress',
+      ],
       type: 'Professional',
+    },
+    role: {
+      role: 'Solo Developer',
+      responsibilities: [
+        'Architecutre',
+        'End to End Development',
+        'CI/CD Pipeline',
+      ],
+    },
+    features: {
+      features: [
+        {
+          header: 'Comprehensive Shipment Tracking',
+          description:
+            'Track incoming and outgoing shipments with rich metadata: who was involved, what was delivered, and when. Ensures traceability and accountability.',
+          media: '/images/projects/warehouse-inventory/placeholder.png',
+        },
+        {
+          header: 'Internal Catalog System',
+          description:
+            'Manage an internal database of manufacturers, projects, and materials for use throughout the system — eliminating redundancy and boosting data integrity.',
+          media: '/images/projects/warehouse-inventory/placeholder.png',
+        },
+        {
+          header: 'Prefabrication Management',
+          description:
+            'Track prefabrication status, identify required materials, and link materials to specific assemblies for a clear production workflow.',
+          media: '/images/projects/warehouse-inventory/placeholder.png',
+        },
+        {
+          header: 'Crate & Packaging Logistics',
+          description:
+            'Group assemblies into outbound crates, relocate crates to shelving, and stage them by project — improving efficiency in the shipping process.',
+          media: '/images/projects/warehouse-inventory/placeholder.png',
+        },
+      ],
+    },
+    challenges: {
+      challenges: [
+        {
+          challenge:
+            'Managing growing project complexity during rapid development.',
+          solution:
+            'Integrated automated unit and integration tests to catch regressions early and maintain system stability.',
+        },
+        {
+          challenge:
+            'Safely applying database schema changes in a live environment.',
+          solution:
+            'Used versioned migration scripts to apply incremental changes while preserving data integrity in production.',
+        },
+      ],
+    },
+    learned: {
+      learned: [
+        'Test-Driven Development (TDD)',
+        'Continuous Integration and Deployment (CI/CD)',
+        'Scalable Full Stack Architecture',
+        'Cloud Hosting & Production Deployment',
+        'Agile Project Management',
+        'Stakeholder Communication',
+      ],
+    },
+    state: {
+      state: 'On Hold',
+      conclusion: `After assessing AdvanceTEC’s long-term strategy, I advised leadership to pivot from custom development to a commercial solution. This helped reduce future maintenance risk and eliminated the dependency on in-house software expertise.`,
     },
   },
   {
