@@ -30,9 +30,9 @@ const OtherProjects = ({ project }: OtherProjectsProps) => {
             </p>
             <Link
               to={`/${slugify(nextProject.title)}`}
-              className="text-gradient-accent hover:underline"
+              className="text-gradient-accent items:center hover:underline"
             >
-              View Project
+              View Case Study <i className="fa-solid fa-arrow-right" />
             </Link>
           </div>
         ))}

@@ -8,12 +8,12 @@ interface BannerProps {
 }
 
 const Banner = ({ project }: BannerProps) => {
-  const hasBanner = Boolean(project.banner)
+  const banner = project.banner
 
   return (
     <Element name="Home">
       <div className="relative isolate h-[70vh] w-full overflow-hidden rounded-lg shadow-lg">
-        {hasBanner ? (
+        {banner ? (
           <img
             src={project.banner}
             alt={`${project.title} banner`}
@@ -27,7 +27,7 @@ const Banner = ({ project }: BannerProps) => {
           <h1 className="text-primary-text dark:text-primary-text-dark text-4xl font-bold md:text-6xl">
             {project.title}
           </h1>
-          <BannerCallToAction />
+          <BannerCallToAction project={project} />
         </div>
       </div>
     </Element>

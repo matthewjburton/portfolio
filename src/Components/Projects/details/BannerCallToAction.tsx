@@ -1,10 +1,19 @@
 import { Link as ScrollLink } from 'react-scroll'
 import { sections } from './sections/sections'
+import { ProjectType } from '../types'
 
-const BannerCallToAction = () => {
+interface BannerCallToActionProps {
+  project: ProjectType
+}
+
+const BannerCallToAction = ({ project }: BannerCallToActionProps) => {
+  const filteredSections = sections.filter((section) =>
+    Boolean(project[section.id as keyof ProjectType]),
+  )
+
   return (
     <ScrollLink
-      to={sections[0]}
+      to={filteredSections[0].label}
       duration="500"
       smooth
       spy={true}

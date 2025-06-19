@@ -257,8 +257,7 @@ export const projects: ProjectType[] = [
     id: 13,
     title: 'Warehouse Inventory',
     description:
-      'Sole developer on an inventory management system capable of tracking shipments, finding materials, and scheduling prefabrication.',
-    link: 'https://inventory.advancetecllc.com',
+      'Designed and delivered a full-featured inventory management system for warehouse logistics, used in a live production environment.',
     skills: [
       { label: 'React / TS', iconClass: 'devicon-react-plain' },
       { label: 'Node / Express', iconClass: 'devicon-nodejs-plain' },
@@ -267,13 +266,13 @@ export const projects: ProjectType[] = [
       { label: 'Testing / CI', iconClass: 'devicon-githubactions-plain' },
     ],
     year: 2025,
-    banner: '/images/projects/warehouse-inventory/banner.png',
+    banner: '/images/projects/warehouse-inventory/banner.jpg',
     purpose: {
       purpose:
-        'Built to replace a fragmented inventory process with a unified, efficient platform that streamlined logistics, tracking, and warehouse operations.',
+        'Designed to unify fragmented warehouse tracking processes into a single platform, resulting in faster shipment identification, reduced errors, and improved employee efficiency.',
       goals: [
-        'Enable real-time tracking of shipments, including contents, status, and responsible personnel',
-        'Allow staff to locate and manage materials by project, crate, and shelf location',
+        'Support real-time tracking of shipments, including contents, status, and responsible personnel',
+        'Empower staff to locate and manage materials by project, crate, and shelf location',
         'Support prefabrication workflows by identifying material needs and tracking assembly progress',
       ],
       type: 'Professional',
@@ -289,28 +288,40 @@ export const projects: ProjectType[] = [
     features: {
       features: [
         {
-          header: 'Comprehensive Shipment Tracking',
-          description:
-            'Track incoming and outgoing shipments with rich metadata: who was involved, what was delivered, and when. Ensures traceability and accountability.',
-          media: '/images/projects/warehouse-inventory/placeholder.png',
-        },
-        {
           header: 'Internal Catalog System',
           description:
             'Manage an internal database of manufacturers, projects, and materials for use throughout the system — eliminating redundancy and boosting data integrity.',
-          media: '/images/projects/warehouse-inventory/placeholder.png',
+          media: '/images/projects/warehouse-inventory/catalog.mp4',
         },
         {
-          header: 'Prefabrication Management',
+          header: 'Shipment Tracking',
           description:
-            'Track prefabrication status, identify required materials, and link materials to specific assemblies for a clear production workflow.',
-          media: '/images/projects/warehouse-inventory/placeholder.png',
+            'Track incoming and outgoing shipments with rich metadata: who was involved, what was delivered, and when. Ensures traceability and accountability.',
+          media: '/images/projects/warehouse-inventory/shipping.mp4',
         },
         {
           header: 'Crate & Packaging Logistics',
           description:
             'Group assemblies into outbound crates, relocate crates to shelving, and stage them by project — improving efficiency in the shipping process.',
-          media: '/images/projects/warehouse-inventory/placeholder.png',
+          media: '/images/projects/warehouse-inventory/staging.mp4',
+        },
+        {
+          header: 'Prefabrication Management',
+          description:
+            'Track prefabrication status, identify required materials, and link materials to specific assemblies for a clear production workflow.',
+          media: '/images/projects/warehouse-inventory/prefab.mp4',
+        },
+        {
+          header: 'Responsive Form Feedback',
+          description:
+            'Instant validation feedback with inline, field-specific error messages for a smoother user experience.',
+          media: '/images/projects/warehouse-inventory/forms.mp4',
+        },
+        {
+          header: 'Integrated Form Modals',
+          description:
+            'Allow users to add new entries (e.g., manufacturers, materials) directly from dropdowns via reusable modal components — reducing context switching and streamlining workflows.',
+          media: '/images/projects/warehouse-inventory/modals.mp4',
         },
       ],
     },
@@ -320,13 +331,25 @@ export const projects: ProjectType[] = [
           challenge:
             'Managing growing project complexity during rapid development.',
           solution:
-            'Integrated automated unit and integration tests to catch regressions early and maintain system stability.',
+            'Integrated automated unit and integration tests into the deployment pipeline to catch regressions early and maintain system stability.',
         },
         {
           challenge:
             'Safely applying database schema changes in a live environment.',
           solution:
             'Used versioned migration scripts to apply incremental changes while preserving data integrity in production.',
+        },
+        {
+          challenge:
+            'Allowing browser based access while restricting authorization to only internal employees.',
+          solution:
+            'Implemented an Auth0 layer around the both ends of the stack preventing service without a verifiable token.',
+        },
+        {
+          challenge:
+            'The user experience must be better than the existing processes in order to convert users.',
+          solution:
+            'Streamlined user workflows with dropdown-integrated actions that launch reusable form modals, minimizing friction and redundant steps.',
         },
       ],
     },

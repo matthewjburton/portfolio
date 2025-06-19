@@ -12,8 +12,6 @@ const State = ({ project }: StateProps) => {
   if (!project.state) return null
 
   const { state, conclusion } = project.state
-
-  if (!project.link) return null
   const { link } = project
 
   return (
