@@ -2,24 +2,10 @@ import { ProjectType } from '@/components/projects/types'
 import { cavesOfCombat } from './projects/caves-of-combat'
 import { warehouseInventory } from './projects/warehouse-inventory'
 import { businessCaseForm } from './projects/business-case-form'
+import { comfortAirlines } from './projects/comfort-airlines'
 
 export const projects: ProjectType[] = [
-  {
-    id: 1,
-    title: 'Comfort Airlines',
-    description:
-      'Simulates realistic airline operations including route planning, cost analysis, and profitability modeling.',
-    link: 'https://github.com/matthewjburton/comfort-airlines',
-    skills: [
-      { label: 'Python', iconClass: 'devicon-python-plain' },
-      { label: 'MariaDB', iconClass: 'devicon-mariadb-plain' },
-      { label: 'Docker', iconClass: 'devicon-docker-plain' },
-    ],
-    year: 2024,
-    purpose: {
-      type: 'Academic',
-    },
-  },
+  comfortAirlines,
   businessCaseForm,
   {
     id: 3,
