@@ -26,7 +26,7 @@ const Challenges = ({ project }: ChallengesProps) => {
             {challenges?.map((challenge) => (
               <div
                 key={challenge.challenge}
-                className="bg-container dark:bg-container-dark grid h-full grid-cols-1 gap-6 rounded-lg p-8"
+                className="bg-container dark:bg-container-dark grid h-full grid-cols-1 gap-6 rounded-lg p-8 shadow-lg"
               >
                 <div className="flex h-full flex-col items-start gap-2">
                   <h4 className="text-secondary-text dark:text-secondary-text-dark text-sm font-semibold uppercase">

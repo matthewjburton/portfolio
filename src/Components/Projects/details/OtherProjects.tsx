@@ -22,7 +22,7 @@ const OtherProjects = ({ project }: OtherProjectsProps) => {
         {nextThree.map((nextProject) => (
           <div
             key={nextProject.id}
-            className="bg-container dark:bg-container-dark rounded-lg p-8 shadow-sm transition hover:shadow-md"
+            className="bg-container dark:bg-container-dark rounded-lg p-8 shadow-lg transition hover:shadow-md"
           >
             <h3 className="mb-2 font-bold">{nextProject.title}</h3>
             <p className="text-secondary-text dark:text-secondary-text-dark mb-4 text-sm">
