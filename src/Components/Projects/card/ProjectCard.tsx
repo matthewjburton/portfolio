@@ -24,7 +24,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                 {project.title}
               </div>
 
-              <span className="text-secondary-text dark:text-secondary-text-dark text-sm italic">
+              <span className="text-text-muted dark:text-dark-text-muted text-sm italic">
                 {project.year.toString()}
               </span>
             </div>

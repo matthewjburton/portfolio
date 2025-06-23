@@ -14,7 +14,7 @@ const BioText: React.FC<BioTextProps> = ({ title, education, description }) => {
           {title}
         </div>
 
-        <span className="text-secondary-text dark:text-secondary-text-dark text-sm italic">
+        <span className="text-text-muted dark:text-dark-text-muted text-sm italic">
           {education}
         </span>
       </div>

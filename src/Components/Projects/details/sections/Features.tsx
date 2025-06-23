@@ -28,7 +28,7 @@ const Features = ({ project }: FeaturesProps) => {
     <Element name={sections[sectionIndex].label}>
       <FadeInSection>
         <section
-          className={`bg-container dark:bg-container-dark grid grid-cols-1 overflow-hidden rounded-lg shadow-xl lg:grid-cols-3`}
+          className={`bg-background dark:bg-dark-background grid grid-cols-1 overflow-hidden rounded-lg shadow-xl lg:grid-cols-3`}
         >
           <div className="flex flex-col gap-4 rounded-lg p-8 lg:gap-8 lg:p-16">
             <div className="flex w-full flex-col items-start gap-4">
@@ -42,7 +42,7 @@ const Features = ({ project }: FeaturesProps) => {
                     isFading ? 'opacity-0' : 'opacity-100'
                   }`}
                 >
-                  <h3 className="text-secondary-text dark:text-secondary-text-dark text-sm uppercase">
+                  <h3 className="text-text-muted dark:text-dark-text-muted text-sm uppercase">
                     {features[activeIndex].header}
                   </h3>
                   <p

@@ -7,7 +7,7 @@ import Tooltip from './Tooltip'
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear()
   return (
-    <div className="bg-container dark:bg-container-dark relative flex w-full flex-col items-center gap-8 py-12">
+    <div className="bg-background dark:bg-dark-background relative flex w-full flex-col items-center gap-8 py-12">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 transform">
         <Tooltip tooltip={'Back to Top'}>
           <ScrollLink
@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
             duration="500"
             smooth
             spy={true}
-            className="gradient-accent text-background dark:text-background-dark flex items-center justify-center rounded-full p-4 text-xl transition duration-300 ease-in-out hover:shadow-[0_0_10px_#8fcf45] hover:dark:shadow-[0_0_10px_#82db4f]"
+            className="gradient-accent text-dark-text dark:text-text flex items-center justify-center rounded-full p-4 text-xl transition duration-300 ease-in-out hover:shadow-[0_0_10px_#8fcf45] hover:dark:shadow-[0_0_10px_#82db4f]"
           >
             <i className="fa-solid fa-angles-up" />
           </ScrollLink>

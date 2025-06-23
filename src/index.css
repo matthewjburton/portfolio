@@ -4,16 +4,16 @@
 
 html,
 body {
-  @apply bg-background dark:bg-background-dark;
+  @apply bg-background-dark dark:bg-dark-background-dark text-text dark:text-dark-text;
 }
 
 @layer utilities {
   .gradient-accent {
-    @apply from-accent-light-start via-accent-light-mid to-accent-light-end dark:from-accent-dark-start dark:via-accent-dark-mid dark:to-accent-dark-end bg-gradient-to-br;
+    @apply from-accent-light via-accent to-accent-dark dark:from-dark-accent-light dark:via-dark-accent dark:to-dark-accent-dark bg-gradient-to-br;
   }
 
   .text-gradient-accent {
-    @apply from-accent-light-start via-accent-light-mid to-accent-light-end dark:from-accent-dark-start dark:via-accent-dark-mid dark:to-accent-dark-end bg-gradient-to-br bg-clip-text text-transparent;
+    @apply from-accent-light via-accent to-accent-dark dark:from-dark-accent-light dark:via-dark-accent dark:to-dark-accent-dark bg-gradient-to-br bg-clip-text text-transparent;
   }
 
   .bg-radial-gradient {
@@ -74,11 +74,11 @@ body {
   }
 
   .active-sidebar-link {
-    @apply border-accent dark:border-accent-dark text-primary-text dark:text-primary-text-dark;
+    @apply border-accent dark:border-dark-accent text-text dark:text-dark-text bg-background dark:bg-dark-background;
   }
 
   .inactive-sidebar-link {
-    @apply border-secondary-text dark:border-secondary-text-dark text-secondary-text dark:text-secondary-text-dark;
+    @apply border-text-muted dark:border-dark-text-muted text-text-muted dark:text-dark-text-muted;
   }
 }
 

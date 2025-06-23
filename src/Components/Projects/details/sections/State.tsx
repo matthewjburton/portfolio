@@ -18,7 +18,7 @@ const State = ({ project }: StateProps) => {
     <Card title={sections[sectionIndex].label}>
       {state && (
         <h3
-          className={`text-sm uppercase italic ${state === 'Complete' ? 'text-gradient-accent' : 'text-secondary-text dark:text-secondary-text-dark'}`}
+          className={`text-sm uppercase italic ${state === 'Complete' ? 'text-gradient-accent' : 'text-text-muted dark:text-dark-text-muted'}`}
         >
           {state}
         </h3>

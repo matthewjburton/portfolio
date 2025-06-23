@@ -9,7 +9,7 @@ const Nav: React.FC = () => {
 
   return (
     <nav
-      className={`bg-container dark:bg-container-dark z-20 flex w-full flex-row justify-center text-2xl ${isSticky ? 'sticky top-0 shadow-md' : ''}`}
+      className={`bg-background dark:bg-dark-background z-20 flex w-full flex-row justify-center text-2xl ${isSticky ? 'sticky top-0 shadow-md' : ''}`}
     >
       {sections.map((section) => (
         <ScrollLink
@@ -20,7 +20,7 @@ const Nav: React.FC = () => {
           spy={true}
           offset={-100}
           className="px-8 py-6"
-          activeClass="text-gradient-accent border-b-2 border-accent dark:border-accent-dark transition duration-300 ease-in-out"
+          activeClass="text-gradient-accent border-b-2 border-accent dark:border-dark-accent transition duration-300 ease-in-out"
         >
           {section}
         </ScrollLink>

@@ -5,27 +5,27 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: '#F4F4F4',
-        'background-dark': '#121212',
+        'background-dark': 'oklch(94% 0 89.9)',
+        background: 'oklch(97% 0 89.9)',
+        'background-light': 'oklch(100% 0 89.9)',
 
-        container: '#FFFFFF',
-        'container-dark': '#1E1E1E',
+        'dark-background-dark': 'oklch(5% 0.01 89.9)',
+        'dark-background': 'oklch(18% 0 89.9)',
+        'dark-background-light': 'oklch(25% 0 89.9)',
 
-        'primary-text': '#121212',
-        'primary-text-dark': '#E0E0E0',
+        text: 'oklch(15.79% 0 89.9)',
+        'text-muted': 'oklch(41.84% 0 89.9)',
 
-        'secondary-text': '#9E9E9E',
-        'secondary-text-dark': '#8C8C8C',
+        'dark-text': 'oklch(96.19% 0 89.9)',
+        'dark-text-muted': 'oklch(76.52% 0 89.9)',
 
-        accent: '#8fcf45',
-        'accent-dark': '#82db4f',
+        'accent-dark': 'oklch(0.62 0.1881 142.68)',
+        accent: 'oklch(0.7101 0.1911 133.01)',
+        'accent-light': 'oklch(0.79 0.1845 130.24)',
 
-        'accent-light-start': '#a4d651',
-        'accent-light-mid': '#8fcf45',
-        'accent-light-end': '#6daf2e',
-        'accent-dark-start': '#a8e063',
-        'accent-dark-mid': '#82db4f',
-        'accent-dark-end': '#50a329',
+        'dark-accent-dark': 'oklch(0.63 0.17 140.66)',
+        'dark-accent': 'oklch(0.8071 0.21 136.02)',
+        'dark-accent-light': 'oklch(0.88 0.16 124.66)',
       },
 
       screens: {

@@ -28,7 +28,7 @@ const Role = ({ project }: RoleProps) => {
             {role && responsibilities && (
               <>
                 {' '}
-                <span className="text-secondary-text dark:text-secondary-text-dark">
+                <span className="text-text-muted dark:text-dark-text-muted">
                   &
                 </span>{' '}
               </>

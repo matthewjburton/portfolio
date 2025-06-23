@@ -24,7 +24,7 @@ const Banner = ({ project }: BannerProps) => {
           <RadialBackground />
         )}
         <div className="relative z-10 flex h-full w-full flex-col items-center justify-center gap-8 text-center">
-          <h1 className="text-primary-text-dark text-4xl font-bold md:text-6xl">
+          <h1 className="text-dark-text dark:text-text text-4xl font-bold md:text-6xl">
             {project.title}
           </h1>
           <BannerCallToAction project={project} />

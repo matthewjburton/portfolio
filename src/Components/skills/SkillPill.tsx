@@ -1,6 +1,6 @@
 import { SkillType } from './types'
 
-const contained = 'gradient-accent text-container dark:text-container-dark'
+const contained = 'gradient-accent text-background dark:text-dark-background'
 const outlined = 'border-accent text-gradient-accent hover:bg-accent border'
 
 interface SkillPillProps {

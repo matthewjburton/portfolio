@@ -17,17 +17,17 @@ const OtherProjects = ({ project }: OtherProjectsProps) => {
 
   return (
     <section className="mt-12 flex flex-col gap-8 pb-12">
-      <h2 className="text-primary-text dark:text-primary-text-dark text-xl font-semibold">
+      <h2 className="text-text dark:text-dark-text text-xl font-semibold">
         Explore More Projects
       </h2>
       <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
         {randomProjects.map((nextProject) => (
           <div
             key={nextProject.id}
-            className="bg-container dark:bg-container-dark flex h-full flex-col rounded-lg p-8 shadow-lg transition hover:shadow-md"
+            className="bg-background dark:bg-dark-background flex h-full flex-col rounded-lg p-8 shadow-lg transition"
           >
             <h3 className="mb-2 font-bold">{nextProject.title}</h3>
-            <p className="text-secondary-text dark:text-secondary-text-dark mb-4 text-sm">
+            <p className="text-text-muted dark:text-dark-text-muted mb-4 text-sm">
               {nextProject.description}
             </p>
             <Link

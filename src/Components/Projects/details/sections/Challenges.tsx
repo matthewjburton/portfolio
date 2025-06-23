@@ -26,13 +26,13 @@ const Challenges = ({ project }: ChallengesProps) => {
             {challenges?.map((challenge) => (
               <div
                 key={challenge.challenge}
-                className="bg-container dark:bg-container-dark grid h-full grid-cols-1 gap-6 rounded-lg p-8 shadow-lg"
+                className="bg-background dark:bg-dark-background grid h-full grid-cols-1 gap-6 rounded-lg p-8 shadow-lg"
               >
                 <div className="flex h-full flex-col items-start gap-2">
-                  <h4 className="text-secondary-text dark:text-secondary-text-dark text-sm font-semibold uppercase">
+                  <h4 className="text-text-muted dark:text-dark-text-muted text-sm font-semibold uppercase">
                     Challenge
                   </h4>
-                  <p className="dark:text-primary-text-dark text-primary-text mb-3">
+                  <p className="dark:text-dark-text text-text mb-3">
                     {challenge.challenge}
                   </p>
                 </div>
@@ -40,7 +40,7 @@ const Challenges = ({ project }: ChallengesProps) => {
                   <h4 className="text-gradient-accent text-sm font-semibold uppercase">
                     Solution
                   </h4>
-                  <p className="dark:text-primary-text-dark text-primary-text">
+                  <p className="dark:text-dark-text text-text">
                     {challenge.solution}
                   </p>
                 </div>

@@ -6,12 +6,10 @@ interface BreadcrumbsProps {
 
 const Breadcrumbs = ({ project }: BreadcrumbsProps) => (
   <nav aria-label="breadcrumb" style={{ marginBottom: '1rem' }}>
-    <span className="text-secondary-text dark:text-secondary-text-dark">
-      <Link to="/">Home</Link> /{' '}
+    <span className="text-text-muted dark:text-dark-text-muted hover:underline">
+      <Link to="/">Home</Link>
     </span>
-    <span className="text-primary-text dark:text-primary-text-dark">
-      {project}
-    </span>
+    <span className="text-text dark:text-dark-text"> / {project}</span>
   </nav>
 )
 
