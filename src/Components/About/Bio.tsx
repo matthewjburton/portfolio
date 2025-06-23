@@ -21,7 +21,7 @@ const Bio: React.FC<BioProps> = ({
   return (
     <>
       <FadeInSection>
-        <div className="bg-background dark:bg-dark-background flex w-full flex-col gap-8 rounded-lg p-12 shadow-lg lg:flex-row">
+        <div className="bg-background dark:bg-dark-background dark:border-t-dark-highlight border-t-highlight border-border dark:border-dark-border flex w-full flex-col gap-8 rounded-lg border p-12 shadow-lg lg:flex-row">
           <Portrait imageSrc={imageSrc} altText={altText} />
           <BioText
             title={title}

@@ -14,7 +14,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
     <div
       key={project.id}
-      className="h-full transition-transform duration-300 ease-in-out hover:scale-105"
+      className="h-full transition-transform duration-300 ease-in-out hover:scale-103"
     >
       <FadeInSection>
         <Link to={`/${slugify(project.title)}`}>

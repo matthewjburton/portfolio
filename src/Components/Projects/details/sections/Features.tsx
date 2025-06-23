@@ -28,7 +28,7 @@ const Features = ({ project }: FeaturesProps) => {
     <Element name={sections[sectionIndex].label}>
       <FadeInSection>
         <section
-          className={`bg-background dark:bg-dark-background grid grid-cols-1 overflow-hidden rounded-lg shadow-xl lg:grid-cols-3`}
+          className={`bg-background dark:bg-dark-background dark:border-t-dark-highlight border-t-highlight border-border dark:border-dark-border grid grid-cols-1 overflow-hidden rounded-lg border shadow-xl lg:grid-cols-3`}
         >
           <div className="flex flex-col gap-4 rounded-lg p-8 lg:gap-8 lg:p-16">
             <div className="flex w-full flex-col items-start gap-4">

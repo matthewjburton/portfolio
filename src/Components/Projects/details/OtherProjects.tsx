@@ -24,7 +24,7 @@ const OtherProjects = ({ project }: OtherProjectsProps) => {
         {randomProjects.map((nextProject) => (
           <div
             key={nextProject.id}
-            className="bg-background dark:bg-dark-background flex h-full flex-col rounded-lg p-8 shadow-lg transition"
+            className="bg-background dark:bg-dark-background dark:border-t-dark-highlight border-t-highlight border-border dark:border-dark-border flex h-full flex-col rounded-lg border p-8 shadow-lg transition"
           >
             <h3 className="mb-2 font-bold">{nextProject.title}</h3>
             <p className="text-text-muted dark:text-dark-text-muted mb-4 text-sm">

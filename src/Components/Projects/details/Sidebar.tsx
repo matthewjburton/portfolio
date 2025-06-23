@@ -22,7 +22,7 @@ const Sidebar = ({ project }: SidebarProps) => {
           smooth
           duration={400}
           offset={-60}
-          className="text-text-muted dark:text-dark-text-muted border-secondary-text dark:border-secondary-text-dark hover:text-primary hover:bg-background-light hover:dark:bg-dark-background-light cursor-pointer rounded-r border-l-2 p-2 text-nowrap transition duration-300 ease-in-out"
+          className="text-text-muted dark:text-dark-text-muted border-text-muted dark:border-dark-text-muted hover:text-primary hover:bg-background-light hover:dark:bg-dark-background-light cursor-pointer rounded-r border-l-2 p-2 text-nowrap transition duration-300 ease-in-out"
           activeClass="active-sidebar-link"
           spy
         >

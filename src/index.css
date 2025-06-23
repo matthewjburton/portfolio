@@ -19,7 +19,7 @@ body {
   .bg-radial-gradient {
     background-image: radial-gradient(
       circle at bottom center,
-      rgba(184, 230, 132, 0.15),
+      rgba(213, 213, 213, 0.15),
       transparent 70%
     );
   }
