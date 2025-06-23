@@ -9,6 +9,7 @@ export const skills: SkillType[] = [
   { label: 'MongoDB', iconClass: 'devicon-mongodb-plain' },
   { label: 'PostgreSQL', iconClass: 'devicon-postgresql-plain' },
   { label: 'Docker', iconClass: 'devicon-docker-plain' },
+  { label: 'CI/CD', iconClass: 'devicon-githubactions-plain' },
   { label: 'C#', iconClass: 'devicon-csharp-plain' },
   { label: 'Python', iconClass: 'devicon-python-plain' },
   { label: 'C++', iconClass: 'devicon-cplusplus-plain' },
