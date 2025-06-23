@@ -12,7 +12,7 @@ export const comfortAirlines: ProjectType = {
     { label: 'Docker', iconClass: 'devicon-docker-plain' },
   ],
   year: 2024,
-  banner: '/images/projects/comfort-airlines/banner.webp',
+  banner: `${import.meta.env.BASE_URL}images/projects/comfort-airlines/banner.webp`,
   purpose: {
     purpose:
       'Built as part of a senior capstone course, Comfort Airlines was a large-scale simulation project designed to mimic real-world airline operations. The objective was to build a modular simulation with a focus on realistic constraints, profitability analysis, and scalability. The client intentionally proposed a scope that was too large to complete in full to test our ability to prioritize, plan, and deliver under pressure.',
@@ -40,31 +40,31 @@ export const comfortAirlines: ProjectType = {
         header: 'Simulation Engine',
         description:
           'A day-by-day simulation system that tracks aircraft locations, fuel reserves, maintenance cycles, and passenger traffic, updating based on a user-configured flight timetable.',
-        media: '/images/projects/comfort-airlines/simulation.mp4',
+        media: `${import.meta.env.BASE_URL}images/projects/comfort-airlines/simulation.mp4`,
       },
       {
         header: 'Customizable Scenarios',
         description:
           'Users can configure key simulation parameters like aircraft types, airport count, flight durations, operational costs, and simulation length through validated inputs.',
-        media: '/images/projects/comfort-airlines/config.mp4',
+        media: `${import.meta.env.BASE_URL}images/projects/comfort-airlines/config.mp4`,
       },
       {
         header: 'CLI Interface with Nested Menus',
         description:
           'Built a fully interactive terminal-based UI with numbered selection options and nested menus to guide users through configuration and simulation steps.',
-        media: '/images/projects/comfort-airlines/interface.mp4',
+        media: `${import.meta.env.BASE_URL}images/projects/comfort-airlines/interface.mp4`,
       },
       {
         header: 'Flight Timetable Integration',
         description:
           'The simulation engine consumes a generated timetable that coordinates flights for maximum passenger throughput while respecting fuel, maintenance, and time constraints.',
-        media: '/images/projects/comfort-airlines/timetable.png',
+        media: `${import.meta.env.BASE_URL}images/projects/comfort-airlines/timetable.png`,
       },
       {
         header: 'Dockerized Database',
         description:
           'Implemented a MariaDB container with preloaded data and SQL reset scripts to allow for consistent test environments and data resets.',
-        media: '/images/projects/comfort-airlines/sql.png',
+        media: `${import.meta.env.BASE_URL}images/projects/comfort-airlines/sql.png`,
       },
     ],
   },

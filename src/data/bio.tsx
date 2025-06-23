@@ -1,5 +1,5 @@
 export const bio = {
-  imageSrc: 'images/about/portrait.webp',
+  imageSrc: `${import.meta.env.BASE_URL}images/about/portrait.webp`,
   altText: 'Matthew Burton',
   title: 'Bio',
   education: 'B.S. Computer Science from High Point University',

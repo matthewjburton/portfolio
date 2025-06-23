@@ -14,7 +14,7 @@ export const fullStackOpen: ProjectType = {
     { label: 'Testing / CI', iconClass: 'devicon-githubactions-plain' },
   ],
   year: 2024,
-  banner: '/images/projects/full-stack-open/banner.png',
+  banner: `${import.meta.env.BASE_URL}images/projects/full-stack-open/banner.png`,
   purpose: {
     type: 'Personal',
     purpose:
@@ -41,31 +41,31 @@ export const fullStackOpen: ProjectType = {
         header: 'Modern Frontend Stack',
         description:
           'Built responsive and interactive frontends using React, Redux, React Query, TypeScript, and custom form validation libraries like Zod and Yup.',
-        media: '/images/projects/full-stack-open/react.mp4',
+        media: `${import.meta.env.BASE_URL}images/projects/full-stack-open/react.mp4`,
       },
       {
         header: 'Robust Backend APIs',
         description:
           'Developed scalable REST and GraphQL APIs using Node, Express, and integrated PostgreSQL or MongoDB for persistence, with support for middleware, authentication, and error handling.',
-        media: '/images/projects/full-stack-open/rest.png',
+        media: `${import.meta.env.BASE_URL}images/projects/full-stack-open/rest.png`,
       },
       {
         header: 'Authentication & Security',
         description:
           'Implemented secure authentication with JWT, bcrypt password hashing, and protected routes for role-based access control.',
-        media: '/images/projects/full-stack-open/auth.png',
+        media: `${import.meta.env.BASE_URL}images/projects/full-stack-open/auth.png`,
       },
       {
         header: 'CI/CD & Containerization',
         description:
           'Configured GitHub Actions for automated testing and deployment. Used Docker to containerize applications and manage development environments.',
-        media: '/images/projects/full-stack-open/devops.png',
+        media: `${import.meta.env.BASE_URL}images/projects/full-stack-open/devops.png`,
       },
       {
         header: 'Comprehensive Testing',
         description:
           'Practiced test-driven development with unit, integration, and end-to-end testing using tools like Jest, Cypress, and Supertest.',
-        media: '/images/projects/full-stack-open/tests.png',
+        media: `${import.meta.env.BASE_URL}images/projects/full-stack-open/tests.png`,
       },
     ],
   },

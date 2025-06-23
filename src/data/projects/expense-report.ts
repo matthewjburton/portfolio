@@ -12,7 +12,7 @@ export const expenseReport: ProjectType = {
     { label: 'Testing / CI', iconClass: 'devicon-githubactions-plain' },
   ],
   year: 2024,
-  banner: '/images/projects/expense-report/banner.jpg',
+  banner: `${import.meta.env.BASE_URL}images/projects/expense-report/banner.jpg`,
   purpose: {
     purpose:
       'Designed to replace the company’s previous Excel-based expense reporting workflow, this tool streamlines the submission and approval process for employee reimbursements. The aim was to create a more intuitive, secure, and scalable experience.',
@@ -39,31 +39,31 @@ export const expenseReport: ProjectType = {
         header: 'Dynamic Expense Form',
         description:
           'Built with `react-hook-form` and `yup`, the form validates user input in real time and supports multiple expense types with conditional fields.',
-        media: '/images/projects/expense-report/form.mp4',
+        media: `${import.meta.env.BASE_URL}images/projects/expense-report/form.mp4`,
       },
       {
         header: 'PDF Report Generation',
         description:
           'Generates a professional PDF summary of the entered expenses, ready for review, download, and email delivery to management.',
-        media: '/images/projects/expense-report/pdf.mp4',
+        media: `${import.meta.env.BASE_URL}images/projects/expense-report/pdf.mp4`,
       },
       {
         header: 'Google Maps Mileage Calculation',
         description:
           'Integrates with the Google Maps API to automatically calculate mileage reimbursement between two locations, with optional manual override.',
-        media: '/images/projects/expense-report/maps.mp4',
+        media: `${import.meta.env.BASE_URL}images/projects/expense-report/maps.mp4`,
       },
       {
         header: 'Admin Config Panel',
         description:
           'Admins can configure application behavior such as available expense types or reimbursement rates via a dedicated settings page, without code changes.',
-        media: '/images/projects/expense-report/settings.mp4',
+        media: `${import.meta.env.BASE_URL}images/projects/expense-report/settings.mp4`,
       },
       {
         header: 'Secure Auth with Auth0',
         description:
           'Auth0 integration ensures only internal employees can view or submit reports, protecting access to confidential project data.',
-        media: '/images/projects/expense-report/auth.mp4',
+        media: `${import.meta.env.BASE_URL}images/projects/expense-report/auth.mp4`,
       },
     ],
   },

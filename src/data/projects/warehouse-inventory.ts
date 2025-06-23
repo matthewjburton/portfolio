@@ -13,7 +13,7 @@ export const warehouseInventory: ProjectType = {
     { label: 'Testing / CI', iconClass: 'devicon-githubactions-plain' },
   ],
   year: 2025,
-  banner: '/images/projects/warehouse-inventory/banner.jpg',
+  banner: `${import.meta.env.BASE_URL}images/projects/warehouse-inventory/banner.jpg`,
   purpose: {
     purpose:
       'Designed to unify fragmented warehouse tracking processes into a single platform, resulting in faster shipment identification, reduced errors, and improved employee efficiency.',
@@ -38,37 +38,37 @@ export const warehouseInventory: ProjectType = {
         header: 'Internal Catalog System',
         description:
           'Manage an internal database of manufacturers, projects, and materials for use throughout the system — eliminating redundancy and boosting data integrity.',
-        media: '/images/projects/warehouse-inventory/catalog.mp4',
+        media: `${import.meta.env.BASE_URL}images/projects/warehouse-inventory/catalog.mp4`,
       },
       {
         header: 'Shipment Tracking',
         description:
           'Track incoming and outgoing shipments with rich metadata: who was involved, what was delivered, and when. Ensures traceability and accountability.',
-        media: '/images/projects/warehouse-inventory/shipping.mp4',
+        media: `${import.meta.env.BASE_URL}images/projects/warehouse-inventory/shipping.mp4`,
       },
       {
         header: 'Crate & Packaging Logistics',
         description:
           'Group assemblies into outbound crates, relocate crates to shelving, and stage them by project — improving efficiency in the shipping process.',
-        media: '/images/projects/warehouse-inventory/staging.mp4',
+        media: `${import.meta.env.BASE_URL}images/projects/warehouse-inventory/staging.mp4`,
       },
       {
         header: 'Prefabrication Management',
         description:
           'Track prefabrication status, identify required materials, and link materials to specific assemblies for a clear production workflow.',
-        media: '/images/projects/warehouse-inventory/prefab.mp4',
+        media: `${import.meta.env.BASE_URL}images/projects/warehouse-inventory/prefab.mp4`,
       },
       {
         header: 'Responsive Form Feedback',
         description:
           'Instant validation feedback with inline, field-specific error messages for a smoother user experience.',
-        media: '/images/projects/warehouse-inventory/forms.mp4',
+        media: `${import.meta.env.BASE_URL}images/projects/warehouse-inventory/forms.mp4`,
       },
       {
         header: 'Integrated Form Modals',
         description:
           'Allow users to add new entries (e.g., manufacturers, materials) directly from dropdowns via reusable modal components — reducing context switching and streamlining workflows.',
-        media: '/images/projects/warehouse-inventory/modals.mp4',
+        media: `${import.meta.env.BASE_URL}images/projects/warehouse-inventory/modals.mp4`,
       },
     ],
   },

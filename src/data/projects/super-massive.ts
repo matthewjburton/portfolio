@@ -11,7 +11,7 @@ export const superMassive: ProjectType = {
     { label: 'Unity', iconClass: 'devicon-unity-plain' },
   ],
   year: 2024,
-  banner: '/images/projects/super-massive/banner.png',
+  banner: `${import.meta.env.BASE_URL}images/projects/super-massive/banner.png`,
   purpose: {
     purpose:
       'Created as a solo submission for the GMTK 2024 Game Jam, where the theme was "Built to Scale." The project was an opportunity to challenge myself under time constraints and practice building a complete experience end-to-end—from prototyping to polish.',
@@ -39,31 +39,31 @@ export const superMassive: ProjectType = {
         header: 'Core Game Mechanics',
         description:
           'Simple, accessible gameplay where like-sized particles merge to grow in scale, rewarding spatial awareness and planning.',
-        media: '/images/projects/super-massive/gameplay.mp4',
+        media: `${import.meta.env.BASE_URL}images/projects/super-massive/gameplay.mp4`,
       },
       {
         header: 'Intro Cutscene & Tutorial',
         description:
           'A brief cutscene introduces the world and gameplay premise, while contextual tutorial prompts guide new players intuitively.',
-        media: '/images/projects/super-massive/cutscene.mp4',
+        media: `${import.meta.env.BASE_URL}images/projects/super-massive/cutscene.mp4`,
       },
       {
         header: 'Dynamic Camera System',
         description:
           'The camera automatically zooms out as your largest particle grows, reinforcing the scale-based theme visually and mechanically.',
-        media: '/images/projects/super-massive/camera.mp4',
+        media: `${import.meta.env.BASE_URL}images/projects/super-massive/camera.mp4`,
       },
       {
         header: 'Antimatter Setbacks',
         description:
           'Antimatter particles appear intermittently, shrinking your progress if collected—adding challenge and urgency.',
-        media: '/images/projects/super-massive/antimatter.mp4',
+        media: `${import.meta.env.BASE_URL}images/projects/super-massive/antimatter.mp4`,
       },
       {
         header: 'Dynamic Environments',
         description:
           'As you drift through space, you encounter warm and cold regions that affect particle behavior—hot zones accelerate particle movement, while cold zones slow things down. This adds dynamic pacing and moments of reprieve between high-pressure situations.',
-        media: '/images/projects/super-massive/environment.mp4',
+        media: `${import.meta.env.BASE_URL}images/projects/super-massive/environment.mp4`,
       },
     ],
   },

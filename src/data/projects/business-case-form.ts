@@ -13,7 +13,7 @@ export const businessCaseForm: ProjectType = {
     { label: 'Figma', iconClass: 'devicon-figma-plain' },
   ],
   year: 2023,
-  banner: '/images/projects/business-case-form/banner.png',
+  banner: `${import.meta.env.BASE_URL}images/projects/business-case-form/banner.png`,
   purpose: {
     purpose:
       'Built to support internal decision-making at a consulting firm, the Business Case Form digitizes a formerly manual process of evaluating investments. The goal was to streamline data collection, improve accuracy, and ensure consistent formatting for downstream analysis and presentation.',
@@ -37,31 +37,31 @@ export const businessCaseForm: ProjectType = {
         header: 'User Information Collection',
         description:
           'Collects user information at the beginning of the process, allowing UDig to follow up with prospective clients on their business strategies.',
-        media: '/images/projects/business-case-form/user-info.png',
+        media: `${import.meta.env.BASE_URL}images/projects/business-case-form/user-info.png`,
       },
       {
         header: 'Intelligent Navigation',
         description:
           'Form sections are grouped into logical steps. Users must complete the current step to proceed, improving data completeness and flow.',
-        media: '/images/projects/business-case-form/navigation.mp4',
+        media: `${import.meta.env.BASE_URL}images/projects/business-case-form/navigation.mp4`,
       },
       {
         header: 'Dynamic Forms',
         description:
           'Form fields adjust in real-time based on user input, ensuring only relevant sections and inputs are shown.',
-        media: '/images/projects/business-case-form/forms.mp4',
+        media: `${import.meta.env.BASE_URL}images/projects/business-case-form/forms.mp4`,
       },
       {
         header: 'Data Visualization',
         description:
           'A final dashboard presents key financial metrics and charts, with export-to-PDF functionality for easy sharing.',
-        media: '/images/projects/business-case-form/data.mp4',
+        media: `${import.meta.env.BASE_URL}images/projects/business-case-form/data.mp4`,
       },
       {
         header: 'Session-Based URLs',
         description:
           'Generates shareable session URLs so multiple users can collaboratively view and evaluate the same business strategy.',
-        media: '/images/projects/business-case-form/sessions.mp4',
+        media: `${import.meta.env.BASE_URL}images/projects/business-case-form/sessions.mp4`,
       },
     ],
   },

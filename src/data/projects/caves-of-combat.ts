@@ -11,7 +11,7 @@ export const cavesOfCombat: ProjectType = {
     { label: 'Unity', iconClass: 'devicon-unity-plain' },
   ],
   year: 2025,
-  banner: '/images/projects/caves-of-combat/ruins.png',
+  banner: `${import.meta.env.BASE_URL}images/projects/caves-of-combat/ruins.png`,
   purpose: {
     purpose:
       'I wanted to make a video game exploring procedurally generated environments and roguelike combat that rewards player mastery.',
@@ -32,19 +32,19 @@ export const cavesOfCombat: ProjectType = {
         header: 'Procedural Generation',
         description:
           'Procedurally generated environments using a random walk algorithm to carve the levels. Sequenced population steps for environment aware platforms, decorations, and objects.',
-        media: '/images/projects/caves-of-combat/generation.mp4',
+        media: `${import.meta.env.BASE_URL}images/projects/caves-of-combat/generation.mp4`,
       },
       {
         header: 'Modular projectiles',
         description:
           'Components for targeting, movement, triggers, and effects. Movement patterns range include linear, homing and even orbitals.',
-        media: '/images/projects/caves-of-combat/projectiles.mp4',
+        media: `${import.meta.env.BASE_URL}images/projects/caves-of-combat/projectiles.mp4`,
       },
       {
         header: 'Intelligent enemies',
         description:
           'Movement, attacks, and animations governed by a state machine and conditions. Observer pattern used in damage and death event responses.',
-        media: '/images/projects/caves-of-combat/boss.mp4',
+        media: `${import.meta.env.BASE_URL}images/projects/caves-of-combat/boss.mp4`,
       },
     ],
   },
