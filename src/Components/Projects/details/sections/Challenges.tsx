@@ -3,7 +3,7 @@ import { ProjectType } from '../../types'
 import { sections } from './sections'
 import FadeInSection from '@/components/FadeInSection'
 
-const sectionIndex = 3
+const sectionIndex = 4
 
 interface ChallengesProps {
   project: ProjectType

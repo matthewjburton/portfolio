@@ -5,7 +5,7 @@ export const warehouseInventory: ProjectType = {
   title: 'Warehouse Inventory',
   description:
     'Designed and delivered a full-featured inventory management system for warehouse logistics, used in a live production environment.',
-  skills: [
+  stack: [
     { label: 'React / TS', iconClass: 'devicon-react-plain' },
     { label: 'Node / Express', iconClass: 'devicon-nodejs-plain' },
     { label: 'Docker', iconClass: 'devicon-docker-plain' },

@@ -6,7 +6,7 @@ export const comfortAirlines: ProjectType = {
   description:
     'Simulates realistic airline operations including route planning, cost analysis, and profitability modeling.',
   link: 'https://github.com/matthewjburton/comfort-airlines',
-  skills: [
+  stack: [
     { label: 'Python', iconClass: 'devicon-python-plain' },
     { label: 'MariaDB', iconClass: 'devicon-mariadb-plain' },
     { label: 'Docker', iconClass: 'devicon-docker-plain' },

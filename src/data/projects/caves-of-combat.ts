@@ -6,7 +6,7 @@ export const cavesOfCombat: ProjectType = {
   description:
     'A 2D action roguelike currently in development with fast-paced combat, procedural content, and custom ability systems.',
   link: 'https://store.steampowered.com/app/3589810/Caves_of_Combat/',
-  skills: [
+  stack: [
     { label: 'C#', iconClass: 'devicon-csharp-plain' },
     { label: 'Unity', iconClass: 'devicon-unity-plain' },
   ],

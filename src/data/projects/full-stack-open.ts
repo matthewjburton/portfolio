@@ -6,7 +6,7 @@ export const fullStackOpen: ProjectType = {
   description:
     'A suite of full-stack web apps for the University of Helsinki’s Full Stack Open course on modern web development, DevOps, and testing.',
   link: 'https://github.com/matthewjburton/full-stack-open',
-  skills: [
+  stack: [
     { label: 'React / TS', iconClass: 'devicon-react-plain' },
     { label: 'Node / Express', iconClass: 'devicon-nodejs-plain' },
     { label: 'PostgreSQL / MongoDB', iconClass: 'devicon-postgresql-plain' },

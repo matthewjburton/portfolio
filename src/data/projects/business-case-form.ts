@@ -6,7 +6,7 @@ export const businessCaseForm: ProjectType = {
   description:
     'A dynamic form system for analyzing investment opportunities, with real-time data validation, custom UI components, and PDF export capabilities.',
   link: 'https://udig-business-case-form-test.netlify.app/',
-  skills: [
+  stack: [
     { label: 'React / TS', iconClass: 'devicon-react-plain' },
     { label: 'GraphQL', iconClass: 'devicon-graphql-plain' },
     { label: 'PostgreSQL', iconClass: 'devicon-postgresql-plain' },

@@ -4,16 +4,14 @@ import { sections } from './sections'
 import { Element } from 'react-scroll'
 import FadeInSection from '@/components/FadeInSection'
 
-const sectionIndex = 5
+const sectionIndex = 3
 
-interface LearnedProps {
+interface StackProps {
   project: ProjectType
 }
 
-const Learned = ({ project }: LearnedProps) => {
-  if (!project.learned) return null
-
-  const { learned } = project.learned
+const Stack = ({ project }: StackProps) => {
+  const { stack } = project
 
   return (
     <FadeInSection>
@@ -22,13 +20,9 @@ const Learned = ({ project }: LearnedProps) => {
           <h2 className="text-start text-xl font-bold md:text-2xl lg:text-3xl">
             {sections[sectionIndex].label}
           </h2>
-          <div className="flex flex-wrap justify-start gap-2">
-            {learned?.map((learning) => (
-              <SkillPill
-                key={learning}
-                skill={{ iconClass: '', label: learning }}
-                variant="contained"
-              />
+          <div className="flex flex-wrap items-center gap-4">
+            {stack.map((skill) => (
+              <SkillPill key={skill.label} skill={skill} variant="outlined" />
             ))}
           </div>
         </div>
@@ -37,4 +31,4 @@ const Learned = ({ project }: LearnedProps) => {
   )
 }
 
-export default Learned
+export default Stack

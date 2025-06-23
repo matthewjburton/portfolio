@@ -4,7 +4,7 @@ export const expenseReport: ProjectType = {
   id: 12,
   title: 'Expense Report',
   description: `A streamlined web form to submit and generate PDF's of employee expenses.`,
-  skills: [
+  stack: [
     { label: 'React / TS', iconClass: 'devicon-react-plain' },
     { label: 'Node / Express', iconClass: 'devicon-nodejs-plain' },
     { label: 'Docker', iconClass: 'devicon-docker-plain' },

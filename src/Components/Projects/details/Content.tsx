@@ -3,6 +3,7 @@ import { ProjectType } from '../types'
 import Purpose from './sections/Purpose'
 import Role from './sections/Role'
 import Features from './sections/Features'
+import Stack from './sections/Stack'
 import Challenges from './sections/Challenges'
 import Learned from './sections/Learned'
 import State from './sections/State'
@@ -16,6 +17,7 @@ const Content: React.FC<ContentProps> = ({ project }) => (
     <Purpose project={project} />
     <Role project={project} />
     <Features project={project} />
+    <Stack project={project} />
     <Challenges project={project} />
     <Learned project={project} />
     <State project={project} />

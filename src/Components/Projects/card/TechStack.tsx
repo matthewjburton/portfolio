@@ -1,15 +1,16 @@
-import SkillPill from '@/components/skills/SkillPill'
 import { SkillType } from '@/components/skills/types'
 
 interface TechStackProps {
-  tags: SkillType[]
+  stack: SkillType[]
 }
 
-const TechStack = ({ tags }: TechStackProps) => {
+const TechStack = ({ stack }: TechStackProps) => {
   return (
-    <div className="flex flex-wrap gap-2">
-      {tags.map((tag) => (
-        <SkillPill key={tag.label} skill={tag} variant="outlined" />
+    <div className="text-gradient-accent flex flex-wrap gap-2">
+      {stack.map((skill) => (
+        <div key={skill.iconClass}>
+          {skill.iconClass && <i className={`${skill.iconClass} text-xl`} />}
+        </div>
       ))}
     </div>
   )

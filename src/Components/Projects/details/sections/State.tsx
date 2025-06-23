@@ -2,7 +2,7 @@ import { ProjectType } from '../../types'
 import Card from '../Card'
 import { sections } from './sections'
 
-const sectionIndex = 5
+const sectionIndex = 6
 
 interface StateProps {
   project: ProjectType

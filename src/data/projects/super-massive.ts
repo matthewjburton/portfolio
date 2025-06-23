@@ -6,7 +6,7 @@ export const superMassive: ProjectType = {
   description:
     'Developed core gameplay, UI, and polish in under 48 hours using Unity. Placed top 7% for enjoyment out of 7,642 total submissions in the GMTK 2024 Game Jam.',
   link: 'https://matt-burton.itch.io/super-massive',
-  skills: [
+  stack: [
     { label: 'C#', iconClass: 'devicon-csharp-plain' },
     { label: 'Unity', iconClass: 'devicon-unity-plain' },
   ],

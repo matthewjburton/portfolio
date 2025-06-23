@@ -5,7 +5,7 @@ export interface ProjectType {
   title: string
   description: string
   link?: string
-  skills: SkillType[]
+  stack: SkillType[]
   year: number
 
   banner?: string

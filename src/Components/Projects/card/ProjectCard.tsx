@@ -31,7 +31,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 
             <div className="text-lg">{project.description}</div>
 
-            <TechStack tags={project.skills} />
+            <div className="mt-auto">
+              <TechStack stack={project.stack} />
+            </div>
           </Card>
         </Link>
       </FadeInSection>

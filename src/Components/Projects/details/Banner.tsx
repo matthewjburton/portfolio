@@ -12,7 +12,7 @@ const Banner = ({ project }: BannerProps) => {
 
   return (
     <Element name="Home">
-      <div className="relative isolate h-[70vh] w-full overflow-hidden rounded-lg shadow-lg">
+      <div className="relative isolate h-[70vh] w-full overflow-hidden shadow-lg">
         {banner ? (
           <img
             src={project.banner}
@@ -24,7 +24,7 @@ const Banner = ({ project }: BannerProps) => {
           <RadialBackground />
         )}
         <div className="relative z-10 flex h-full w-full flex-col items-center justify-center gap-8 text-center">
-          <h1 className="text-primary-text dark:text-primary-text-dark text-4xl font-bold md:text-6xl">
+          <h1 className="text-primary-text-dark text-4xl font-bold md:text-6xl">
             {project.title}
           </h1>
           <BannerCallToAction project={project} />

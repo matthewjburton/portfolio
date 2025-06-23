@@ -6,7 +6,7 @@ export const endlessBreakout: ProjectType = {
   description:
     'An infinite arcade brick breaker with dynamic difficulty scaling and a retro aesthetic built in Unity.',
   link: 'https://matt-burton.itch.io/endless-breakout',
-  skills: [
+  stack: [
     { label: 'Unity', iconClass: 'devicon-unity-plain' },
     { label: 'C#', iconClass: 'devicon-csharp-plain' },
     { label: 'Illustrator', iconClass: 'devicon-illustrator-plain' },
