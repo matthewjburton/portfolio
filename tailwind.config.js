@@ -5,10 +5,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: '#FFFFFF',
+        background: '#F4F4F4',
         'background-dark': '#121212',
 
-        container: '#f4f4f4',
+        container: '#FFFFFF',
         'container-dark': '#1E1E1E',
 
         'primary-text': '#121212',
