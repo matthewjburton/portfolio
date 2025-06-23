@@ -20,6 +20,7 @@ const Purpose = ({ project }: PurposeProps) => {
       >
         {type} Project
       </h3>
+
       <p className="text-primary-text dark:text-primary-text-dark">{purpose}</p>
 
       {goals && (
@@ -29,7 +30,10 @@ const Purpose = ({ project }: PurposeProps) => {
           </h3>
           <ul className="text-primary-text dark:text-primary-text-dark list-none text-left md:text-lg">
             {goals.map((goal) => (
-              <li key={goal}>{goal}</li>
+              <li key={goal} className="flex items-center gap-2">
+                <span className="text-gradient-accent text-sm">◆</span>
+                <span>{goal}</span>
+              </li>
             ))}
           </ul>
         </div>
