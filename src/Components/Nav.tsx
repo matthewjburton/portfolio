@@ -19,7 +19,7 @@ const Nav: React.FC = () => {
           smooth
           spy={true}
           offset={-100}
-          className="px-8 py-6"
+          className="px-8 py-6 hover:cursor-pointer"
           activeClass="text-gradient-accent border-b-2 border-accent dark:border-dark-accent transition duration-300 ease-in-out"
         >
           {section}

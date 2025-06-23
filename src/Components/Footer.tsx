@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
             duration="500"
             smooth
             spy={true}
-            className="gradient-accent text-dark-text dark:text-text flex items-center justify-center rounded-full p-4 text-xl transition duration-300 ease-in-out hover:shadow-[0_0_10px_#8fcf45] hover:dark:shadow-[0_0_10px_#82db4f]"
+            className="gradient-accent text-dark-text dark:text-text flex items-center justify-center rounded-full p-4 text-xl transition duration-300 ease-in-out hover:cursor-pointer hover:shadow-[0_0_10px_#8fcf45] hover:dark:shadow-[0_0_10px_#82db4f]"
           >
             <i className="fa-solid fa-angles-up" />
           </ScrollLink>
