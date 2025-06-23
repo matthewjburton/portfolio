@@ -1,5 +1,10 @@
 export const footer = [
   {
+    link: '/',
+    icon: 'fa-solid fa-home',
+    tooltip: 'Home',
+  },
+  {
     link: 'mailto:mattjburton64@gmail.com',
     icon: 'fa-solid fa-envelope',
     tooltip: 'Email',
