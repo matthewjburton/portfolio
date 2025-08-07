@@ -7,6 +7,7 @@ import { superMassive } from './projects/super-massive'
 import { expenseReport } from './projects/expense-report'
 import { fullStackOpen } from './projects/full-stack-open'
 import { endlessBreakout } from './projects/endless-breakout'
+import { fabricationDashboard } from './projects/fabrication-dashboard'
 
 export const projects: ProjectType[] = [
   comfortAirlines,
@@ -17,4 +18,5 @@ export const projects: ProjectType[] = [
   fullStackOpen,
   expenseReport,
   warehouseInventory,
+  fabricationDashboard,
 ]

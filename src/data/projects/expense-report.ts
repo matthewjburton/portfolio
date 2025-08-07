@@ -4,6 +4,7 @@ export const expenseReport: ProjectType = {
   id: 12,
   title: 'Expense Report',
   description: `A streamlined web form to submit and generate PDF's of employee expenses.`,
+  link: 'https://github.com/AdvanceTEC-LLC/expense-report',
   stack: [
     { label: 'React / TS', iconClass: 'devicon-react-plain' },
     { label: 'Node / Express', iconClass: 'devicon-nodejs-plain' },
