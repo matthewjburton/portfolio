@@ -1,6 +1,8 @@
+import { basename } from "@/router/basename";
+
 export const footer = [
   {
-    link: '/',
+    link: basename === '/' ? basename : `https://matthewjburton.github.io${basename}`,
     icon: 'fa-solid fa-home',
     tooltip: 'Home',
   },
