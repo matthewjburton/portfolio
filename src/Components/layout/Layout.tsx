@@ -5,7 +5,9 @@ import { Wrapper } from '../Wrapper'
 const Layout = () => {
   return (
     <Wrapper>
-      <Outlet />
+      <div className="flex-grow">
+        <Outlet />
+      </div>
       <Footer />
     </Wrapper>
   )

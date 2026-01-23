@@ -1,7 +1,9 @@
-export interface PostMeta {
+export interface PostMetaType {
   title: string
   slug: string
-  date: Date
+  date: string
   tags: readonly string[]
+  author: string
+  readingTime: string
   summary: string
 }
