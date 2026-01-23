@@ -17,4 +17,4 @@ const HeroCallToAction = () => {
   )
 }
 
-export default HeroCallToAction
+export { HeroCallToAction }

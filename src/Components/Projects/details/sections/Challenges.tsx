@@ -1,7 +1,7 @@
 import { Element } from 'react-scroll'
 import { ProjectType } from '../../types'
 import { sections } from './sections'
-import FadeInSection from '@/components/FadeInSection'
+import { FadeInSection } from '@/components/FadeInSection'
 
 const sectionIndex = 4
 
@@ -53,4 +53,4 @@ const Challenges = ({ project }: ChallengesProps) => {
   )
 }
 
-export default Challenges
+export { Challenges }

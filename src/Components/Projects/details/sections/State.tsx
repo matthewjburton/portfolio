@@ -1,5 +1,5 @@
 import { ProjectType } from '../../types'
-import Card from '../Card'
+import { Card } from '../Card'
 import { sections } from './sections'
 
 const sectionIndex = 6
@@ -38,4 +38,4 @@ const State = ({ project }: StateProps) => {
   )
 }
 
-export default State
+export { State }

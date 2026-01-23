@@ -14,4 +14,4 @@ const Tooltip = ({ tooltip, children }: TooltipProps) => {
   )
 }
 
-export default Tooltip
+export { Tooltip }

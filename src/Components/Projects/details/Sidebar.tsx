@@ -33,4 +33,4 @@ const Sidebar = ({ project }: SidebarProps) => {
   )
 }
 
-export default Sidebar
+export { Sidebar }

@@ -13,4 +13,4 @@ const DeviconRow = ({ reverse = false }: { reverse?: boolean }) => {
   )
 }
 
-export default DeviconRow
+export { DeviconRow }

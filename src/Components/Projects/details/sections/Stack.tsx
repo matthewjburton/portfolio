@@ -1,8 +1,8 @@
-import SkillPill from '@/components/skills/SkillPill'
+import { SkillPill } from '@/components/skills/SkillPill'
 import { ProjectType } from '../../types'
 import { sections } from './sections'
 import { Element } from 'react-scroll'
-import FadeInSection from '@/components/FadeInSection'
+import { FadeInSection } from '@/components/FadeInSection'
 
 const sectionIndex = 3
 
@@ -31,4 +31,4 @@ const Stack = ({ project }: StackProps) => {
   )
 }
 
-export default Stack
+export { Stack }

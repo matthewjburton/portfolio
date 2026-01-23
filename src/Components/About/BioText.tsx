@@ -23,4 +23,4 @@ const BioText: React.FC<BioTextProps> = ({ title, education, description }) => {
   )
 }
 
-export default BioText
+export { BioText }

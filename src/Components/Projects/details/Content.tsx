@@ -1,12 +1,12 @@
 import React from 'react'
 import { ProjectType } from '../types'
-import Purpose from './sections/Purpose'
-import Role from './sections/Role'
-import Features from './sections/Features'
-import Stack from './sections/Stack'
-import Challenges from './sections/Challenges'
-import Learned from './sections/Learned'
-import State from './sections/State'
+import { Purpose } from './sections/Purpose'
+import { Role } from './sections/Role'
+import { Features } from './sections/Features'
+import { Stack } from './sections/Stack'
+import { Challenges } from './sections/Challenges'
+import { Learned } from './sections/Learned'
+import { State } from './sections/State'
 
 interface ContentProps {
   project: ProjectType
@@ -24,4 +24,4 @@ const Content: React.FC<ContentProps> = ({ project }) => (
   </div>
 )
 
-export default Content
+export { Content }

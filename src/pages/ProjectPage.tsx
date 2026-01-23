@@ -1,13 +1,13 @@
 import { projects } from '@/data/projects'
 import { slugify } from '@/router/utils/slugify'
 import { useParams } from 'react-router-dom'
-import ProjectDetails from '@/components/projects/details/ProjectDetails'
-import Breadcrumbs from '@/components/Breadcrumbs'
-import Container from '@/components/Container'
-import Banner from '@/components/projects/details/Banner'
+import { ProjectDetails } from '@/components/projects/details/ProjectDetails'
+import { Breadcrumbs } from '@/components/Breadcrumbs'
+import { Container } from '@/components/Container'
+import { Banner } from '@/components/projects/details/Banner'
 
 const ProjectPage = () => {
-  const { slug } = useParams<{ slug: string }>()
+  const { slug } = useParams()
   const project = projects.find((p) => slugify(p.title) === slug)
 
   if (!project) return <p>Project not found</p>
@@ -23,4 +23,4 @@ const ProjectPage = () => {
   )
 }
 
-export default ProjectPage
+export { ProjectPage }

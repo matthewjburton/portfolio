@@ -1,7 +1,7 @@
 import React from 'react'
-import Bio from './Bio'
+import { Bio } from './Bio'
 import { bio } from '../../data/bio'
-import Header from '../Header'
+import { Header } from '../Header'
 import { Element } from 'react-scroll'
 
 const About: React.FC = () => {
@@ -15,4 +15,4 @@ const About: React.FC = () => {
   )
 }
 
-export default About
+export { About }

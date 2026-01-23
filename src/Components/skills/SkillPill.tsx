@@ -25,4 +25,4 @@ const SkillPill = ({
   )
 }
 
-export default SkillPill
+export { SkillPill }

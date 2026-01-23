@@ -1,8 +1,8 @@
 import { Element } from 'react-scroll'
-import BackgroundIcons from './BackgroundIcons'
-import Greeting from './Greeting'
-import RadialBackground from '@/components/hero/RadialBackground'
-import HeroCallToAction from './HeroCallToAction'
+import { BackgroundIcons } from './BackgroundIcons'
+import { Greeting } from './Greeting'
+import { RadialBackground } from '@/components/hero/RadialBackground'
+import { HeroCallToAction } from './HeroCallToAction'
 
 const Hero = () => {
   return (
@@ -18,4 +18,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export { Hero }

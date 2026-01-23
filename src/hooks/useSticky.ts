@@ -17,4 +17,4 @@ const useSticky = (threshold = 0) => {
   return isSticky
 }
 
-export default useSticky
+export { useSticky }

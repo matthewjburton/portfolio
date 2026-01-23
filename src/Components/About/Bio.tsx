@@ -1,7 +1,7 @@
 import React from 'react'
-import FadeInSection from '../FadeInSection'
-import Portrait from './Portrait'
-import BioText from './BioText'
+import { FadeInSection } from '../FadeInSection'
+import { Portrait } from './Portrait'
+import { BioText } from './BioText'
 
 interface BioProps {
   imageSrc: string
@@ -34,4 +34,4 @@ const Bio: React.FC<BioProps> = ({
   )
 }
 
-export default Bio
+export { Bio }

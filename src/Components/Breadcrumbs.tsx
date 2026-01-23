@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { ROUTES } from '@/router/routes'
 
 interface BreadcrumbsProps {
   project: string
@@ -7,10 +8,10 @@ interface BreadcrumbsProps {
 const Breadcrumbs = ({ project }: BreadcrumbsProps) => (
   <nav aria-label="breadcrumb" style={{ marginBottom: '1rem' }}>
     <span className="text-text-muted dark:text-dark-text-muted hover:underline">
-      <Link to="/">Home</Link>
+      <Link to={ROUTES.HOME}>Home</Link>
     </span>
     <span className="text-text dark:text-dark-text"> / {project}</span>
   </nav>
 )
 
-export default Breadcrumbs
+export { Breadcrumbs }

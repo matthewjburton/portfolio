@@ -1,5 +1,5 @@
 import React from 'react'
-import FadeInSection from './FadeInSection'
+import { FadeInSection } from './FadeInSection'
 
 interface HeaderProps {
   text: string
@@ -17,4 +17,4 @@ const Header: React.FC<HeaderProps> = ({ text }) => {
   )
 }
 
-export default Header
+export { Header }

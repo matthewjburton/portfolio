@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { ProjectType } from '../../types'
 import { sections } from './sections'
-import FadeInSection from '@/components/FadeInSection'
+import { FadeInSection } from '@/components/FadeInSection'
 import { Element } from 'react-scroll'
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -100,4 +100,4 @@ const Features = ({ project }: FeaturesProps) => {
   )
 }
 
-export default Features
+export { Features }

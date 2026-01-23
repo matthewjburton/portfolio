@@ -1,8 +1,8 @@
-import SkillPill from '@/components/skills/SkillPill'
+import { SkillPill } from '@/components/skills/SkillPill'
 import { ProjectType } from '../../types'
 import { sections } from './sections'
 import { Element } from 'react-scroll'
-import FadeInSection from '@/components/FadeInSection'
+import { FadeInSection } from '@/components/FadeInSection'
 
 const sectionIndex = 1
 const defaultRole = 'Not Specified'
@@ -47,4 +47,4 @@ const Role = ({ project }: RoleProps) => {
   )
 }
 
-export default Role
+export { Role }

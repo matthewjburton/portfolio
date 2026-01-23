@@ -12,4 +12,4 @@ const Greeting = () => {
   )
 }
 
-export default Greeting
+export { Greeting }

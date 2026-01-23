@@ -1,9 +1,10 @@
 import React from 'react'
-import FadeInSection from '../../FadeInSection'
+import { FadeInSection } from '../../FadeInSection'
 import { Link } from 'react-router-dom'
 import { slugify } from '@/router/utils/slugify'
-import TechStack from './TechStack'
-import Card from './Card'
+import { ROUTES } from '@/router/routes'
+import { TechStack } from './TechStack'
+import { Card } from './Card'
 import { ProjectType } from '../types'
 
 interface ProjectCardProps {
@@ -17,7 +18,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       className="h-full transition-transform duration-300 ease-in-out hover:scale-103"
     >
       <FadeInSection>
-        <Link to={`/${slugify(project.title)}`}>
+        <Link to={ROUTES.PROJECTS.DETAIL(slugify(project.title))}>
           <Card>
             <div className="flex flex-col gap-2">
               <div className="text-start text-xl font-bold md:text-2xl lg:text-3xl">
@@ -41,4 +42,4 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   )
 }
 
-export default ProjectCard
+export { ProjectCard }

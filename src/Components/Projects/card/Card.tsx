@@ -14,4 +14,4 @@ const Card = ({ children }: CardProps) => {
   )
 }
 
-export default Card
+export { Card }

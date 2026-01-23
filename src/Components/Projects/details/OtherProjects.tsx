@@ -2,6 +2,7 @@ import { ProjectType } from '../types'
 import { useSortedProjects } from '../hooks/useSortedProjectsHook'
 import { Link } from 'react-router-dom'
 import { slugify } from '@/router/utils/slugify'
+import { ROUTES } from '@/router/routes'
 
 interface OtherProjectsProps {
   project: ProjectType
@@ -31,7 +32,7 @@ const OtherProjects = ({ project }: OtherProjectsProps) => {
               {nextProject.description}
             </p>
             <Link
-              to={`/${slugify(nextProject.title)}`}
+              to={ROUTES.PROJECTS.DETAIL(slugify(nextProject.title))}
               className="text-gradient-accent items:center mt-auto hover:underline"
             >
               View Case Study <i className="fa-solid fa-arrow-right" />
@@ -43,4 +44,4 @@ const OtherProjects = ({ project }: OtherProjectsProps) => {
   )
 }
 
-export default OtherProjects
+export { OtherProjects }

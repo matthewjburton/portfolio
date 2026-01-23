@@ -2,7 +2,7 @@ import { footer } from '../data/footer'
 import React from 'react'
 
 import { Link as ScrollLink } from 'react-scroll'
-import Tooltip from './Tooltip'
+import { Tooltip } from './Tooltip'
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear()
@@ -38,4 +38,4 @@ const Footer: React.FC = () => {
   )
 }
 
-export default Footer
+export { Footer }

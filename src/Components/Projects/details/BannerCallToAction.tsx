@@ -25,4 +25,4 @@ const BannerCallToAction = ({ project }: BannerCallToActionProps) => {
   )
 }
 
-export default BannerCallToAction
+export { BannerCallToAction }

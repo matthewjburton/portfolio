@@ -1,7 +1,7 @@
 import React from 'react'
 import { skills } from '../../data/skills'
-import FadeInSection from '../FadeInSection'
-import SkillPill from './SkillPill'
+import { FadeInSection } from '../FadeInSection'
+import { SkillPill } from './SkillPill'
 
 const Skills: React.FC = () => {
   return (
@@ -15,4 +15,4 @@ const Skills: React.FC = () => {
   )
 }
 
-export default Skills
+export { Skills }

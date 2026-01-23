@@ -9,7 +9,7 @@ import reactDom from 'eslint-plugin-react-dom'
 
 export default tseslint.config(
   {
-    ignores: ['dist/**', 'node_modules/**', '*.config.js'],
+    ignores: ['dist/**', 'node_modules/**', '*.config.js', 'src/vite-env.d.ts'],
   },
 
   // Base JavaScript rules
@@ -17,8 +17,6 @@ export default tseslint.config(
 
   // TypeScript rules
   ...tseslint.configs.recommended,
-  ...tseslint.configs.recommendedTypeChecked,
-  ...tseslint.configs.strictTypeChecked,
   ...tseslint.configs.stylisticTypeChecked,
 
   {

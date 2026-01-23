@@ -1,4 +1,4 @@
-import FadeInSection from '@/components/FadeInSection'
+import { FadeInSection } from '@/components/FadeInSection'
 import { Element } from 'react-scroll'
 
 interface CardProps {
@@ -29,4 +29,4 @@ const Card = ({ children, className, title }: CardProps) => {
   )
 }
 
-export default Card
+export { Card }

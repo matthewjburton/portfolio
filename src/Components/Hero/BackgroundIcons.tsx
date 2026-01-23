@@ -1,4 +1,4 @@
-import DeviconRow from './DeviconRow'
+import { DeviconRow } from './DeviconRow'
 
 const BackgroundIcons = () => {
   return (
@@ -16,4 +16,4 @@ const BackgroundIcons = () => {
   )
 }
 
-export default BackgroundIcons
+export { BackgroundIcons }

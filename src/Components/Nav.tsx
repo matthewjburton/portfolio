@@ -1,4 +1,4 @@
-import useSticky from '@/hooks/useSticky'
+import { useSticky } from '@/hooks/useSticky'
 import React from 'react'
 import { Link as ScrollLink } from 'react-scroll'
 
@@ -29,4 +29,4 @@ const Nav: React.FC = () => {
   )
 }
 
-export default Nav
+export { Nav }

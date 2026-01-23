@@ -15,4 +15,4 @@ const Portrait = ({ imageSrc, altText }: PortraitProps) => {
   )
 }
 
-export default Portrait
+export { Portrait }

@@ -16,4 +16,4 @@ const TechStack = ({ stack }: TechStackProps) => {
   )
 }
 
-export default TechStack
+export { TechStack }

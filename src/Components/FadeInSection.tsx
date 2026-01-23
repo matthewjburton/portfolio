@@ -21,4 +21,4 @@ const FadeInSection = ({ children }: FadeInSectionProps) => {
   )
 }
 
-export default FadeInSection
+export { FadeInSection }

@@ -1,8 +1,8 @@
 import React from 'react'
-import Sidebar from './Sidebar'
-import Content from './Content'
+import { Sidebar } from './Sidebar'
+import { Content } from './Content'
 import { ProjectType } from '../types'
-import OtherProjects from './OtherProjects'
+import { OtherProjects } from './OtherProjects'
 
 interface ProjectDetailsProps {
   project: ProjectType
@@ -18,4 +18,4 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => (
   </div>
 )
 
-export default ProjectDetails
+export { ProjectDetails }

@@ -1,7 +1,7 @@
 import { Element } from 'react-scroll'
 import { ProjectType } from '../types'
-import BannerCallToAction from './BannerCallToAction'
-import RadialBackground from '@/components/hero/RadialBackground'
+import { BannerCallToAction } from './BannerCallToAction'
+import { RadialBackground } from '@/components/hero/RadialBackground'
 
 interface BannerProps {
   project: ProjectType
@@ -34,4 +34,4 @@ const Banner = ({ project }: BannerProps) => {
   )
 }
 
-export default Banner
+export { Banner }
