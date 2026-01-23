@@ -1,11 +1,8 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
-import mdx from '@mdx-js/rollup'
 import path from 'path'
 import fs from 'fs'
-import remarkFrontmatter from 'remark-frontmatter'
-import remarkMdxFrontmatter from 'remark-mdx-frontmatter'
 
 export const DEVELOPMENT_BASE = '/'
 export const PRODUCTION_BASE = '/portfolio'
@@ -23,17 +20,7 @@ function spaFallbackPlugin() {
 }
 
 export default defineConfig(({ mode }) => ({
-  plugins: [
-    react(),
-    tailwindcss(),
-    spaFallbackPlugin(),
-    mdx({
-      remarkPlugins: [
-        remarkFrontmatter,
-        [remarkMdxFrontmatter, { name: 'frontmatter' }],
-      ],
-    }),
-  ],
+  plugins: [react(), tailwindcss(), spaFallbackPlugin()],
   base: mode === 'production' ? PRODUCTION_BASE : DEVELOPMENT_BASE,
   resolve: {
     alias: {
