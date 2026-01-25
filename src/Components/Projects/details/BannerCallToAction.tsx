@@ -1,6 +1,6 @@
 import { Link as ScrollLink } from 'react-scroll'
 import { sections } from './sections/sections'
-import { ProjectType } from '../types'
+import { ProjectType } from '@/types/content'
 
 interface BannerCallToActionProps {
   project: ProjectType

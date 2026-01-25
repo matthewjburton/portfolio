@@ -1,4 +1,6 @@
-import { ProjectType } from '@/types/content'
+import PrefabSerializationMitigation from './posts/PrefabSerializationMitigation'
+import { prefabSerializationMitigation } from './posts/PrefabSerializationMitigation.meta'
+
 import { cavesOfCombat } from './projects/caves-of-combat'
 import { warehouseInventory } from './projects/warehouse-inventory'
 import { businessCaseForm } from './projects/business-case-form'
@@ -8,6 +10,15 @@ import { expenseReport } from './projects/expense-report'
 import { fullStackOpen } from './projects/full-stack-open'
 import { endlessBreakout } from './projects/endless-breakout'
 import { fabricationDashboard } from './projects/fabrication-dashboard'
+import { ProjectType } from '@/types/content'
+import { PostType } from '@/types/content'
+
+export const posts: PostType[] = [
+  {
+    post: PrefabSerializationMitigation,
+    meta: prefabSerializationMitigation,
+  },
+]
 
 export const projects: ProjectType[] = [
   comfortAirlines,

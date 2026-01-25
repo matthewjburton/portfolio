@@ -1,4 +1,4 @@
-import { PostMetaType } from '../types'
+import { PostMetaType } from '@/types/content'
 import { formatDate } from '@/utils/formatDate'
 
 interface PostMetaProps {

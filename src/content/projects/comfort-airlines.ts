@@ -1,4 +1,4 @@
-import { ProjectType } from '@/components/projects/types'
+import { ProjectType } from '@/types/content'
 
 export const comfortAirlines: ProjectType = {
   id: 1,

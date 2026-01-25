@@ -1,4 +1,4 @@
-import { ProjectType } from '../types'
+import { ProjectType } from '@/types/content'
 import { useSortedProjects } from '../hooks/useSortedProjects'
 import { Link } from 'react-router-dom'
 import { slugify } from '@/router/utils/slugify'

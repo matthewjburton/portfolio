@@ -1,4 +1,4 @@
-import { ProjectType } from '../../types'
+import { ProjectType } from '@/types/content'
 import { Card } from '../Card'
 import { sections } from './sections'
 

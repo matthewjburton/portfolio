@@ -1,5 +1,5 @@
 import { Element } from 'react-scroll'
-import { ProjectType } from '../../types'
+import { ProjectType } from '@/types/content'
 import { sections } from './sections'
 import { FadeInSection } from '@/components/FadeInSection'
 

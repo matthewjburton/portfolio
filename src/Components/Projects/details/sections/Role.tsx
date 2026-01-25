@@ -1,5 +1,5 @@
 import { SkillPill } from '@/components/skills/SkillPill'
-import { ProjectType } from '../../types'
+import { ProjectType } from '@/types/content'
 import { sections } from './sections'
 import { Element } from 'react-scroll'
 import { FadeInSection } from '@/components/FadeInSection'

@@ -4,7 +4,7 @@ import { slugify } from '@/router/utils/slugify'
 import { ROUTES } from '@/router/routes'
 import { TechStack } from './TechStack'
 import { Card } from '../../Card'
-import { ProjectType } from '../types'
+import { ProjectType } from '@/types/content'
 
 interface ProjectCardProps {
   project: ProjectType

@@ -1,4 +1,4 @@
-import { ProjectType } from '@/components/projects/types'
+import { ProjectType } from '@/types/content'
 
 export const businessCaseForm: ProjectType = {
   id: 2,

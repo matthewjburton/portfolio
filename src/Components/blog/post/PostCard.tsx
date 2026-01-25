@@ -3,7 +3,7 @@ import { slugify } from '@/router/utils/slugify'
 import { ROUTES } from '@/router/routes'
 
 import { FadeInSection } from '../../FadeInSection'
-import { PostType } from '../types'
+import { PostType } from '@/types/content'
 import { Card } from '../../Card'
 import { formatDate } from '@/utils/formatDate'
 

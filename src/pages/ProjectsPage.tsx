@@ -1,14 +1,14 @@
-import { AllPosts } from '@/components/blog/AllPosts'
+import { AllProjects } from '@/components/projects/AllProjects'
 import { Breadcrumbs } from '@/components/Breadcrumbs'
 import { Container } from '@/components/Container'
 
-const BlogPage = () => (
+const ProjectsPage = () => (
     <div className="flex flex-col p-8">
-        <Breadcrumbs />
+        <Breadcrumbs type="projects" />
         <Container>
-            <AllPosts />
+            <AllProjects />
         </Container>
     </div>
 )
 
-export { BlogPage }
+export { ProjectsPage }

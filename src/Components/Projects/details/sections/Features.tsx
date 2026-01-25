@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { ProjectType } from '../../types'
+import { ProjectType } from '@/types/content'
 import { sections } from './sections'
 import { FadeInSection } from '@/components/FadeInSection'
 import { Element } from 'react-scroll'

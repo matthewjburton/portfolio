@@ -1,4 +1,4 @@
-import { ProjectType } from '../types'
+import { ProjectType } from '@/types/content'
 import { Purpose } from './sections/Purpose'
 import { Role } from './sections/Role'
 import { Features } from './sections/Features'

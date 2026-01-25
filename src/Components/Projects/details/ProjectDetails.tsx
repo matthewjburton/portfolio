@@ -1,6 +1,6 @@
 import { Sidebar } from './Sidebar'
 import { Content } from './Content'
-import { ProjectType } from '../types'
+import { ProjectType } from '@/types/content'
 import { OtherProjects } from './OtherProjects'
 
 interface ProjectDetailsProps {

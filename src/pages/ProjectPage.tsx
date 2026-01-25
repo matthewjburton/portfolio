@@ -1,5 +1,4 @@
-import { projects } from '@/content/projects'
-import { slugify } from '@/router/utils/slugify'
+import { findProjectBySlug } from '@/content/utils'
 import { useParams } from 'react-router-dom'
 import { ProjectDetails } from '@/components/projects/details/ProjectDetails'
 import { Breadcrumbs } from '@/components/Breadcrumbs'
@@ -8,15 +7,15 @@ import { Banner } from '@/components/projects/details/Banner'
 
 const ProjectPage = () => {
   const { slug } = useParams()
-  const project = projects.find((p) => slugify(p.title) === slug)
-
-  if (!project) return <p>Project not found</p>
+  if (!slug) return
+  const project = findProjectBySlug(slug)
+  if (!project) return
 
   return (
     <div className="flex flex-col gap-12">
       <Banner project={project} />
       <Container>
-        <Breadcrumbs project={project.title} />
+        <Breadcrumbs type="projects" title={project.title} />
         <ProjectDetails project={project} />
       </Container>
     </div>
