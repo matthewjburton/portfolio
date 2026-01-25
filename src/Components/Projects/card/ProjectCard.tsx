@@ -1,4 +1,3 @@
-import React from 'react'
 import { FadeInSection } from '../../FadeInSection'
 import { Link } from 'react-router-dom'
 import { slugify } from '@/router/utils/slugify'
@@ -11,7 +10,7 @@ interface ProjectCardProps {
   project: ProjectType
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
+const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
     <div
       key={project.id}

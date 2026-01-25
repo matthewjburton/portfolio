@@ -1,6 +1,10 @@
 import React from 'react'
 
-const Wrapper: React.FC<React.PropsWithChildren> = ({ children }) => {
+interface WrapperProps {
+  children: React.ReactNode
+}
+
+const Wrapper = ({ children }: WrapperProps) => {
   return <div className="flex min-h-screen flex-col">{children}</div>
 }
 

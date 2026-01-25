@@ -5,7 +5,7 @@ interface QuoteProps {
   author?: string
 }
 
-const Quote: React.FC<QuoteProps> = ({ children, author }) => (
+const Quote = ({ children, author }: QuoteProps) => (
   <blockquote className="border-accent dark:border-dark-accent bg-accent/5 dark:bg-dark-accent/5 text-text-muted dark:text-dark-text-muted my-6 border-l-4 py-3 pl-4 italic">
     <p className="mb-2">{children}</p>
     {author && (
@@ -16,4 +16,4 @@ const Quote: React.FC<QuoteProps> = ({ children, author }) => (
   </blockquote>
 )
 
-export default Quote
+export { Quote }

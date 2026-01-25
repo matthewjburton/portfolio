@@ -1,12 +1,11 @@
-import React from 'react'
-import { PostMetaType } from './types'
+import { PostMetaType } from '../types'
 import { formatDate } from '@/utils/formatDate'
 
 interface PostMetaProps {
   meta: PostMetaType
 }
 
-const PostMeta: React.FC<PostMetaProps> = ({ meta }) => {
+const PostMeta = ({ meta }: PostMetaProps) => {
   const { date, tags, author, readingTime } = meta
 
   return (
@@ -32,4 +31,4 @@ const PostMeta: React.FC<PostMetaProps> = ({ meta }) => {
   )
 }
 
-export default PostMeta
+export { PostMeta }

@@ -1,4 +1,3 @@
-import React from 'react'
 import { ProjectType } from '../types'
 import { Purpose } from './sections/Purpose'
 import { Role } from './sections/Role'
@@ -12,7 +11,7 @@ interface ContentProps {
   project: ProjectType
 }
 
-const Content: React.FC<ContentProps> = ({ project }) => (
+const Content = ({ project }: ContentProps) => (
   <div className="mb-12 flex w-full flex-col gap-24">
     <Purpose project={project} />
     <Role project={project} />

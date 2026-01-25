@@ -1,4 +1,5 @@
 import { About } from '@/components/about/About'
+import { Blog } from '@/components/blog/Blog'
 import { Container } from '@/components/Container'
 import { Hero } from '@/components/hero/Hero'
 import { Nav } from '@/components/Nav'
@@ -11,6 +12,7 @@ const HomePage = () => (
     <Nav />
     <Container>
       <Projects />
+      <Blog />
       <About />
       <Skills />
     </Container>

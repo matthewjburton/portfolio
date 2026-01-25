@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 
 interface HeadingItem {
   id: string
@@ -6,7 +6,7 @@ interface HeadingItem {
   level: number
 }
 
-const TableOfContents: React.FC = () => {
+const TableOfContents = () => {
   const [activeId, setActiveId] = useState<string>('')
 
    // Memoize the headings so it only calculates once
@@ -70,4 +70,4 @@ const TableOfContents: React.FC = () => {
   )
 }
 
-export default TableOfContents
+export { TableOfContents }

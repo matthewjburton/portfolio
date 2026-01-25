@@ -10,9 +10,9 @@ export const ROUTES = {
     PATTERN: 'projects/:slug',
     DETAIL: (slug: string) => `/projects/${slug}`,
   },
-  POSTS: {
-    ROOT: '/posts',
-    PATTERN: 'posts/:slug',
-    DETAIL: (slug: string) => `/posts/${slug}`,
+  BLOG: {
+    ROOT: '/blog',
+    PATTERN: 'blog/:slug',
+    DETAIL: (slug: string) => `/blog/${slug}`,
   },
 } as const

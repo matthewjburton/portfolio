@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 import { ROUTES } from '@/router/routes'
 
@@ -13,14 +12,14 @@ interface PrevNextLinksProps {
   }
 }
 
-const PrevNextLinks: React.FC<PrevNextLinksProps> = ({
+const PrevNextLinks = ({
   prevPost,
   nextPost,
-}) => (
+}: PrevNextLinksProps) => (
   <div className="border-border dark:border-dark-border mt-12 flex justify-between border-t pt-8">
     {prevPost ? (
       <Link
-        to={ROUTES.POSTS.DETAIL(prevPost.slug)}
+        to={ROUTES.BLOG.DETAIL(prevPost.slug)}
         className="text-gradient-accent flex items-center gap-2 transition hover:underline"
       >
         <i className="fa-solid fa-arrow-left" />
@@ -31,7 +30,7 @@ const PrevNextLinks: React.FC<PrevNextLinksProps> = ({
     )}
     {nextPost ? (
       <Link
-        to={ROUTES.POSTS.DETAIL(nextPost.slug)}
+        to={ROUTES.BLOG.DETAIL(nextPost.slug)}
         className="text-gradient-accent flex items-center gap-2 transition hover:underline"
       >
         {nextPost.title}
@@ -43,4 +42,4 @@ const PrevNextLinks: React.FC<PrevNextLinksProps> = ({
   </div>
 )
 
-export default PrevNextLinks
+export { PrevNextLinks }

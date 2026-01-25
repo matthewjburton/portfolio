@@ -1,19 +1,19 @@
-import { Aside } from '@/components/posts/Aside'
-import CodeBlock from '@/components/posts/CodeBlock'
-import { Code } from '@/components/posts/Code'
-import List, { ListItem } from '@/components/posts/List'
-import { Note } from '@/components/posts/Note'
-import PrevNextLinks from '@/components/posts/PrevNextLinks'
-import Quote from '@/components/posts/Quote'
-import { Section } from '@/components/posts/Section'
-import { SectionHeader } from '@/components/posts/SectionHeader'
+import { Aside } from '@/components/blog/post/sections/Aside'
+import { CodeBlock } from '@/components/blog/post/sections/CodeBlock'
+import { Code } from '@/components/blog/post/sections/Code'
+import {List, ListItem } from '@/components/blog/post/sections/List'
+import { Note } from '@/components/blog/post/sections/Note'
+import { PrevNextLinks} from '@/components/blog/post/PrevNextLinks'
+import { Quote }from '@/components/blog/post/sections/Quote'
+import { Section } from '@/components/blog/post/sections/Section'
+import { Header } from '@/components/blog/post/sections/Header'
 
 const PrefabSerializationMitigation = () => (
   <>
     <Section>
-      <SectionHeader>
+      <Header>
         The Hidden Cost of Refactoring Unity Components
-      </SectionHeader>
+      </Header>
       If you've worked in Unity long enough, you've probably felt this pain: You
       attach a component like <Code>EnemyHealth</Code> to dozens (or hundreds)
       of prefabs. Everything works fine. Then one day, you decide to clean
@@ -30,7 +30,7 @@ const PrefabSerializationMitigation = () => (
     </Section>
 
     <Section>
-      <SectionHeader>Why This Becomes a Real Problem at Scale</SectionHeader>
+      <Header>Why This Becomes a Real Problem at Scale</Header>
       On a small prototype, resetting a few prefabs is annoying but manageable.
       On a mature project, it becomes a serious drag on velocity. The core issue
       isn't just lost values—
@@ -44,7 +44,7 @@ const PrefabSerializationMitigation = () => (
     </Section>
 
     <Section>
-      <SectionHeader>Common Pain Points in Practice</SectionHeader>
+      <Header>Common Pain Points in Practice</Header>
 
       <List>
         <ListItem>
@@ -69,9 +69,9 @@ const PrefabSerializationMitigation = () => (
     </Section>
 
     <Section>
-      <SectionHeader>
+      <Header>
         The Root Cause: How Unity Serialization Works
-      </SectionHeader>
+      </Header>
       <Quote>
         Unity does not serialize components by "meaning" or intent—only by field
         name and type.
@@ -88,9 +88,9 @@ const PrefabSerializationMitigation = () => (
     </Section>
 
     <Section>
-      <SectionHeader>
+      <Header>
         Practical Strategies to Reduce Refactoring Pain
-      </SectionHeader>
+      </Header>
 
       <div className="space-y-8">
         <div>
@@ -189,7 +189,7 @@ public class EnemyHealth : MonoBehaviour
     </Section>
 
     <Section>
-      <SectionHeader>Trade-Offs to Be Aware Of</SectionHeader>
+      <Header>Trade-Offs to Be Aware Of</Header>
       No strategy is free. Each comes with costs worth considering:
       <List>
         <ListItem>
@@ -211,7 +211,7 @@ public class EnemyHealth : MonoBehaviour
     </Section>
 
     <Section>
-      <SectionHeader>A Broader Architectural Insight</SectionHeader>
+      <Header>A Broader Architectural Insight</Header>
       <Quote>
         Prefab serialization is fragile by nature—robust Unity architectures
         work around that fragility, not against it.
@@ -222,7 +222,7 @@ public class EnemyHealth : MonoBehaviour
     </Section>
 
     <Section>
-      <SectionHeader>Practical Rules of Thumb</SectionHeader>
+      <Header>Practical Rules of Thumb</Header>
       <List ordered>
         <ListItem>
           Always use <Code>[FormerlySerializedAs]</Code> when renaming

@@ -1,11 +1,10 @@
-import React from 'react'
 import { FadeInSection } from './FadeInSection'
 
 interface HeaderProps {
   text: string
 }
 
-const Header: React.FC<HeaderProps> = ({ text }) => {
+const Header = ({ text }: HeaderProps) => {
   return (
     <div className="self-center">
       <FadeInSection>

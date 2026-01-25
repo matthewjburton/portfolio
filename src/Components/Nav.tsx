@@ -1,17 +1,15 @@
+import { SECTIONS } from '@/content/sections'
 import { useSticky } from '@/hooks/useSticky'
-import React from 'react'
 import { Link as ScrollLink } from 'react-scroll'
 
-const sections = ['Home', 'Projects', 'About']
-
-const Nav: React.FC = () => {
+const Nav = () => {
   const isSticky = useSticky()
 
   return (
     <nav
       className={`bg-background dark:bg-dark-background z-20 flex w-full flex-row justify-center text-2xl ${isSticky ? 'sticky top-0 shadow-md' : ''}`}
     >
-      {sections.map((section) => (
+      {Object.entries(SECTIONS).map(([_, section]) => (
         <ScrollLink
           key={section}
           to={section}

@@ -5,7 +5,7 @@ interface ListProps {
   ordered?: boolean
 }
 
-const List: React.FC<ListProps> = ({ children, ordered = false }) => {
+const List = ({ children, ordered = false }: ListProps) => {
   const Tag = ordered ? 'ol' : 'ul'
   return (
     <Tag className="text-text dark:text-dark-text my-4 ml-6 space-y-2">
@@ -14,12 +14,15 @@ const List: React.FC<ListProps> = ({ children, ordered = false }) => {
   )
 }
 
-export default List
 
-export const ListItem: React.FC<{ children: React.ReactNode }> = ({
-  children,
-}) => (
+interface ListItemProps {
+  children: React.ReactNode
+} 
+
+const ListItem = ({ children }: ListItemProps) => (
   <li className="marker:text-accent dark:marker:text-dark-accent list-disc">
     {children}
   </li>
 )
+
+export { List, ListItem }

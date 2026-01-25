@@ -1,9 +1,9 @@
 import { useParams } from 'react-router-dom'
-import { Container } from '@/components/posts/Container'
+import { Container } from '@/components/blog/post/sections/Container'
 import { posts } from '@/content/posts'
 import { slugify } from '@/router/utils/slugify'
 import { Breadcrumbs } from '@/components/Breadcrumbs'
-import PostMeta from '@/components/posts/PostMeta'
+import { PostMeta } from '@/components/blog/post/PostMeta'
 
 const PostPage = () => {
   const { slug } = useParams<{ slug: string }>()

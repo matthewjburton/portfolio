@@ -11,13 +11,13 @@ interface BioProps {
   description: React.ReactNode
 }
 
-const Bio: React.FC<BioProps> = ({
+const Bio = ({
   imageSrc,
   altText,
   title,
   education,
   description,
-}) => {
+}: BioProps) => {
   return (
     <>
       <FadeInSection>

@@ -1,9 +1,9 @@
 import { Element } from 'react-scroll'
 import { Header } from '../Header'
-import { PostCard } from './PostCard'
-import { useSortedPosts } from './hooks/useSortedPosts'
+import { useSortedPosts } from './post/hooks/useSortedPosts'
+import { PostCard } from './post/PostCard'
 
-const Posts = () => {
+const AllPosts = () => {
   const { posts } = useSortedPosts()
 
   return (
@@ -20,4 +20,4 @@ const Posts = () => {
   )
 }
 
-export { Posts }
+export { AllPosts }

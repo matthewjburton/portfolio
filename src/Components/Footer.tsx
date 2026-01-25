@@ -4,7 +4,7 @@ import React from 'react'
 import { Link as ScrollLink } from 'react-scroll'
 import { Tooltip } from './Tooltip'
 
-const Footer: React.FC = () => {
+const Footer = () => {
   const currentYear = new Date().getFullYear()
   return (
     <div className="bg-background dark:bg-dark-background relative flex w-full flex-col items-center gap-8 py-12">

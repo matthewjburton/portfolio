@@ -1,6 +1,6 @@
 import PrefabSerializationMitigation from './posts/PrefabSerializationMitigation'
 import { prefabSerializationMitigation } from './posts/PrefabSerializationMitigation.meta'
-import { PostType } from '@/components/posts/types'
+import { PostType } from '@/components/blog/types'
 
 export const posts: PostType[] = [
   {

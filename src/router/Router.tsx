@@ -6,7 +6,7 @@ import { basename } from './basename'
 import { ScrollToTop } from './ScrollToTop'
 import { PostPage } from '@/pages/PostPage'
 import { ROUTES } from './routes'
-import { PostsPage } from '@/pages/PostsPage'
+import { BlogPage } from '@/pages/BlogPage'
 
 const Router = () => (
   <BrowserRouter basename={basename}>
@@ -15,8 +15,8 @@ const Router = () => (
       <Route path={ROUTES.HOME} element={<Layout />}>
         <Route index element={<HomePage />} />
         <Route path={ROUTES.PROJECTS.PATTERN} element={<ProjectPage />} />
-        <Route path={ROUTES.POSTS.ROOT} element={<PostsPage />} />
-        <Route path={ROUTES.POSTS.PATTERN} element={<PostPage />} />
+        <Route path={ROUTES.BLOG.ROOT} element={<BlogPage />} />
+        <Route path={ROUTES.BLOG.PATTERN} element={<PostPage />} />
       </Route>
     </Routes>
   </BrowserRouter>

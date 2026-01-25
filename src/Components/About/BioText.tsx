@@ -6,7 +6,7 @@ interface BioTextProps {
   description: React.ReactNode
 }
 
-const BioText: React.FC<BioTextProps> = ({ title, education, description }) => {
+const BioText = ({ title, education, description }: BioTextProps) => {
   return (
     <div className="flex w-full flex-col items-start gap-4">
       <div className="flex flex-col gap-2">

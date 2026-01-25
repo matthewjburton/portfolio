@@ -1,4 +1,3 @@
-import React from 'react'
 import { Light as SyntaxHighlighter } from 'react-syntax-highlighter'
 import csharp from 'react-syntax-highlighter/dist/esm/languages/hljs/csharp'
 import javascript from 'react-syntax-highlighter/dist/esm/languages/hljs/javascript'
@@ -38,11 +37,11 @@ interface CodeBlockProps {
   language?: string
 }
 
-const CodeBlock: React.FC<CodeBlockProps> = ({
+const CodeBlock = ({
   children,
   language = 'javascript',
-}) => (
-  <div className="bg-background dark:bg-dark-background border-t-highlight dark:border-t-dark-highlight border-border dark:border-dark-border my-6 overflow-x-auto rounded-md border-1 shadow-lg">
+}: CodeBlockProps) => (
+  <div className="bg-background dark:bg-dark-background border-t-highlight dark:border-t-dark-highlight border-border dark:border-dark-border my-6 overflow-x-auto rounded-md border shadow-lg">
     {language && (
       <div className="bg-dark-background-light text-dark-text-muted dark:text-text-muted px-3 py-1 text-xs font-semibold">
         {language}
@@ -59,4 +58,4 @@ const CodeBlock: React.FC<CodeBlockProps> = ({
   </div>
 )
 
-export default CodeBlock
+export { CodeBlock }

@@ -3,7 +3,7 @@ import { skills } from '../../content/skills'
 import { FadeInSection } from '../FadeInSection'
 import { SkillPill } from './SkillPill'
 
-const Skills: React.FC = () => {
+const Skills = () => {
   return (
     <FadeInSection>
       <div className="my-12 flex flex-wrap justify-center gap-2">

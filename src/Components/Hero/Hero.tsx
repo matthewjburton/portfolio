@@ -3,11 +3,12 @@ import { BackgroundIcons } from './BackgroundIcons'
 import { Greeting } from './Greeting'
 import { RadialBackground } from '@/components/hero/RadialBackground'
 import { HeroCallToAction } from './HeroCallToAction'
+import { SECTIONS } from '@/content/sections'
 
 const Hero = () => {
   return (
     <Element
-      name="Home"
+      name={SECTIONS.home}
       className="relative flex h-screen flex-col items-center justify-center gap-8 overflow-hidden p-4 text-center text-wrap lg:p-8"
     >
       <RadialBackground />

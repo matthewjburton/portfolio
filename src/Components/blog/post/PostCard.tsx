@@ -1,18 +1,17 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 import { slugify } from '@/router/utils/slugify'
 import { ROUTES } from '@/router/routes'
 
-import { FadeInSection } from '../FadeInSection'
-import { PostType } from './types'
-import { Card } from '../Card'
+import { FadeInSection } from '../../FadeInSection'
+import { PostType } from '../types'
+import { Card } from '../../Card'
 import { formatDate } from '@/utils/formatDate'
 
 interface PostCardProps {
   post: PostType
 }
 
-const PostCard: React.FC<PostCardProps> = ({ post }) => {
+const PostCard = ({ post }: PostCardProps) => {
     const { title, slug, summary, date, tags } = post.meta
   return (
     <div
@@ -20,7 +19,7 @@ const PostCard: React.FC<PostCardProps> = ({ post }) => {
       className="h-full transition-transform duration-300 ease-in-out hover:scale-103"
     >
       <FadeInSection>
-        <Link to={ROUTES.POSTS.DETAIL(slugify(slug))}>
+        <Link to={ROUTES.BLOG.DETAIL(slugify(slug))}>
           <Card>
             <div className="flex flex-col gap-2">
               <div className="text-start text-xl font-bold md:text-2xl lg:text-3xl">
