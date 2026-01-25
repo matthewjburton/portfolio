@@ -1,9 +1,8 @@
-import { JSX } from 'react'
-import { PostMetaType } from './posts/types'
 import PrefabSerializationMitigation from './posts/PrefabSerializationMitigation'
 import { prefabSerializationMitigation } from './posts/PrefabSerializationMitigation.meta'
+import { PostType } from '@/components/posts/types'
 
-export const posts: { post: () => JSX.Element; meta: PostMetaType }[] = [
+export const posts: PostType[] = [
   {
     post: PrefabSerializationMitigation,
     meta: prefabSerializationMitigation,

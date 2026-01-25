@@ -1,4 +1,4 @@
-import { projects } from '@/data/projects'
+import { projects } from '@/content/projects'
 import { slugify } from '@/router/utils/slugify'
 import { useParams } from 'react-router-dom'
 import { ProjectDetails } from '@/components/projects/details/ProjectDetails'

@@ -1,8 +1,9 @@
 import { ProjectType } from '../types'
-import { useSortedProjects } from '../hooks/useSortedProjectsHook'
+import { useSortedProjects } from '../hooks/useSortedProjects'
 import { Link } from 'react-router-dom'
 import { slugify } from '@/router/utils/slugify'
 import { ROUTES } from '@/router/routes'
+import { useMemo } from 'react'
 
 interface OtherProjectsProps {
   project: ProjectType
@@ -11,10 +12,23 @@ interface OtherProjectsProps {
 const OtherProjects = ({ project }: OtherProjectsProps) => {
   const { projects } = useSortedProjects()
 
-  const randomProjects = projects
-    .filter((p) => p.id !== project.id)
-    .sort(() => 0.5 - Math.random()) // shuffle for randomness
-    .slice(0, 3)
+  const randomProjects = useMemo(() => {
+    const filtered = projects.filter((p) => p.id !== project.id)
+    if (filtered.length === 0) return []
+
+    const currentIndex = projects.findIndex((p) => p.id === project.id)
+    const result: ProjectType[] = []
+    const maxProjects = Math.min(3, filtered.length)
+
+    for (let i = 1; i <= maxProjects; i++) {
+      const nextIndex = (currentIndex + i) % filtered.length
+      if (filtered[nextIndex].id !== project.id) {
+        result.push(filtered[nextIndex])
+      }
+    }
+
+    return result
+  }, [projects, project.id])
 
   return (
     <section className="mt-12 flex flex-col gap-8 pb-12">
@@ -28,7 +42,7 @@ const OtherProjects = ({ project }: OtherProjectsProps) => {
             className="bg-background dark:bg-dark-background dark:border-t-dark-highlight border-t-highlight border-border dark:border-dark-border flex h-full flex-col rounded-lg border p-8 shadow-lg transition"
           >
             <h3 className="mb-2 font-bold">{nextProject.title}</h3>
-            <p className="text-text-muted dark:text-dark-text-muted mb-4 text-sm">
+            <p className="text-text-muted dark:text-dark-te xt-muted mb-4 text-sm">
               {nextProject.description}
             </p>
             <Link

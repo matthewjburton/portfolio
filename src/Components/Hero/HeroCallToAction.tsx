@@ -1,4 +1,4 @@
-import { hero } from '@/data/hero'
+import { hero } from '@/content/hero'
 import { Link as ScrollLink } from 'react-scroll'
 
 const HeroCallToAction = () => {

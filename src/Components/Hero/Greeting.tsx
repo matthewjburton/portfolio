@@ -1,4 +1,4 @@
-import { hero } from '@/data/hero'
+import { hero } from '@/content/hero'
 
 const Greeting = () => {
   return (

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { slugify } from '@/router/utils/slugify'
 import { ROUTES } from '@/router/routes'
 import { TechStack } from './TechStack'
-import { Card } from './Card'
+import { Card } from '../../Card'
 import { ProjectType } from '../types'
 
 interface ProjectCardProps {

@@ -1,4 +1,4 @@
-import { projects } from '@/data/projects'
+import { projects } from '@/content/projects'
 import { ProjectType } from '../types'
 
 export const useSortedProjects = () => {

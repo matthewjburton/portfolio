@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 
 interface HeadingItem {
   id: string
@@ -7,25 +7,23 @@ interface HeadingItem {
 }
 
 const TableOfContents: React.FC = () => {
-  const [headings, setHeadings] = useState<HeadingItem[]>([])
   const [activeId, setActiveId] = useState<string>('')
 
+   // Memoize the headings so it only calculates once
+  const headings: HeadingItem[] = useMemo(() => {
+    return Array.from(document.querySelectorAll('h2, h3')).map((element) => ({
+      id:
+        element.id ||
+        element.textContent?.toLowerCase().replace(/\s+/g, '-') ||
+        '',
+      text: element.textContent || '',
+      level: parseInt(element.tagName[1]),
+    }))
+  }, [])
+
   useEffect(() => {
-    // Extract headings from the DOM
-    const elements = Array.from(document.querySelectorAll('h2, h3')).map(
-      (element) => ({
-        id:
-          element.id ||
-          element.textContent?.toLowerCase().replace(/\s+/g, '-') ||
-          '',
-        text: element.textContent || '',
-        level: parseInt(element.tagName[1]),
-      }),
-    )
+    if (headings.length === 0) return
 
-    setHeadings(elements)
-
-    // Set up intersection observer for active heading
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -37,13 +35,13 @@ const TableOfContents: React.FC = () => {
       { rootMargin: '-100px 0px -66%' },
     )
 
-    elements.forEach(({ id }) => {
+    headings.forEach(({ id }) => {
       const element = document.getElementById(id)
       if (element) observer.observe(element)
     })
 
     return () => observer.disconnect()
-  }, [])
+  }, [headings])
 
   if (headings.length === 0) return null
 

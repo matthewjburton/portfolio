@@ -1,6 +1,6 @@
 import React from 'react'
 import { Bio } from './Bio'
-import { bio } from '../../data/bio'
+import { bio } from '../../content/bio'
 import { Header } from '../Header'
 import { Element } from 'react-scroll'
 

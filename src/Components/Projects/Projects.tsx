@@ -2,7 +2,7 @@ import React from 'react'
 import { Element } from 'react-scroll'
 import { Header } from '../Header'
 import { ProjectCard } from './card/ProjectCard'
-import { useSortedProjects } from './hooks/useSortedProjectsHook'
+import { useSortedProjects } from './hooks/useSortedProjects'
 
 const Projects: React.FC = () => {
   const { projects } = useSortedProjects()
