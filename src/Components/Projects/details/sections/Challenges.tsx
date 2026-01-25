@@ -1,4 +1,3 @@
-import { Element } from 'react-scroll'
 import { ProjectType } from '@/types/content'
 import { sections } from './sections'
 import { FadeInSection } from '@/components/FadeInSection'
@@ -16,7 +15,7 @@ const Challenges = ({ project }: ChallengesProps) => {
 
   return (
     <FadeInSection>
-      <Element name={sections[sectionIndex].label}>
+      <section id={sections[sectionIndex].label}>
         <div className="flex w-full flex-col items-start gap-8">
           <h2 className="px-8 text-start text-xl font-bold md:text-2xl lg:px-16 lg:text-3xl">
             {sections[sectionIndex].label}
@@ -48,7 +47,7 @@ const Challenges = ({ project }: ChallengesProps) => {
             ))}
           </div>
         </div>
-      </Element>
+      </section>
     </FadeInSection>
   )
 }

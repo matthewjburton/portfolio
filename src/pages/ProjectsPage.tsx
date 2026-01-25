@@ -3,7 +3,7 @@ import { Breadcrumbs } from '@/components/Breadcrumbs'
 import { Container } from '@/components/Container'
 
 const ProjectsPage = () => (
-    <div className="flex flex-col p-8">
+    <div className="flex flex-col p-16">
         <Breadcrumbs type="projects" />
         <Container>
             <AllProjects />

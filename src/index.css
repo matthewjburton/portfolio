@@ -5,15 +5,22 @@
 html,
 body {
   @apply bg-background-dark dark:bg-dark-background-dark text-text dark:text-dark-text;
+  scroll-behavior: smooth;
 }
 
 @layer utilities {
   .gradient-accent {
-    @apply from-accent-light via-accent to-accent-dark dark:from-dark-accent-light dark:via-dark-accent dark:to-dark-accent-dark bg-gradient-to-br;
+    @apply from-accent-light via-accent to-accent-dark dark:from-dark-accent-light dark:via-dark-accent dark:to-dark-accent-dark bg-linear-to-br;
+  }
+
+  .gradient-accent-80 {
+    @apply from-accent-light/80 via-accent/80 to-accent-dark/80
+          dark:from-dark-accent-light/80 dark:via-dark-accent/80 dark:to-dark-accent-dark/80
+          bg-linear-to-br;
   }
 
   .text-gradient-accent {
-    @apply from-accent-light via-accent to-accent-dark dark:from-dark-accent-light dark:via-dark-accent dark:to-dark-accent-dark bg-gradient-to-br bg-clip-text text-transparent;
+    @apply from-accent-light via-accent to-accent-dark dark:from-dark-accent-light dark:via-dark-accent dark:to-dark-accent-dark bg-linear-to-br bg-clip-text text-transparent;
   }
 
   .bg-radial-gradient {

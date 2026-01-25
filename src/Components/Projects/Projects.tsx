@@ -1,5 +1,3 @@
-import { Element } from 'react-scroll'
-import { Header } from '../Header'
 import { ProjectCard } from './card/ProjectCard'
 import { useSortedProjects } from './hooks/useSortedProjects'
 import { Link } from 'react-router-dom'
@@ -12,9 +10,8 @@ const Projects = () => {
   const { projects } = useSortedProjects()
 
   return (
-    <Element name={SECTIONS.projects} className="flex w-full justify-center">
-      <div className="flex flex-col items-center gap-12">
-        <Header text={SECTIONS.projects} />
+    <section id={SECTIONS.projects} className="scroll-mt-32">
+      <div className="flex flex-col items-center gap-16">
         <div className="grid w-full grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
           {projects.slice(0, NUMBER_OF_PROJECTS_TO_SHOW).map((project) => (
             <ProjectCard key={project.id} project={project} />
@@ -22,12 +19,11 @@ const Projects = () => {
         </div>
         <Link
           to={ROUTES.PROJECTS.ROOT}
-          className="text-gradient-accent hover:underline"
-        >
-          View All Projects <i className="fa-solid fa-arrow-right" />
+          className="inline-flex items-center gap-2 rounded-lg gradient-accent z-10 cursor-pointer px-6 py-3 font-semibold text-background dark:text-dark-background transition-all duration-200 hover:opacity-85 hover:scale-102">
+          View All Projects <i className="fa-solid fa-arrow-right text-sm" />
         </Link>
       </div>
-    </Element>
+    </section>
   )
 }
 

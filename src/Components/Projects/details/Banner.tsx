@@ -1,4 +1,3 @@
-import { Element } from 'react-scroll'
 import { ProjectType } from '@/types/content'
 import { BannerCallToAction } from './BannerCallToAction'
 import { RadialBackground } from '@/components/hero/RadialBackground'
@@ -11,7 +10,7 @@ const Banner = ({ project }: BannerProps) => {
   const banner = project.banner
 
   return (
-    <Element name="Home">
+    <section id="Home">
       <div className="relative isolate h-[70vh] w-full overflow-hidden shadow-lg">
         {banner ? (
           <img
@@ -30,7 +29,7 @@ const Banner = ({ project }: BannerProps) => {
           <BannerCallToAction project={project} />
         </div>
       </div>
-    </Element>
+    </section>
   )
 }
 

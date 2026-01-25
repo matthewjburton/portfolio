@@ -1,4 +1,3 @@
-import React from 'react'
 import { skills } from '../../content/skills'
 import { FadeInSection } from '../FadeInSection'
 import { SkillPill } from './SkillPill'

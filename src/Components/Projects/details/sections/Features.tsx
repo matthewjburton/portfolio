@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { ProjectType } from '@/types/content'
 import { sections } from './sections'
 import { FadeInSection } from '@/components/FadeInSection'
-import { Element } from 'react-scroll'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
@@ -25,7 +24,7 @@ const Features = ({ project }: FeaturesProps) => {
   if (!features) return null
 
   return (
-    <Element name={sections[sectionIndex].label}>
+    <section id={sections[sectionIndex].label}>
       <FadeInSection>
         <section
           className={`bg-background dark:bg-dark-background dark:border-t-dark-highlight border-t-highlight border-border dark:border-dark-border grid grid-cols-1 overflow-hidden rounded-lg border shadow-xl lg:grid-cols-3`}
@@ -96,7 +95,7 @@ const Features = ({ project }: FeaturesProps) => {
           </div>
         </section>
       </FadeInSection>
-    </Element>
+    </section>
   )
 }
 
