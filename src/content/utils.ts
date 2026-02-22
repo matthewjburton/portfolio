@@ -3,7 +3,8 @@
  */
 
 import { slugify } from '@/router/utils/slugify'
-import { posts, projects } from './registry'
+import { projects } from './registry'
+import { posts } from './posts'
 import { PostType, ProjectType } from '@/types/content'
 
 /**
@@ -32,7 +33,7 @@ export const findProjectBySlug = (slug: string): ProjectType | undefined => {
  */
 export const findContentBySlug = (
   type: 'post' | 'project',
-  slug: string
+  slug: string,
 ): PostType | ProjectType | undefined => {
   if (type === 'post') {
     return findPostBySlug(slug)
@@ -49,7 +50,7 @@ export const findContentBySlug = (
  */
 export const getRelatedProjects = (
   currentProject: ProjectType,
-  limit = 3
+  limit = 3,
 ): ProjectType[] => {
   const currentStackLabels = new Set(currentProject.stack.map((s) => s.label))
 

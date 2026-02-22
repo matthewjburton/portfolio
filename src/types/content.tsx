@@ -1,5 +1,5 @@
-import { SkillType } from "@/components/skills/types";
-import { JSX } from "react";
+import { SkillType } from '@/components/skills/types'
+import { ComponentType } from 'react'
 
 export interface ProjectType {
   id: number
@@ -20,10 +20,10 @@ export interface ProjectType {
     responsibilities?: string[]
   }
   features?: {
-    features: { header: string; description: string; media: string} []
+    features: { header: string; description: string; media: string }[]
   }
   challenges?: {
-    challenges?: { challenge: string; solution: string} []
+    challenges?: { challenge: string; solution: string }[]
   }
   learned?: {
     learned?: string[]
@@ -32,18 +32,18 @@ export interface ProjectType {
     state?: 'Complete' | 'In Progress' | 'On Hold' | 'Prototype'
     conclusion?: string
   }
-}export interface PostType {
-    post: () => JSX.Element
-    meta: PostMetaType
+}
+export interface PostType {
+  post: ComponentType
+  meta: PostMetaType
 }
 
 export interface PostMetaType {
-    title: string
-    slug: string
-    date: string
-    tags: readonly string[]
-    author: string
-    readingTime: string
-    summary: string
+  title: string
+  slug: string
+  date: string
+  tags: readonly string[]
+  author: string
+  readingTime: string
+  summary: string
 }
-

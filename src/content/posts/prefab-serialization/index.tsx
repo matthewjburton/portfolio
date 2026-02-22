@@ -1,19 +1,17 @@
 import { Aside } from '@/components/blog/post/sections/Aside'
 import { CodeBlock } from '@/components/blog/post/sections/CodeBlock'
 import { Code } from '@/components/blog/post/sections/Code'
-import {List, ListItem } from '@/components/blog/post/sections/List'
+import { List, ListItem } from '@/components/blog/post/sections/List'
 import { Note } from '@/components/blog/post/sections/Note'
-import { PrevNextLinks} from '@/components/blog/post/PrevNextLinks'
-import { Quote }from '@/components/blog/post/sections/Quote'
+import { PrevNextLinks } from '@/components/blog/post/PrevNextLinks'
+import { Quote } from '@/components/blog/post/sections/Quote'
 import { Section } from '@/components/blog/post/sections/Section'
 import { Header } from '@/components/blog/post/sections/Header'
 
-const PrefabSerializationMitigation = () => (
+const PrefabSerializationPost = () => (
   <>
     <Section>
-      <Header>
-        The Hidden Cost of Refactoring Unity Components
-      </Header>
+      <Header>The Hidden Cost of Refactoring Unity Components</Header>
       If you've worked in Unity long enough, you've probably felt this pain: You
       attach a component like <Code>EnemyHealth</Code> to dozens (or hundreds)
       of prefabs. Everything works fine. Then one day, you decide to clean
@@ -69,9 +67,7 @@ const PrefabSerializationMitigation = () => (
     </Section>
 
     <Section>
-      <Header>
-        The Root Cause: How Unity Serialization Works
-      </Header>
+      <Header>The Root Cause: How Unity Serialization Works</Header>
       <Quote>
         Unity does not serialize components by "meaning" or intent—only by field
         name and type.
@@ -88,9 +84,7 @@ const PrefabSerializationMitigation = () => (
     </Section>
 
     <Section>
-      <Header>
-        Practical Strategies to Reduce Refactoring Pain
-      </Header>
+      <Header>Practical Strategies to Reduce Refactoring Pain</Header>
 
       <div className="space-y-8">
         <div>
@@ -243,4 +237,4 @@ public class EnemyHealth : MonoBehaviour
   </>
 )
 
-export default PrefabSerializationMitigation
+export default PrefabSerializationPost

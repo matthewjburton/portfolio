@@ -1,18 +1,14 @@
-import { PostMetaType } from './types'
+import { PostMetaType } from '@/types/content'
 
-export const prefabSerializationMitigation: PostMetaType = {
+const meta: PostMetaType = {
   title: 'The Hidden Cost of Refactoring Unity Components',
-  slug: 'unity-prefab-serialization-mitigation',
+  slug: 'prefab-serialization',
   date: '2026-01-22',
-  tags: [
-    'unity',
-    'refactoring',
-    'architecture',
-    'prefabs',
-    'serialization',
-  ] as const,
+  tags: ['unity', 'refactoring', 'architecture', 'prefabs', 'serialization'],
   author: 'Matt Burton',
   readingTime: '10 min read',
   summary:
     'How serialized field changes break prefabs in Unity, and practical strategies to design systems that are safe to refactor.',
-} as const
+}
+
+export default meta
