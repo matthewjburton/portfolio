@@ -32,7 +32,7 @@ const ProjectFilters = ({
         placeholder="Search projects..."
         value={search}
         onChange={(e) => onSearchChange(e.target.value)}
-        className="bg-background-light dark:bg-dark-background-light border-border dark:border-dark-border text-text dark:text-dark-text placeholder:text-text-muted dark:placeholder:text-dark-text-muted w-full rounded-full border px-5 py-3 outline-none transition-colors focus:border-accent dark:focus:border-dark-accent"
+        className="bg-background dark:bg-dark-background-light border-border dark:border-dark-border text-text dark:text-dark-text placeholder:text-text-muted dark:placeholder:text-dark-text-muted w-full rounded-full border px-5 py-3 outline-none transition-colors focus:border-accent dark:focus:border-dark-accent"
       />
 
       <div className="flex flex-wrap gap-2">
