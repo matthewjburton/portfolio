@@ -8,6 +8,7 @@ import { expenseReport } from './projects/expense-report'
 import { fullStackOpen } from './projects/full-stack-open'
 import { endlessBreakout } from './projects/endless-breakout'
 import { fabricationDashboard } from './projects/fabrication-dashboard'
+import { repIndex } from './projects/rep-index'
 
 export const projects: ProjectType[] = [
   comfortAirlines,
@@ -19,4 +20,5 @@ export const projects: ProjectType[] = [
   expenseReport,
   warehouseInventory,
   fabricationDashboard,
+  repIndex,
 ]

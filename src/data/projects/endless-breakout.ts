@@ -4,7 +4,7 @@ export const endlessBreakout: ProjectType = {
   id: 6,
   title: 'Endless Breakout',
   description:
-    'An infinite arcade brick breaker with dynamic difficulty scaling and a retro aesthetic built in Unity.',
+    'Infinite arcade brick breaker with dynamic difficulty scaling, rebuilt from scratch in a two-week sprint.',
   link: 'https://matt-burton.itch.io/endless-breakout',
   stack: [
     { label: 'Unity', iconClass: 'devicon-unity-plain' },
@@ -15,11 +15,10 @@ export const endlessBreakout: ProjectType = {
   banner: `${import.meta.env.BASE_URL}images/projects/endless-breakout/banner.png`,
   purpose: {
     purpose:
-      'Created after completing the Envision Game Development Program at George Mason University, this project was a personal challenge to reimagine a classic game with modern mechanics and polish.',
+      'A personal challenge to reimagine a classic game with modern mechanics and polish, built after completing the Envision Game Development Program at GMU.',
     goals: [
-      'Experiment with endless gameplay loops',
-      'Practice Unity physics, UI, and mobile controls',
-      'Rebuild a lost game from scratch in a two-week sprint',
+      'Experiment with endless gameplay loops and dynamic difficulty',
+      'Support both desktop and mobile with cross-platform controls',
     ],
     type: 'Personal',
   },
@@ -32,31 +31,31 @@ export const endlessBreakout: ProjectType = {
       {
         header: 'Endless Arcade Mode',
         description:
-          'Unlike traditional level-based brick breakers, bricks descend slowly over time and new challenges are introduced at score thresholds.',
+          'Bricks descend over time with new challenges at score thresholds instead of traditional levels.',
         media: `${import.meta.env.BASE_URL}images/projects/endless-breakout/endless.mp4`,
       },
       {
         header: 'Dynamic Brick Types',
         description:
-          'Special bricks include metal-edged bricks (which can only be broken from exposed sides) and multi-hit bricks with increasing durability.',
+          'Metal-edged bricks breakable only from exposed sides, plus multi-hit bricks with increasing durability.',
         media: `${import.meta.env.BASE_URL}images/projects/endless-breakout/bricks.mp4`,
       },
       {
         header: 'Cross-Platform Controls',
         description:
-          'Supports both desktop and mobile. Paddle can follow the cursor/finger or be dragged manually for precision.',
+          'Desktop and mobile support with cursor/finger tracking or manual drag for precision.',
         media: `${import.meta.env.BASE_URL}images/projects/endless-breakout/controls.mp4`,
       },
       {
         header: 'Aimable Bounce Physics',
         description:
-          'The bounce angle of the ball is dynamically calculated based on where it hits the paddle, encouraging skillful control.',
+          'Bounce angle calculated from paddle contact point, rewarding skillful aim.',
         media: `${import.meta.env.BASE_URL}images/projects/endless-breakout/aim.mp4`,
       },
       {
         header: 'Combo System & Stats',
         description:
-          'Score combos are tracked for hitting multiple bricks without touching the paddle, along with a full game loop and real-time stat tracking.',
+          'Combo tracking for consecutive hits without touching the paddle, with real-time stats.',
         media: `${import.meta.env.BASE_URL}images/projects/endless-breakout/combos.mp4`,
       },
     ],
@@ -65,27 +64,21 @@ export const endlessBreakout: ProjectType = {
     challenges: [
       {
         challenge:
-          'Creating paddle bounce mechanics that felt intuitive and rewarding.',
+          'Special bricks could spawn in unwinnable patterns.',
         solution:
-          'Calculated bounce direction using the relative contact point between ball and paddle to allow skill-based aiming.',
+          'Validation logic prevents metal-edged bricks from forming impenetrable formations.',
       },
       {
         challenge:
-          'Ensuring special brick types couldn’t spawn in unwinnable patterns.',
+          'Original project files lost with no source or assets.',
         solution:
-          'Added logic to prevent metal-edged bricks from forming completely impenetrable formations along the bottom row.',
+          'Rebuilt the entire game from scratch in a two-week sprint.',
       },
       {
         challenge:
-          'Rebuilding lost project files without original source or assets.',
+          'Difficulty balance as bricks descend toward the paddle.',
         solution:
-          'Rebuilt the game entirely from scratch in under two weeks using a focused development sprint.',
-      },
-      {
-        challenge:
-          'Maintaining gameplay balance as the bricks descend lower over time.',
-        solution:
-          'Implemented a system where the height of the lowest brick determines the delay between spawning the next row, preventing the player from being overwhelmed and keeping the difficulty fair but challenging.',
+          'Lowest brick height dynamically controls the spawn delay of new rows.',
       },
     ],
   },
@@ -93,14 +86,13 @@ export const endlessBreakout: ProjectType = {
     learned: [
       'Unity Physics & Collision',
       'Endless Game Design',
-      'Custom Input Systems for Mobile/Desktop',
-      'Game Feel & Juice',
-      'Polishing Game Loops',
+      'Cross-Platform Input Systems',
+      'Game Feel & Polish',
     ],
   },
   state: {
     state: 'Complete',
     conclusion:
-      'While I had plans to expand Endless Breakout further with power-ups and game modes, I ultimately reached a satisfying version that demonstrated polished gameplay, solid mechanics, and cross-platform support.',
+      'Polished, cross-platform release with solid mechanics. Published on itch.io.',
   },
 }
