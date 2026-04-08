@@ -3,6 +3,8 @@ export const bio = {
   altText: 'Matthew Burton',
   title: 'Bio',
   education: 'B.S. Computer Science from High Point University',
+  resumeSrc: `${import.meta.env.BASE_URL}images/about/Resume.pdf`,
+  resumeUpdated: 'Aug 2025',
   description: (
     <div className="flex h-full flex-col gap-y-4">
       <div>

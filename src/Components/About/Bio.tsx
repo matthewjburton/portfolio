@@ -9,6 +9,8 @@ interface BioProps {
   title: string
   education: string
   description: React.ReactNode
+  resumeSrc?: string
+  resumeUpdated?: string
 }
 
 const Bio: React.FC<BioProps> = ({
@@ -17,6 +19,8 @@ const Bio: React.FC<BioProps> = ({
   title,
   education,
   description,
+  resumeSrc,
+  resumeUpdated,
 }) => {
   return (
     <>
@@ -27,6 +31,8 @@ const Bio: React.FC<BioProps> = ({
             title={title}
             education={education}
             description={description}
+            resumeSrc={resumeSrc}
+            resumeUpdated={resumeUpdated}
           />
         </div>
       </FadeInSection>
