@@ -90,6 +90,7 @@ export const superMassive: ProjectType = {
   },
   state: {
     state: 'On Hold',
+    lastUpdated: 'Aug 2024',
     conclusion:
       'Top 7% in Enjoyment, Top 15% Overall. Received strong community feedback and remains playable in its post-jam form.',
   },

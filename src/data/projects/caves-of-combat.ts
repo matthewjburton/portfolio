@@ -71,7 +71,8 @@ export const cavesOfCombat: ProjectType = {
     ],
   },
   state: {
-    state: 'In Progress',
-    conclusion: 'Steam page is live. Working toward a public demo with core combat, procedural environments, and enemy AI in place.',
+    state: 'On Hold',
+    lastUpdated: 'Apr 2026',
+    conclusion: 'Free public demo is live on Steam with core combat, procedural environments, and enemy AI. Further development is on hold.',
   },
 }

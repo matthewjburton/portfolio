@@ -34,7 +34,7 @@ const OtherProjects = ({ project }: OtherProjectsProps) => {
               to={`/${slugify(nextProject.title)}`}
               className="text-gradient-accent items:center mt-auto hover:underline"
             >
-              View Case Study <i className="fa-solid fa-arrow-right" />
+              Read more <i className="fa-solid fa-arrow-right" />
             </Link>
           </div>
         ))}

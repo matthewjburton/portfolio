@@ -103,6 +103,7 @@ export const repIndex: ProjectType = {
   },
   state: {
     state: 'In Progress',
+    lastUpdated: 'Apr 2026',
     conclusion:
       'Fully functional and in daily personal use with 8 real testers through word of mouth. Refining the progression engine and analytics.',
   },

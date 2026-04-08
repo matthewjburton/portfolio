@@ -104,6 +104,7 @@ export const warehouseInventory: ProjectType = {
   },
   state: {
     state: 'On Hold',
+    lastUpdated: 'Jan 2025',
     conclusion: 'Advised leadership to pivot to a commercial solution after assessing long-term strategy, reducing maintenance risk and in-house dependency.',
   },
 }

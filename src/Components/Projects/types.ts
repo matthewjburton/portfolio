@@ -18,6 +18,7 @@ export interface ProjectType {
     role?: string
     responsibilities?: string[]
   }
+  mediaOrientation?: 'portrait' | 'landscape'
   features?: {
     features: { header: string; description: string; media: string }[]
   }
@@ -29,6 +30,7 @@ export interface ProjectType {
   }
   state?: {
     state?: 'Complete' | 'In Progress' | 'On Hold' | 'Prototype'
+    lastUpdated?: string
     conclusion?: string
   }
 }
