@@ -9,7 +9,6 @@ export const endlessBreakout: ProjectType = {
   stack: [
     { label: 'Unity', iconClass: 'devicon-unity-plain' },
     { label: 'C#', iconClass: 'devicon-csharp-plain' },
-    { label: 'Illustrator', iconClass: 'devicon-illustrator-plain' },
   ],
   year: 2023,
   banner: `${import.meta.env.BASE_URL}images/projects/endless-breakout/banner.png`,

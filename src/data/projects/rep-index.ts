@@ -10,6 +10,7 @@ export const repIndex: ProjectType = {
     { label: 'React Native', iconClass: 'devicon-react-original' },
     { label: 'TypeScript', iconClass: 'devicon-typescript-plain' },
     { label: 'PostgreSQL', iconClass: 'devicon-postgresql-plain' },
+    { label: 'CI/CD', iconClass: 'devicon-githubactions-plain' },
   ],
   year: 2026,
   banner: `${import.meta.env.BASE_URL}images/projects/rep-index/banner.png`,

@@ -7,10 +7,10 @@ export const businessCaseForm: ProjectType = {
     'Investment analysis tool that digitized a manual evaluation process and launched to generate client leads.',
   link: 'https://udig-business-case-form-test.netlify.app/',
   stack: [
-    { label: 'React / TS', iconClass: 'devicon-react-plain' },
+    { label: 'React', iconClass: 'devicon-react-plain' },
+    { label: 'TypeScript', iconClass: 'devicon-typescript-plain' },
     { label: 'GraphQL', iconClass: 'devicon-graphql-plain' },
     { label: 'PostgreSQL', iconClass: 'devicon-postgresql-plain' },
-    { label: 'Figma', iconClass: 'devicon-figma-plain' },
   ],
   year: 2023,
   banner: `${import.meta.env.BASE_URL}images/projects/business-case-form/banner.png`,

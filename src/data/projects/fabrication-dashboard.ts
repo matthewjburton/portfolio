@@ -8,9 +8,7 @@ export const fabricationDashboard: ProjectType = {
   link: 'https://github.com/AdvanceTEC-LLC/fabrication-dashboard',
   stack: [
     { label: 'React', iconClass: 'devicon-react-plain' },
-    { label: 'Typescript', iconClass: 'devicon-typescript-plain' },
-    { label: 'Tailwind', iconClass: 'devicon-tailwindcss-plain' },
-    { label: 'CSS', iconClass: 'devicon-css3-plain' },
+    { label: 'TypeScript', iconClass: 'devicon-typescript-plain' },
   ],
   year: 2025,
   banner: `${import.meta.env.BASE_URL}images/projects/fabrication-dashboard/banner.jpg`,
