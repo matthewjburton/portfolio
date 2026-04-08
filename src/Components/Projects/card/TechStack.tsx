@@ -1,5 +1,5 @@
 import { SkillType } from '@/components/skills/types'
-import Tooltip from '@/components/Tooltip'
+import { Tooltip } from '@/components/Tooltip'
 
 interface TechStackProps {
   stack: SkillType[]

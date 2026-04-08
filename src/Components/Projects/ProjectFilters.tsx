@@ -88,4 +88,4 @@ const ProjectFilters = ({
   )
 }
 
-export default ProjectFilters
+export { ProjectFilters }
