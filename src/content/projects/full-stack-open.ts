@@ -4,25 +4,27 @@ export const fullStackOpen: ProjectType = {
   id: 10,
   title: 'Full Stack Open',
   description:
-    'A suite of full-stack web apps for the University of Helsinki’s Full Stack Open course on modern web development, DevOps, and testing.',
+    'Full-stack web apps covering MERN/PERN stacks, CI/CD, Docker, and testing through Helsinki\'s Full Stack Open.',
   link: 'https://github.com/matthewjburton/full-stack-open',
   stack: [
-    { label: 'React / TS', iconClass: 'devicon-react-plain' },
-    { label: 'Node / Express', iconClass: 'devicon-nodejs-plain' },
-    { label: 'PostgreSQL / MongoDB', iconClass: 'devicon-postgresql-plain' },
+    { label: 'React', iconClass: 'devicon-react-plain' },
+    { label: 'TypeScript', iconClass: 'devicon-typescript-plain' },
+    { label: 'Node.js', iconClass: 'devicon-nodejs-plain' },
+    { label: 'Express', iconClass: 'devicon-express-original' },
+    { label: 'PostgreSQL', iconClass: 'devicon-postgresql-plain' },
+    { label: 'MongoDB', iconClass: 'devicon-mongodb-plain' },
     { label: 'Docker', iconClass: 'devicon-docker-plain' },
-    { label: 'Testing / CI', iconClass: 'devicon-githubactions-plain' },
+    { label: 'CI/CD', iconClass: 'devicon-githubactions-plain' },
   ],
   year: 2024,
   banner: `${import.meta.env.BASE_URL}images/projects/full-stack-open/banner.png`,
   purpose: {
     type: 'Personal',
     purpose:
-      'Completed as a self-guided education project, this course gave me foundational experience in modern full-stack web development using JavaScript, TypeScript, and multiple backend stacks.',
+      'Self-guided deep dive into modern full-stack development across both MERN and PERN stacks.',
     goals: [
-      'Master both MERN and PERN stacks through hands-on projects',
-      'Learn to build, test, and deploy real-world full-stack applications',
-      'Understand modern DevOps practices including CI/CD and containerization',
+      'Build, test, and deploy full-stack applications end-to-end',
+      'Apply CI/CD, Docker, and automated testing in real projects',
     ],
   },
   role: {
@@ -40,31 +42,31 @@ export const fullStackOpen: ProjectType = {
       {
         header: 'Modern Frontend Stack',
         description:
-          'Built responsive and interactive frontends using React, Redux, React Query, TypeScript, and custom form validation libraries like Zod and Yup.',
+          'React, Redux, React Query, and TypeScript with Zod/Yup validation.',
         media: `${import.meta.env.BASE_URL}images/projects/full-stack-open/react.mp4`,
       },
       {
         header: 'Robust Backend APIs',
         description:
-          'Developed scalable REST and GraphQL APIs using Node, Express, and integrated PostgreSQL or MongoDB for persistence, with support for middleware, authentication, and error handling.',
+          'REST and GraphQL APIs with Node/Express, PostgreSQL, and MongoDB.',
         media: `${import.meta.env.BASE_URL}images/projects/full-stack-open/rest.png`,
       },
       {
         header: 'Authentication & Security',
         description:
-          'Implemented secure authentication with JWT, bcrypt password hashing, and protected routes for role-based access control.',
+          'JWT, bcrypt hashing, and role-based access control.',
         media: `${import.meta.env.BASE_URL}images/projects/full-stack-open/auth.png`,
       },
       {
         header: 'CI/CD & Containerization',
         description:
-          'Configured GitHub Actions for automated testing and deployment. Used Docker to containerize applications and manage development environments.',
+          'GitHub Actions pipelines with Docker-based environments.',
         media: `${import.meta.env.BASE_URL}images/projects/full-stack-open/devops.png`,
       },
       {
         header: 'Comprehensive Testing',
         description:
-          'Practiced test-driven development with unit, integration, and end-to-end testing using tools like Jest, Cypress, and Supertest.',
+          'Unit, integration, and E2E testing with Jest, Cypress, and Supertest.',
         media: `${import.meta.env.BASE_URL}images/projects/full-stack-open/tests.png`,
       },
     ],
@@ -72,45 +74,28 @@ export const fullStackOpen: ProjectType = {
   challenges: {
     challenges: [
       {
-        challenge:
-          'Learning and switching between both PERN (PostgreSQL) and MERN (MongoDB) stacks.',
+        challenge: 'Switching between PERN and MERN stacks across projects.',
         solution:
-          'Created multiple full-stack projects with both technologies and studied key architectural differences and similarities.',
+          'Built parallel projects in both stacks to internalize architectural differences.',
       },
       {
-        challenge: 'Maintaining code quality across frontend and backend.',
+        challenge: 'Layering new tech (GraphQL, Docker) without losing code quality.',
         solution:
-          'Applied consistent typing with TypeScript, schema validation with Zod/Yup, and modular code architecture with services, routes, and controllers.',
-      },
-      {
-        challenge:
-          'Managing application complexity while introducing new tech (e.g., GraphQL, container orchestration).',
-        solution:
-          'Iteratively added tools and patterns from the course into real project scenarios, applying DevOps concepts incrementally.',
+          'Incremental adoption with consistent TypeScript typing and schema validation throughout.',
       },
     ],
   },
   learned: {
     learned: [
-      'Full-Stack Development',
-      'React',
-      'Redux',
-      'React Query',
-      'TypeScript',
-      'Node.js',
-      'Express',
-      'REST APIs',
-      'MongoDB',
-      'PostgreSQL',
-      'Database Migrations',
-      'CI/CD Pipelines',
-      'Docker',
+      'Full-Stack Development (MERN & PERN)',
+      'CI/CD & Docker',
       'Automated Testing',
+      'Database Migrations',
     ],
   },
   state: {
     state: 'Complete',
     conclusion:
-      'The Full Stack Open course was pivotal in helping me solidify my understanding of full-stack development. It prepared me to confidently build, test, and deploy professional-grade web applications.',
+      'Built the foundation I used to ship production apps at AdvanceTEC.',
   },
 }

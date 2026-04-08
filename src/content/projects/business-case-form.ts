@@ -4,22 +4,22 @@ export const businessCaseForm: ProjectType = {
   id: 2,
   title: 'Business Case Form',
   description:
-    'A dynamic form system for analyzing investment opportunities, with real-time data validation, custom UI components, and PDF export capabilities.',
+    'Investment analysis tool that digitized a manual evaluation process and launched to generate client leads.',
   link: 'https://udig-business-case-form-test.netlify.app/',
   stack: [
-    { label: 'React / TS', iconClass: 'devicon-react-plain' },
+    { label: 'React', iconClass: 'devicon-react-plain' },
+    { label: 'TypeScript', iconClass: 'devicon-typescript-plain' },
     { label: 'GraphQL', iconClass: 'devicon-graphql-plain' },
     { label: 'PostgreSQL', iconClass: 'devicon-postgresql-plain' },
-    { label: 'Figma', iconClass: 'devicon-figma-plain' },
   ],
   year: 2023,
   banner: `${import.meta.env.BASE_URL}images/projects/business-case-form/banner.png`,
   purpose: {
     purpose:
-      'Built to support internal decision-making at a consulting firm, the Business Case Form digitizes a formerly manual process of evaluating investments. The goal was to streamline data collection, improve accuracy, and ensure consistent formatting for downstream analysis and presentation.',
+      'Digitized a manual investment evaluation process at a consulting firm to streamline data collection and ensure consistent formatting for analysis.',
     goals: [
-      'Create a user-friendly, responsive web form',
-      'Visualize valuation metrics with interactive charts',
+      'Replace manual workflows with a responsive, validated web form',
+      'Visualize valuation metrics with interactive charts and PDF export',
     ],
     type: 'Professional',
   },
@@ -36,31 +36,31 @@ export const businessCaseForm: ProjectType = {
       {
         header: 'User Information Collection',
         description:
-          'Collects user information at the beginning of the process, allowing UDig to follow up with prospective clients on their business strategies.',
+          'Captures client details upfront so UDig can follow up on business strategies.',
         media: `${import.meta.env.BASE_URL}images/projects/business-case-form/user-info.png`,
       },
       {
         header: 'Intelligent Navigation',
         description:
-          'Form sections are grouped into logical steps. Users must complete the current step to proceed, improving data completeness and flow.',
+          'Step-by-step progression ensures data completeness before advancing.',
         media: `${import.meta.env.BASE_URL}images/projects/business-case-form/navigation.mp4`,
       },
       {
         header: 'Dynamic Forms',
         description:
-          'Form fields adjust in real-time based on user input, ensuring only relevant sections and inputs are shown.',
+          'Fields adjust in real-time based on input, showing only relevant sections.',
         media: `${import.meta.env.BASE_URL}images/projects/business-case-form/forms.mp4`,
       },
       {
         header: 'Data Visualization',
         description:
-          'A final dashboard presents key financial metrics and charts, with export-to-PDF functionality for easy sharing.',
+          'Dashboard of key financial metrics and charts with PDF export.',
         media: `${import.meta.env.BASE_URL}images/projects/business-case-form/data.mp4`,
       },
       {
         header: 'Session-Based URLs',
         description:
-          'Generates shareable session URLs so multiple users can collaboratively view and evaluate the same business strategy.',
+          'Shareable URLs let multiple stakeholders collaborate on the same submission.',
         media: `${import.meta.env.BASE_URL}images/projects/business-case-form/sessions.mp4`,
       },
     ],
@@ -68,37 +68,28 @@ export const businessCaseForm: ProjectType = {
   challenges: {
     challenges: [
       {
-        challenge: 'Presenting complex form content in a digestible structure.',
+        challenge: 'Complex form content needed to feel simple.',
         solution:
-          'Used visual hierarchy and card layouts to group related elements clearly and reduce cognitive load.',
+          'Visual hierarchy and card layouts to group related elements and reduce cognitive load.',
       },
       {
-        challenge: 'Managing dynamic form fields and user data cleanly.',
+        challenge: 'Multiple stakeholders needed to collaborate on the same submission.',
         solution:
-          'Leveraged `react-hook-form` to handle dynamic field arrays, conditional logic, and schema validation with minimal boilerplate.',
-      },
-      {
-        challenge:
-          'Allowing multiple stakeholders to collaborate on the same business case submission.',
-        solution:
-          'Implemented session-based, shareable URLs that persist form data server-side, enabling others to access and continue editing the same session without duplicating input.',
+          'Session-based shareable URLs that persist form data server-side.',
       },
     ],
   },
   learned: {
     learned: [
-      'React',
-      'GraphQL',
-      'PostgreSQL',
+      'React & GraphQL',
       'Dynamic Forms',
       'Frontend Architecture',
-      'Agile Development',
       'Design Collaboration with Figma',
     ],
   },
   state: {
     state: 'Complete',
     conclusion:
-      'At the conclusion of our internship at UDig, this project launched publicly and began generating leads from clients seeking strategic consulting — validating both the product and its impact.',
+      'Launched publicly at the end of the UDig internship and began generating client leads for strategic consulting.',
   },
 }

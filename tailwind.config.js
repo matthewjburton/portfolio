@@ -5,16 +5,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        'background-dark': 'oklch(94% 0 270)',
-        background: 'oklch(97% 0 270)',
-        'background-light': 'oklch(100% 0 270)',
-        text: 'oklch(15.79% 0 270)',
-        'text-muted': 'oklch(41.84% 0 270)',
-        border: 'oklch(94% 0 270)',
-        highlight: 'oklch(100% 0 270)',
-        'accent-dark': 'oklch(0.62 0.1881 142.68)',
-        accent: 'oklch(0.7101 0.1911 133.01)',
-        'accent-light': 'oklch(0.79 0.1845 130.24)',
+        'background-dark': 'oklch(97% 0 0)',
+        background: 'oklch(100% 0 0)',
+        'background-light': 'oklch(97% 0.002 270)',
+        text: 'oklch(18% 0 0)',
+        'text-muted': 'oklch(50% 0 0)',
+        border: 'oklch(90% 0 0)',
+        highlight: 'oklch(90% 0 0)',
+        'accent-dark': 'oklch(0.42 0.15 150)',
+        accent: 'oklch(0.50 0.17 145)',
+        'accent-light': 'oklch(0.58 0.15 140)',
 
         'dark-background-dark': 'oklch(15% 0 270)',
         'dark-background': 'oklch(20% 0 270)',

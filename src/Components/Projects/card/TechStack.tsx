@@ -1,4 +1,5 @@
 import { SkillType } from '@/components/skills/types'
+import Tooltip from '@/components/Tooltip'
 
 interface TechStackProps {
   stack: SkillType[]
@@ -6,11 +7,13 @@ interface TechStackProps {
 
 const TechStack = ({ stack }: TechStackProps) => {
   return (
-    <div className="text-gradient-accent flex flex-wrap gap-2">
+    <div className="flex flex-wrap gap-2">
       {stack.map((skill) => (
-        <div key={skill.iconClass}>
-          {skill.iconClass && <i className={`${skill.iconClass} text-xl`} />}
-        </div>
+        <Tooltip key={skill.label} tooltip={skill.label}>
+          {skill.iconClass && (
+            <i className={`${skill.iconClass} text-gradient-accent text-xl`} />
+          )}
+        </Tooltip>
       ))}
     </div>
   )

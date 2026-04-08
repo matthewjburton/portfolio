@@ -2,42 +2,70 @@ import { ProjectType } from '@/types/content'
 import { Card } from '../Card'
 import { sections } from './sections'
 
-const sectionIndex = 6
+const sectionIndex = 3
 
 interface StateProps {
   project: ProjectType
 }
 
+const getLinkLabel = (url: string): string => {
+  if (url.includes('github.com')) return 'View on GitHub'
+  if (url.includes('itch.io')) return 'Play on itch.io'
+  if (url.includes('steampowered.com') || url.includes('store.steam'))
+    return 'View on Steam'
+  if (url.includes('testflight.apple.com')) return 'Join TestFlight'
+  if (url.includes('netlify.app')) return 'Try it live'
+  return 'View project'
+}
+
 const State = ({ project }: StateProps) => {
   if (!project.state) return null
 
-  const { state, conclusion } = project.state
+  const { state, lastUpdated, conclusion } = project.state
   const { link } = project
+  const learned = project.learned?.learned
   const title = sections[sectionIndex].label
 
   return (
-    <section id={title}>
+    <section id={title} className="scroll-mt-32">
       <Card title={title}>
         {state && (
           <h3
-            className={`text-sm uppercase italic ${state === 'Complete' ? 'text-gradient-accent' : 'text-text-muted dark:text-dark-text-muted'}`}
+            className={`flex items-center gap-2 text-sm uppercase italic ${state === 'Complete' ? 'text-gradient-accent' : 'text-text-muted dark:text-dark-text-muted'}`}
           >
-          {state}
-        </h3>
-      )}
+            {state}
+            {lastUpdated && (
+              <span className="text-text-muted dark:text-dark-text-muted text-xs normal-case not-italic">
+                &middot; Updated {lastUpdated}
+              </span>
+            )}
+          </h3>
+        )}
 
-      {conclusion && <p>{conclusion}</p>}
+        {conclusion && <p>{conclusion}</p>}
 
-      {link && (
-        <span className="text-gradient-accent flex items-center gap-2">
-          <a href={project.link} target="_blank" rel="noopener noreferrer">
-            View project
-          </a>
-          <i className="fa fa-external-link" aria-hidden="true"></i>
-        </span>
-      )}
-    </Card>
-  </section>
-)}
+        {learned && learned.length > 0 && (
+          <div className="flex flex-col gap-3">
+            <h3 className="text-text-muted dark:text-dark-text-muted text-sm uppercase">
+              What I Learned
+            </h3>
+            <p className="text-text dark:text-dark-text">
+              {learned.join(' \u00B7 ')}
+            </p>
+          </div>
+        )}
+
+        {link && (
+          <span className="text-gradient-accent flex items-center gap-2">
+            <a href={project.link} target="_blank" rel="noopener noreferrer">
+              {getLinkLabel(link)}
+            </a>
+            <i className="fa fa-external-link" aria-hidden="true"></i>
+          </span>
+        )}
+      </Card>
+    </section>
+  )
+}
 
 export { State }

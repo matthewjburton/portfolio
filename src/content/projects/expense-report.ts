@@ -3,25 +3,25 @@ import { ProjectType } from '@/types/content'
 export const expenseReport: ProjectType = {
   id: 12,
   title: 'Expense Report',
-  description: `A streamlined web form to submit and generate PDF's of employee expenses.`,
+  description: 'Replaced a manual Excel workflow with a web app now used company-wide for expense submissions.',
   link: 'https://github.com/AdvanceTEC-LLC/expense-report',
   stack: [
-    { label: 'React / TS', iconClass: 'devicon-react-plain' },
-    { label: 'Node / Express', iconClass: 'devicon-nodejs-plain' },
+    { label: 'React', iconClass: 'devicon-react-plain' },
+    { label: 'TypeScript', iconClass: 'devicon-typescript-plain' },
+    { label: 'Node.js', iconClass: 'devicon-nodejs-plain' },
+    { label: 'Express', iconClass: 'devicon-express-original' },
     { label: 'Docker', iconClass: 'devicon-docker-plain' },
     { label: 'MongoDB', iconClass: 'devicon-mongodb-plain' },
-    { label: 'Testing / CI', iconClass: 'devicon-githubactions-plain' },
+    { label: 'CI/CD', iconClass: 'devicon-githubactions-plain' },
   ],
   year: 2024,
   banner: `${import.meta.env.BASE_URL}images/projects/expense-report/banner.jpg`,
   purpose: {
     purpose:
-      'Designed to replace the company’s previous Excel-based expense reporting workflow, this tool streamlines the submission and approval process for employee reimbursements. The aim was to create a more intuitive, secure, and scalable experience.',
+      'Replaced an Excel-based expense workflow with a secure web app for submitting and approving employee reimbursements.',
     goals: [
-      'Replace manual spreadsheets with a dynamic web form',
-      'Improve clarity, usability, and form feedback',
-      'Secure sensitive project data with proper authentication',
-      'Generate and store finalized expense reports as PDFs',
+      'Dynamic form with real-time validation and PDF generation',
+      'Auth0-secured access for internal employees only',
     ],
     type: 'Professional',
   },
@@ -39,31 +39,31 @@ export const expenseReport: ProjectType = {
       {
         header: 'Dynamic Expense Form',
         description:
-          'Built with `react-hook-form` and `yup`, the form validates user input in real time and supports multiple expense types with conditional fields.',
+          'Real-time validation with conditional fields across multiple expense types.',
         media: `${import.meta.env.BASE_URL}images/projects/expense-report/form.mp4`,
       },
       {
         header: 'PDF Report Generation',
         description:
-          'Generates a professional PDF summary of the entered expenses, ready for review, download, and email delivery to management.',
+          'Generates downloadable PDF summaries for review and email delivery.',
         media: `${import.meta.env.BASE_URL}images/projects/expense-report/pdf.mp4`,
       },
       {
         header: 'Google Maps Mileage Calculation',
         description:
-          'Integrates with the Google Maps API to automatically calculate mileage reimbursement between two locations, with optional manual override.',
+          'Auto-calculates mileage reimbursement via Google Maps API with manual override.',
         media: `${import.meta.env.BASE_URL}images/projects/expense-report/maps.mp4`,
       },
       {
         header: 'Admin Config Panel',
         description:
-          'Admins can configure application behavior such as available expense types or reimbursement rates via a dedicated settings page, without code changes.',
+          'Admins adjust expense types and reimbursement rates without code changes.',
         media: `${import.meta.env.BASE_URL}images/projects/expense-report/settings.mp4`,
       },
       {
         header: 'Secure Auth with Auth0',
         description:
-          'Auth0 integration ensures only internal employees can view or submit reports, protecting access to confidential project data.',
+          'Auth0 restricts access to verified internal employees.',
         media: `${import.meta.env.BASE_URL}images/projects/expense-report/auth.mp4`,
       },
     ],
@@ -71,50 +71,33 @@ export const expenseReport: ProjectType = {
   challenges: {
     challenges: [
       {
-        challenge: 'Migrating users from an unclear Excel-based system.',
+        challenge: 'Teammate dropped out early in development.',
         solution:
-          'Focused on creating a clean, user-friendly UI with field-specific validation and helpful guidance at every step.',
+          'Took full ownership, refactored core features, and shipped solo.',
       },
       {
-        challenge:
-          'Protecting sensitive project data in a publicly accessible app.',
+        challenge: 'Sensitive data in a browser-accessible app.',
         solution:
-          'Integrated Auth0 with strict access control to enforce authenticated usage across both frontend and backend routes.',
+          'Auth0 with strict access control on both frontend and backend routes.',
       },
       {
-        challenge:
-          'Calculating travel mileage reliably while accounting for alternate routes.',
+        challenge: 'Maintaining quality during rapid solo development.',
         solution:
-          'Used Google Maps API to determine distances, while allowing manual mileage overrides for user flexibility.',
-      },
-      {
-        challenge:
-          'Maintaining quality and reliability during rapid development.',
-        solution:
-          'Wrote full-stack tests, including end-to-end test flows, and wired them into a CI/CD pipeline using GitHub Actions.',
-      },
-      {
-        challenge:
-          'Adapting the project after a teammate dropped out early in development.',
-        solution:
-          'Refactored core features, improved code quality, and rewrote major components to ensure maintainability and consistency.',
+          'Full-stack and E2E tests wired into a CI/CD pipeline via GitHub Actions.',
       },
     ],
   },
   learned: {
     learned: [
-      'React Hook Form + Yup Validation',
-      'Google Maps API Integration',
-      'MongoDB Schema Design',
-      'Secure Authentication with Auth0',
-      'CI/CD and End-to-End Testing',
       'Solo Project Ownership',
-      'Scalable App Configuration',
+      'Google Maps API Integration',
+      'Auth0 & Secure Access Control',
+      'CI/CD with E2E Testing',
     ],
   },
   state: {
     state: 'Complete',
     conclusion:
-      'The Expense Report app is live and actively used at AdvanceTEC. It successfully replaced the old spreadsheet process and improved accuracy, usability, and submission time across the company.',
+      'Live and actively used at AdvanceTEC. Replaced the spreadsheet process and improved accuracy and submission time company-wide.',
   },
 }
