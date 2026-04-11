@@ -36,7 +36,7 @@ const Nav: React.FC = () => {
             setMenuOpen((prev) => !prev)
           }}
           type="button"
-          className="text-text-muted dark:text-dark-text-muted hover:text-accent dark:hover:text-dark-accent absolute left-8 cursor-pointer p-2 text-xl transition-colors sm:hidden"
+          className="text-text-muted dark:text-dark-text-muted hover:text-accent dark:hover:text-dark-accent absolute left-4 cursor-pointer p-2 text-xl transition-colors sm:hidden"
           aria-label="Toggle menu"
         >
           <i className={`fa-solid ${menuOpen ? 'fa-xmark' : 'fa-bars'}`} />
@@ -67,7 +67,7 @@ const Nav: React.FC = () => {
         <button
           onClick={toggle}
           type="button"
-          className="text-text-muted dark:text-dark-text-muted hover:text-accent dark:hover:text-dark-accent absolute right-8 cursor-pointer p-2 text-xl transition-colors md:right-12 lg:right-24"
+          className="text-text-muted dark:text-dark-text-muted hover:text-accent dark:hover:text-dark-accent absolute right-4 cursor-pointer p-2 text-xl transition-colors md:right-12 lg:right-24"
           aria-label="Toggle dark mode"
         >
           <i className={`fa-solid ${isDark ? 'fa-sun' : 'fa-moon'}`} />
@@ -85,7 +85,7 @@ const Nav: React.FC = () => {
               smooth
               spy={true}
               offset={-100}
-              className="text-text dark:text-dark-text hover:bg-border/50 dark:hover:bg-dark-border/50 px-8 py-4 text-lg transition-colors hover:cursor-pointer"
+              className="text-text dark:text-dark-text hover:bg-border/50 dark:hover:bg-dark-border/50 px-4 py-4 text-lg transition-colors hover:cursor-pointer"
               activeClass="text-gradient-accent"
               onClick={() => {
                 setMenuOpen(false)
