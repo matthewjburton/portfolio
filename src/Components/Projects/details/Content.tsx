@@ -10,7 +10,7 @@ interface ContentProps {
 }
 
 const Content: React.FC<ContentProps> = ({ project }) => (
-  <div className="flex w-full flex-col gap-12 md:gap-24">
+  <div className="flex w-full flex-col gap-12 md:gap-16">
     <Purpose project={project} />
     <Features project={project} />
     <Challenges project={project} />
