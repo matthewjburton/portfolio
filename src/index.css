@@ -62,14 +62,6 @@ body {
   .devicon-row.reverse {
     animation-name: scroll-right;
   }
-
-  .active-sidebar-link {
-    @apply border-accent dark:border-dark-accent text-text dark:text-dark-text bg-background dark:bg-dark-background;
-  }
-
-  .inactive-sidebar-link {
-    @apply border-text-muted dark:border-dark-text-muted text-text-muted dark:text-dark-text-muted;
-  }
 }
 
 .dark .bg-radial-gradient {

@@ -16,8 +16,8 @@ const OtherProjects = ({ project }: OtherProjectsProps) => {
     .slice(0, 3)
 
   return (
-    <section className="mt-12 flex flex-col gap-8 pb-12">
-      <h2 className="text-text dark:text-dark-text text-xl font-semibold">
+    <section className="mt-12 flex flex-col gap-8 pb-4 md:pb-12">
+      <h2 className="text-text dark:text-dark-text text-center text-xl font-semibold md:text-left">
         Explore More Projects
       </h2>
       <div className="grid grid-cols-1 gap-6 md:grid-cols-3">

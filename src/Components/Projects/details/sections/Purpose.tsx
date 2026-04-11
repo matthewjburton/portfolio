@@ -33,8 +33,8 @@ const Purpose = ({ project }: PurposeProps) => {
           </h3>
           <ul className="text-text dark:text-dark-text list-none text-left md:text-lg">
             {goals.map((goal) => (
-              <li key={goal} className="flex items-center gap-2">
-                <span className="text-gradient-accent text-sm">◆</span>
+              <li key={goal} className="flex items-start gap-2">
+                <span className="text-gradient-accent mt-1 text-sm">◆</span>
                 <span>{goal}</span>
               </li>
             ))}
