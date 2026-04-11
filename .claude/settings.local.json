@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -r \"hamburger\\\\|menu\\\\|mobile\\\\|responsive\" /Users/matt/GitHub/portfolio/src/components/*.tsx)",
+      "mcp__plugin_playwright_playwright__browser_navigate",
+      "mcp__plugin_playwright_playwright__browser_resize"
+    ]
+  }
+}
