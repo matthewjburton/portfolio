@@ -65,16 +65,10 @@ export const timeDontStop: ProjectType = {
         media: `${import.meta.env.BASE_URL}images/projects/time-dont-stop/tutorial.mp4`,
       },
       {
-        header: 'Dynamic Soundtrack',
-        description:
-          'An adaptive score built from A/B instrument variations, with extra stems that layer in for Overcharge and low-time danger states.',
-        media: `${import.meta.env.BASE_URL}images/projects/time-dont-stop/music.mp4`,
-      },
-      {
         header: 'Bestiary & High Scores',
         description:
           'A bestiary catalogs the enemies and bosses you face, while high-score tracking rewards mastery of the time economy.',
-        media: `${import.meta.env.BASE_URL}images/projects/time-dont-stop/bestiary.mp4`,
+        media: `${import.meta.env.BASE_URL}images/projects/time-dont-stop/bestiary.png`,
       },
     ],
   },
