@@ -9,8 +9,10 @@ import { fullStackOpen } from './projects/full-stack-open'
 import { endlessBreakout } from './projects/endless-breakout'
 import { fabricationDashboard } from './projects/fabrication-dashboard'
 import { repIndex } from './projects/rep-index'
+import { timeDontStop } from './projects/time-dont-stop'
 
 export const projects: ProjectType[] = [
+  timeDontStop,
   comfortAirlines,
   businessCaseForm,
   endlessBreakout,
