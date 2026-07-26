@@ -4,7 +4,7 @@ export const timeDontStop: ProjectType = {
   id: 16,
   title: "Time Don't Stop",
   description:
-    "A top-down arena shooter where time is your only resource, built solo in 96 hours for the GMTK 2026 game jam (theme: 'Count Down').",
+    'A top-down arena shooter where time is your only resource, built solo in 96 hours for the GMTK 2026 game jam.',
   link: 'https://matt-burton.itch.io/time-dont-stop',
   stack: [
     { label: 'Unity', iconClass: 'devicon-unity-plain' },
@@ -105,8 +105,7 @@ export const timeDontStop: ProjectType = {
           'Added Overcharge mode: spend the surplus for a major power boost while the clock burns down faster, keeping time-pressure meaningful at every reserve level.',
       },
       {
-        challenge:
-          'Multiple weapon types diluted the time-management focus.',
+        challenge: 'Multiple weapon types diluted the time-management focus.',
         solution:
           'Cut them so every remaining mechanic serves the countdown theme.',
       },
