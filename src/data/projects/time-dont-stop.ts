@@ -4,7 +4,7 @@ export const timeDontStop: ProjectType = {
   id: 16,
   title: "Time Don't Stop",
   description:
-    'A top-down arena shooter where time is your only resource, built solo in 96 hours for the GMTK 2026 game jam.',
+    'A top-down arena shooter where time is your only resource, built solo in 96 hours for GMTK 2026. Ranked #126 in Enjoyment out of ~10,500 entries — the top 1.2%.',
   link: 'https://matt-burton.itch.io/time-dont-stop',
   stack: [
     { label: 'Unity', iconClass: 'devicon-unity-plain' },
@@ -123,6 +123,6 @@ export const timeDontStop: ProjectType = {
     state: 'Complete',
     lastUpdated: 'Jul 2026',
     conclusion:
-      'Designed, built, and shipped solo in 96 hours for the GMTK 2026 jam — around a full work week, travel, and weekend commitments. Community scoring results to follow.',
+      'Designed, built, and shipped solo in 96 hours for GMTK 2026 — around a full work week, travel, and weekend commitments. Enjoyment was the goal, and community voting across ~10,500 entries delivered: #126 in Enjoyment (4.27 / 5) — the top 1.2% — with strong marks in Audio (#1,295) and Creativity (#1,742).',
   },
 }
