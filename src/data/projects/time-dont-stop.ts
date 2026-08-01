@@ -123,6 +123,6 @@ export const timeDontStop: ProjectType = {
     state: 'Complete',
     lastUpdated: 'Jul 2026',
     conclusion:
-      'Designed, built, and shipped solo in 96 hours for GMTK 2026, around a full work week, travel, and weekend commitments. Enjoyment was the goal, and community voting across ~10,500 entries delivered: #126 in Enjoyment (4.27 / 5), the top 1.2%. It also placed well in Audio (#1,295), Creativity (#1,742), and Artwork (#3,055).',
+      'Designed, built, and shipped solo in 96 hours for GMTK 2026, around a full work week, travel, and weekend commitments. Enjoyment was the goal, and community voting across ~10,500 entries delivered: #126 in Enjoyment (4.27 / 5), the top 1.2%. It also placed well in Audio (#1,295), Creativity (#1,742), and Artwork (#3,055). Post-jam, I carried it beyond the deadline with a mobile port, now in beta on iOS via TestFlight.',
   },
 }
