@@ -19,7 +19,7 @@ const Projects: React.FC = () => {
   } = useSortedProjects()
 
   return (
-    <Element name="Projects" className="flex w-full justify-center">
+    <Element name="Projects" id="Projects" className="flex w-full justify-center">
       <div className="flex w-full flex-col items-center gap-12">
         <Header text="Projects" />
         <ProjectFilters

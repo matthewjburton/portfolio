@@ -194,7 +194,7 @@ const Features = ({ project }: FeaturesProps) => {
 
   return (
     <>
-      <Element name={sections[sectionIndex].label}>
+      <Element name={sections[sectionIndex].label} id={sections[sectionIndex].label}>
         <FadeInSection>
           <section
             className={`bg-background dark:bg-dark-background dark:border-t-dark-highlight border-t-highlight border-border dark:border-dark-border grid grid-cols-1 overflow-hidden rounded-lg border shadow-xl ${isPortrait ? 'lg:grid-cols-2' : 'lg:grid-cols-3'}`}
