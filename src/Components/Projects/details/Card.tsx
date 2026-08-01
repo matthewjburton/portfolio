@@ -9,7 +9,7 @@ interface CardProps {
 
 const Card = ({ children, className, title }: CardProps) => {
   return (
-    <Element name={title}>
+    <Element name={title} id={title}>
       <FadeInSection>
         <section
           className={`bg-background dark:bg-dark-background dark:border-t-dark-highlight border-t-highlight border-border dark:border-dark-border group flex h-full flex-col items-center justify-center overflow-hidden rounded-lg border p-8 shadow-xl transition duration-300 ease-in-out ${className ?? ''}`}
