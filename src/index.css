@@ -72,6 +72,21 @@ body {
   );
 }
 
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .devicon-row {
+    animation: none !important;
+  }
+}
+
 .swiper-button-prev,
 .swiper-button-next {
   color: white !important;
