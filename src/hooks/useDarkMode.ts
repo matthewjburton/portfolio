@@ -19,7 +19,9 @@ export const useDarkMode = () => {
     localStorage.setItem('theme', isDark ? 'dark' : 'light')
   }, [isDark])
 
-  const toggle = () => setIsDark((prev) => !prev)
+  const toggle = () => {
+    setIsDark((prev) => !prev)
+  }
 
   return { isDark, toggle }
 }
