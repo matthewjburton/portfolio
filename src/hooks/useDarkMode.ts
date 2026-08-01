@@ -11,7 +11,7 @@ export const useDarkMode = () => {
     const root = document.documentElement
     if (isDark) {
       root.classList.add('dark')
-      root.style.backgroundColor = '#0b0b0b'
+      root.style.backgroundColor = '#0e1512'
     } else {
       root.classList.remove('dark')
       root.style.backgroundColor = ''

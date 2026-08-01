@@ -7,13 +7,14 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ text }) => {
   return (
-    <div className="self-center">
-      <FadeInSection>
-        <div className="text-gradient-accent border-b-8 py-4 text-5xl font-bold">
+    <FadeInSection>
+      <div className="flex flex-col items-center gap-3">
+        <h2 className="text-gradient-accent text-4xl font-bold tracking-tight md:text-5xl">
           {text}
-        </div>
-      </FadeInSection>
-    </div>
+        </h2>
+        <div className="gradient-accent h-1 w-12 rounded-full" />
+      </div>
+    </FadeInSection>
   )
 }
 

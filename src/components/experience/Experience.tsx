@@ -11,7 +11,8 @@ const Experience: React.FC = () => (
       <Header text="Experience" />
 
       <FadeInSection>
-        <ol className="border-border dark:border-dark-border relative flex w-full flex-col gap-10 border-l pl-8">
+        <div className="bg-background dark:bg-dark-background border-t-highlight dark:border-t-dark-highlight border-border dark:border-dark-border w-full rounded-lg border p-8 shadow-lg md:p-12">
+          <ol className="border-border dark:border-dark-border relative flex w-full flex-col gap-10 border-l pl-8">
           {experience.map((job) => (
             <li key={`${job.company}-${job.roles[0].dates}`} className="relative">
               <span className="gradient-accent ring-background dark:ring-dark-background absolute top-1.5 -left-[38px] h-3 w-3 rounded-full ring-4" />
@@ -63,7 +64,8 @@ const Experience: React.FC = () => (
               </div>
             </li>
           ))}
-        </ol>
+          </ol>
+        </div>
       </FadeInSection>
 
       <div className="flex w-full flex-col items-center gap-2">
