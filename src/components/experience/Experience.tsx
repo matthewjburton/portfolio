@@ -6,7 +6,7 @@ import Skills from '../skills/Skills'
 import { experience } from '../../data/experience'
 
 const Experience: React.FC = () => (
-  <Element name="Experience" className="flex w-full justify-center">
+  <Element name="Experience" id="Experience" className="flex w-full justify-center">
     <div className="flex w-full flex-col items-center gap-12">
       <Header text="Experience" />
 
