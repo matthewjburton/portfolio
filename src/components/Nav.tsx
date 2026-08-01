@@ -1,4 +1,5 @@
 import useSticky from '@/hooks/useSticky'
+import useScrollSpy from '@/hooks/useScrollSpy'
 import { useDarkMode } from '@/hooks/useDarkMode'
 import React, { useState, useEffect } from 'react'
 import { Link as ScrollLink } from 'react-scroll'
@@ -6,6 +7,16 @@ import { useNavigate } from 'react-router-dom'
 import { ArrowLeft, Menu, X, Sun, Moon } from 'lucide-react'
 
 const defaultSections = ['Home', 'Projects', 'Experience', 'About']
+
+// Gap (px) left above a section when a nav link scrolls it into view — clears
+// the sticky nav. This governs where a clicked section lands on screen.
+const SCROLL_OFFSET = 100
+
+// Line (px from the top of the viewport) at which a section becomes the active
+// one. Sits just below SCROLL_OFFSET so a section you just clicked to — which
+// lands exactly at SCROLL_OFFSET — is reliably highlighted despite sub-pixel
+// scroll rounding. Only affects highlighting, not where clicks scroll to.
+const ACTIVE_OFFSET = SCROLL_OFFSET + 24
 
 interface NavProps {
   sections?: string[]
@@ -19,7 +30,7 @@ const Nav: React.FC<NavProps> = ({
   const isSticky = useSticky()
   const { isDark, toggle } = useDarkMode()
   const [menuOpen, setMenuOpen] = useState(false)
-  const [activeSection, setActiveSection] = useState(sections[0])
+  const activeSection = useScrollSpy(sections, ACTIVE_OFFSET)
   const navigate = useNavigate()
 
   // Breakpoint: 875px for project pages (more sections), sm (640px) for homepage
@@ -95,13 +106,12 @@ const Nav: React.FC<NavProps> = ({
               to={section}
               duration={500}
               smooth
-              spy={true}
-              offset={-100}
-              className="px-6 py-6 hover:cursor-pointer"
-              activeClass="text-gradient-accent border-b-2 border-accent dark:border-dark-accent transition duration-300 ease-in-out"
-              onSetActive={() => {
-                setActiveSection(section)
-              }}
+              offset={-SCROLL_OFFSET}
+              className={`px-6 py-6 transition duration-300 ease-in-out hover:cursor-pointer ${
+                activeSection === section
+                  ? 'text-gradient-accent border-accent dark:border-dark-accent border-b-2'
+                  : ''
+              }`}
             >
               {section}
             </ScrollLink>
@@ -133,10 +143,12 @@ const Nav: React.FC<NavProps> = ({
               to={section}
               duration={500}
               smooth
-              spy={true}
-              offset={-100}
-              className="text-text dark:text-dark-text hover:bg-border/50 dark:hover:bg-dark-border/50 px-4 py-4 text-lg transition-colors hover:cursor-pointer"
-              activeClass="text-gradient-accent"
+              offset={-SCROLL_OFFSET}
+              className={`hover:bg-border/50 dark:hover:bg-dark-border/50 px-4 py-4 text-lg transition-colors hover:cursor-pointer ${
+                activeSection === section
+                  ? 'text-gradient-accent'
+                  : 'text-text dark:text-dark-text'
+              }`}
               onClick={() => {
                 setMenuOpen(false)
               }}

@@ -8,6 +8,7 @@ const Hero = () => {
   return (
     <Element
       name="Home"
+      id="Home"
       className="relative flex h-screen flex-col items-center justify-center gap-8 overflow-hidden p-4 text-center text-wrap lg:p-8"
     >
       <RadialBackground />
