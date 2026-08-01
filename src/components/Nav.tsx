@@ -3,6 +3,7 @@ import { useDarkMode } from '@/hooks/useDarkMode'
 import React, { useState, useEffect } from 'react'
 import { Link as ScrollLink } from 'react-scroll'
 import { useNavigate } from 'react-router-dom'
+import { ArrowLeft, Menu, X, Sun, Moon } from 'lucide-react'
 
 const defaultSections = ['Home', 'Projects', 'Experience', 'About']
 
@@ -57,7 +58,7 @@ const Nav: React.FC<NavProps> = ({
             className={`text-text-muted dark:text-dark-text-muted hover:text-accent dark:hover:text-dark-accent absolute left-4 cursor-pointer p-2 text-xl transition-colors ${hiddenAbove}`}
             aria-label="Back to home"
           >
-            <i className="fa-solid fa-arrow-left" />
+            <ArrowLeft className="size-5" />
           </button>
         ) : (
           <button
@@ -68,7 +69,7 @@ const Nav: React.FC<NavProps> = ({
             className={`text-text-muted dark:text-dark-text-muted hover:text-accent dark:hover:text-dark-accent absolute left-4 cursor-pointer p-2 text-xl transition-colors ${hiddenAbove}`}
             aria-label="Toggle menu"
           >
-            <i className={`fa-solid ${menuOpen ? 'fa-xmark' : 'fa-bars'}`} />
+            {menuOpen ? <X className="size-5" /> : <Menu className="size-5" />}
           </button>
         )}
 
@@ -82,7 +83,7 @@ const Nav: React.FC<NavProps> = ({
             className={`text-text-muted dark:text-dark-text-muted hover:text-accent dark:hover:text-dark-accent absolute left-4 cursor-pointer p-2 text-xl transition-colors ${showAboveBlock} md:left-12 lg:left-24`}
             aria-label="Back to home"
           >
-            <i className="fa-solid fa-arrow-left" />
+            <ArrowLeft className="size-5" />
           </button>
         )}
 
@@ -119,7 +120,7 @@ const Nav: React.FC<NavProps> = ({
           className="text-text-muted dark:text-dark-text-muted hover:text-accent dark:hover:text-dark-accent absolute right-4 cursor-pointer p-2 text-xl transition-colors md:right-12 lg:right-24"
           aria-label="Toggle dark mode"
         >
-          <i className={`fa-solid ${isDark ? 'fa-sun' : 'fa-moon'}`} />
+          {isDark ? <Sun className="size-5" /> : <Moon className="size-5" />}
         </button>
       </div>
 

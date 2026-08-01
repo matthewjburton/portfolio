@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { SlidersHorizontal } from 'lucide-react'
 
 const projectTypes = ['Personal', 'Professional', 'Academic'] as const
 
@@ -52,7 +53,7 @@ const ProjectFilters = ({
           }`}
           aria-label="Toggle filters"
         >
-          <i className="fa-solid fa-sliders" />
+          <SlidersHorizontal className="size-4" />
           {hasFilters && (
             <span className="gradient-accent absolute -right-1 -top-1 h-2.5 w-2.5 rounded-full" />
           )}

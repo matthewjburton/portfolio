@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback } from 'react'
+import { X, ChevronLeft, ChevronRight } from 'lucide-react'
 import { ProjectType } from '../../types'
 import { sections } from './sections'
 import FadeInSection from '@/components/FadeInSection'
@@ -81,7 +82,7 @@ const Lightbox = ({ features, index, onClose, onPrev, onNext }: LightboxProps) =
           className="absolute -top-2 right-0 z-10 cursor-pointer p-2 text-xl text-white/70 transition-colors hover:text-white"
           aria-label="Close lightbox"
         >
-          <i className="fa-solid fa-xmark" />
+          <X className="size-6" />
         </button>
 
         {/* Media */}
@@ -106,7 +107,7 @@ const Lightbox = ({ features, index, onClose, onPrev, onNext }: LightboxProps) =
               className="absolute left-0 top-1/2 -translate-x-full -translate-y-1/2 cursor-pointer p-4 text-2xl text-white/70 transition-colors hover:text-white"
               aria-label="Previous feature"
             >
-              <i className="fa-solid fa-chevron-left" />
+              <ChevronLeft className="size-7" />
             </button>
             <button
               type="button"
@@ -114,7 +115,7 @@ const Lightbox = ({ features, index, onClose, onPrev, onNext }: LightboxProps) =
               className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-full cursor-pointer p-4 text-2xl text-white/70 transition-colors hover:text-white"
               aria-label="Next feature"
             >
-              <i className="fa-solid fa-chevron-right" />
+              <ChevronRight className="size-7" />
             </button>
           </>
         )}
