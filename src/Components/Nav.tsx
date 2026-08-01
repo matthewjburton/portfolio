@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react'
 import { Link as ScrollLink } from 'react-scroll'
 import { useNavigate } from 'react-router-dom'
 
-const defaultSections = ['Home', 'Projects', 'About']
+const defaultSections = ['Home', 'Projects', 'Experience', 'About']
 
 interface NavProps {
   sections?: string[]
