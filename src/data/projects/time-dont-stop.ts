@@ -4,7 +4,7 @@ export const timeDontStop: ProjectType = {
   id: 16,
   title: "Time Don't Stop",
   description:
-    'A top-down arena shooter where time is your only resource, built solo in 96 hours for GMTK 2026. Ranked #126 in Enjoyment out of ~10,500 entries — the top 1.2%.',
+    'A top-down arena shooter where time is your only resource, built solo in 96 hours for GMTK 2026. Ranked #126 in Enjoyment out of ~10,500 entries (top 1.2%).',
   link: 'https://matt-burton.itch.io/time-dont-stop',
   stack: [
     { label: 'Unity', iconClass: 'devicon-unity-plain' },
@@ -14,10 +14,10 @@ export const timeDontStop: ProjectType = {
   banner: `${import.meta.env.BASE_URL}images/projects/time-dont-stop/banner.png`,
   purpose: {
     purpose:
-      "Built for the GMTK 2026 game jam around the theme 'Count Down.' Rather than a timer bolted onto a shooter, time itself is the game: a single draining clock is your health, your resource, and the countdown you race — every dash, hit, and decision spends from it.",
+      "Built for the GMTK 2026 game jam around the theme 'Count Down.' Rather than a timer bolted onto a shooter, time itself is the game: a single draining clock is your health, your resource, and the countdown you race; every dash, hit, and decision spends from it.",
     goals: [
       "Turn the 'Count Down' theme into the core mechanic, not just a UI element",
-      'Ship a complete, polished game — tutorial, bosses, music, and meta systems — within the 96-hour window',
+      'Ship a complete, polished game (tutorial, bosses, music, and meta systems) within the 96-hour window',
       'Iterate quickly on player feedback throughout the jam',
     ],
     type: 'Personal',
@@ -43,7 +43,7 @@ export const timeDontStop: ProjectType = {
       {
         header: 'Overcharge Mode',
         description:
-          'Banked too much time? Burn it in Overcharge for higher fire rate, more damage, and piercing shots — but the clock drains far faster, turning a surplus into a gamble.',
+          'Banked too much time? Burn it in Overcharge for higher fire rate, more damage, and piercing shots, but the clock drains far faster, turning a surplus into a gamble.',
         media: `${import.meta.env.BASE_URL}images/projects/time-dont-stop/overcharge.mp4`,
       },
       {
@@ -84,11 +84,11 @@ export const timeDontStop: ProjectType = {
         challenge:
           'Manual aiming demanded twitch skill the game was never about.',
         solution:
-          'Switched to auto-aim so players focus on the real challenge — spending and conserving time — instead of execution.',
+          'Switched to auto-aim so players focus on the real challenge, spending and conserving time, instead of execution.',
       },
       {
         challenge:
-          'Dashing cost time, so players avoided it — but boss attacks required dashing to survive.',
+          'Dashing cost time, so players avoided it, but boss attacks required dashing to survive.',
         solution:
           'Tuned dashing to cost less time than the damage it avoids, making evasion always the correct play.',
       },
@@ -123,6 +123,6 @@ export const timeDontStop: ProjectType = {
     state: 'Complete',
     lastUpdated: 'Jul 2026',
     conclusion:
-      'Designed, built, and shipped solo in 96 hours for GMTK 2026 — around a full work week, travel, and weekend commitments. Enjoyment was the goal, and community voting across ~10,500 entries delivered: #126 in Enjoyment (4.27 / 5) — the top 1.2% — with strong marks in Audio (#1,295) and Creativity (#1,742).',
+      'Designed, built, and shipped solo in 96 hours for GMTK 2026, around a full work week, travel, and weekend commitments. Enjoyment was the goal, and community voting across ~10,500 entries delivered: #126 in Enjoyment (4.27 / 5), the top 1.2%. It also placed well in Audio (#1,295), Creativity (#1,742), and Artwork (#3,055).',
   },
 }
