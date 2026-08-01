@@ -3,6 +3,27 @@ import { SlidersHorizontal } from 'lucide-react'
 
 const projectTypes = ['Personal', 'Professional', 'Academic'] as const
 
+const typeFilterStyles: Record<string, { active: string; inactive: string }> = {
+  Professional: {
+    active:
+      'bg-accent dark:bg-dark-accent text-background dark:text-dark-background border-transparent',
+    inactive:
+      'border-accent text-accent dark:border-dark-accent dark:text-dark-accent hover:bg-accent/10 dark:hover:bg-dark-accent/10',
+  },
+  Personal: {
+    active:
+      'bg-secondary dark:bg-dark-secondary text-background dark:text-dark-background border-transparent',
+    inactive:
+      'border-secondary text-secondary dark:border-dark-secondary dark:text-dark-secondary hover:bg-secondary/10 dark:hover:bg-dark-secondary/10',
+  },
+  Academic: {
+    active:
+      'bg-text-muted dark:bg-dark-text-muted text-background dark:text-dark-background border-transparent',
+    inactive:
+      'border-border text-text-muted dark:border-dark-border dark:text-dark-text-muted hover:bg-text-muted/10 dark:hover:bg-dark-text-muted/10',
+  },
+}
+
 interface ProjectFiltersProps {
   search: string
   onSearchChange: (value: string) => void
@@ -67,13 +88,13 @@ const ProjectFilters = ({
               <button
                 key={type}
                 type="button"
-            onClick={() => {
-              onTypeChange(activeType === type ? null : type)
-            }}
+                onClick={() => {
+                  onTypeChange(activeType === type ? null : type)
+                }}
                 className={`cursor-pointer rounded-full border px-4 py-2 text-sm transition-colors ${
                   activeType === type
-                    ? 'gradient-accent text-background dark:text-dark-background border-transparent'
-                    : 'border-accent text-accent dark:border-dark-accent dark:text-dark-accent hover:bg-accent/10 dark:hover:bg-dark-accent/10'
+                    ? typeFilterStyles[type].active
+                    : typeFilterStyles[type].inactive
                 }`}
               >
                 {type}
