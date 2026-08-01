@@ -1,6 +1,7 @@
 import { ProjectType } from '../types'
 import { useSortedProjects } from '../hooks/useSortedProjectsHook'
 import { Link } from 'react-router-dom'
+import { ArrowRight } from 'lucide-react'
 import { slugify } from '@/router/utils/slugify'
 
 interface OtherProjectsProps {
@@ -32,9 +33,9 @@ const OtherProjects = ({ project }: OtherProjectsProps) => {
             </p>
             <Link
               to={`/${slugify(nextProject.title)}`}
-              className="text-gradient-accent items:center mt-auto hover:underline"
+              className="text-gradient-accent mt-auto inline-flex items-center gap-1 hover:underline"
             >
-              Read more <i className="fa-solid fa-arrow-right" />
+              Read more <ArrowRight className="size-4" />
             </Link>
           </div>
         ))}

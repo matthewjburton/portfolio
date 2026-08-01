@@ -1,6 +1,6 @@
 import { footer } from '../data/footer'
 import React from 'react'
-
+import { ChevronsUp } from 'lucide-react'
 import { Link as ScrollLink } from 'react-scroll'
 import Tooltip from './Tooltip'
 
@@ -15,21 +15,28 @@ const Footer: React.FC = () => {
             duration="500"
             smooth
             spy={true}
-            className="gradient-accent text-dark-text dark:text-text flex items-center justify-center rounded-full p-4 text-xl transition duration-300 ease-in-out hover:cursor-pointer hover:shadow-md hover:dark:shadow-[0_0_10px_#82db4f]"
+            className="gradient-accent text-dark-text dark:text-text flex items-center justify-center rounded-full p-4 text-xl transition duration-300 ease-in-out hover:cursor-pointer hover:shadow-md hover:dark:shadow-[0_0_12px_#34d399]"
           >
-            <i className="fa-solid fa-angles-up" />
+            <ChevronsUp className="size-5" />
           </ScrollLink>
         </Tooltip>
       </div>
 
       <div className="mt-8 flex w-full flex-row justify-center gap-8">
-        {footer.map((action) => (
-          <Tooltip key={action.tooltip} tooltip={action.tooltip}>
-            <a href={action.link}>
-              <i className={action.icon} />
-            </a>
-          </Tooltip>
-        ))}
+        {footer.map((action) => {
+          const Icon = action.icon
+          return (
+            <Tooltip key={action.tooltip} tooltip={action.tooltip}>
+              <a
+                href={action.link}
+                aria-label={action.tooltip}
+                className="hover:text-accent dark:hover:text-dark-accent transition-colors"
+              >
+                <Icon className="size-6" />
+              </a>
+            </Tooltip>
+          )
+        })}
       </div>
       <div className="text-sm uppercase">
         Matthew Burton &copy;{currentYear}

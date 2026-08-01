@@ -9,7 +9,11 @@ export const useSortedProjects = () => {
 
   const allTech = useMemo(() => {
     const techSet = new Set<string>()
-    allProjects.forEach((p) => p.stack.forEach((s) => techSet.add(s.label)))
+    allProjects.forEach((p) => {
+      p.stack.forEach((s) => {
+        techSet.add(s.label)
+      })
+    })
     return [...techSet].sort()
   }, [])
 

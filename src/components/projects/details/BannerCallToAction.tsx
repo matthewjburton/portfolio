@@ -1,4 +1,5 @@
 import { Link as ScrollLink } from 'react-scroll'
+import { ArrowDown } from 'lucide-react'
 import { sections } from './sections/sections'
 import { ProjectType } from '../types'
 
@@ -18,9 +19,9 @@ const BannerCallToAction = ({ project }: BannerCallToActionProps) => {
       smooth
       spy={true}
       offset={-60}
-      className="gradient-accent text-background dark:text-dark-background hover:dark:shadow-dark-accent z-10 cursor-pointer rounded-full bg-size-[200%] p-4 text-lg transition duration-300 ease-in-out hover:shadow-[0_0_10px_#8fcf45] hover:dark:shadow-[0_0_10px_#82db4f]"
+      className="gradient-accent text-background dark:text-dark-background z-10 inline-flex cursor-pointer items-center gap-2 rounded-full bg-size-[200%] p-4 text-lg transition duration-300 ease-in-out hover:shadow-[0_0_12px_#0e9f6e] hover:dark:shadow-[0_0_12px_#34d399]"
     >
-      Read More <i className="fa-solid fa-arrow-down hover-slide-down ml-2" />
+      Read More <ArrowDown className="size-5" />
     </ScrollLink>
   )
 }

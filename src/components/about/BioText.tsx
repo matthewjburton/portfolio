@@ -1,4 +1,5 @@
 import React from 'react'
+import { Download } from 'lucide-react'
 
 interface BioTextProps {
   title: string
@@ -27,7 +28,7 @@ const BioText: React.FC<BioTextProps> = ({ title, education, description, resume
           download
           className="text-accent dark:text-dark-accent hover:text-accent-dark dark:hover:text-dark-accent-light flex items-center gap-2 text-sm transition-colors"
         >
-          <i className="fa-solid fa-download" />
+          <Download className="size-4" />
           Download Resume
           {resumeUpdated && (
             <span className="text-text-muted dark:text-dark-text-muted">

@@ -1,3 +1,4 @@
+import { ExternalLink } from 'lucide-react'
 import { ProjectType } from '../../types'
 import Card from '../Card'
 import { sections } from './sections'
@@ -58,7 +59,7 @@ const State = ({ project }: StateProps) => {
           <a href={project.link} target="_blank" rel="noopener noreferrer">
             {getLinkLabel(link)}
           </a>
-          <i className="fa fa-external-link" aria-hidden="true"></i>
+          <ExternalLink className="size-4" aria-hidden="true" />
         </span>
       )}
     </Card>

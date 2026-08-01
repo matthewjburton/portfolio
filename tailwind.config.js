@@ -5,27 +5,32 @@ export default {
   theme: {
     extend: {
       colors: {
-        'background-dark': 'oklch(97% 0 0)',
-        background: 'oklch(100% 0 0)',
-        'background-light': 'oklch(97% 0.002 270)',
-        text: 'oklch(18% 0 0)',
-        'text-muted': 'oklch(50% 0 0)',
-        border: 'oklch(90% 0 0)',
-        highlight: 'oklch(90% 0 0)',
-        'accent-dark': 'oklch(0.42 0.15 150)',
-        accent: 'oklch(0.50 0.17 145)',
-        'accent-light': 'oklch(0.58 0.15 140)',
+        // ---- Signal · light ----
+        'background-dark': '#f4f7f5', // page background
+        background: '#ffffff', // cards / raised surfaces
+        'background-light': '#eef2f0', // subtle raised fill
+        text: '#14201c',
+        'text-muted': '#5a6b65',
+        border: '#dde4e1',
+        highlight: '#e7ece9',
+        'accent-dark': '#0b7f58',
+        accent: '#0e9f6e', // emerald primary
+        'accent-light': '#34b583',
+        secondary: '#f0654a', // coral secondary
+        'secondary-dark': '#d94e34',
 
-        'dark-background-dark': 'oklch(15% 0 270)',
-        'dark-background': 'oklch(20% 0 270)',
-        'dark-background-light': 'oklch(25% 0 270)',
-        'dark-text': 'oklch(96.19% 0 270)',
-        'dark-text-muted': 'oklch(76.52% 0 270)',
-        'dark-border': 'oklch(30% 0 270)',
-        'dark-highlight': 'oklch(50% 0 270)',
-        'dark-accent-dark': 'oklch(0.63 0.17 140.66)',
-        'dark-accent': 'oklch(0.8071 0.21 136.02)',
-        'dark-accent-light': 'oklch(0.88 0.16 124.66)',
+        // ---- Signal · dark ----
+        'dark-background-dark': '#0e1512',
+        'dark-background': '#17201c',
+        'dark-background-light': '#1f2a25',
+        'dark-text': '#eaf1ee',
+        'dark-text-muted': '#8fa39c',
+        'dark-border': '#26332e',
+        'dark-highlight': '#3a4a43',
+        'dark-accent-dark': '#1fb47d',
+        'dark-accent': '#34d399', // emerald primary
+        'dark-accent-light': '#6ee7b7',
+        'dark-secondary': '#fb7a5d', // coral secondary
       },
 
       screens: {

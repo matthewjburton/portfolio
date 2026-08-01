@@ -11,7 +11,7 @@ export const useDarkMode = () => {
     const root = document.documentElement
     if (isDark) {
       root.classList.add('dark')
-      root.style.backgroundColor = '#0b0b0b'
+      root.style.backgroundColor = '#0e1512'
     } else {
       root.classList.remove('dark')
       root.style.backgroundColor = ''
@@ -19,7 +19,9 @@ export const useDarkMode = () => {
     localStorage.setItem('theme', isDark ? 'dark' : 'light')
   }, [isDark])
 
-  const toggle = () => setIsDark((prev) => !prev)
+  const toggle = () => {
+    setIsDark((prev) => !prev)
+  }
 
   return { isDark, toggle }
 }
